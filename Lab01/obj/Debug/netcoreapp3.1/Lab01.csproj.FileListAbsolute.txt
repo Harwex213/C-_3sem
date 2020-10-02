@@ -1,0 +1,13 @@
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab01\bin\Debug\netcoreapp3.1\Lab01.exe
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab01\bin\Debug\netcoreapp3.1\Lab01.deps.json
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab01\bin\Debug\netcoreapp3.1\Lab01.runtimeconfig.json
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab01\bin\Debug\netcoreapp3.1\Lab01.runtimeconfig.dev.json
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab01\bin\Debug\netcoreapp3.1\Lab01.dll
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab01\bin\Debug\netcoreapp3.1\Lab01.pdb
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab01\obj\Debug\netcoreapp3.1\Lab01.csprojAssemblyReference.cache
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab01\obj\Debug\netcoreapp3.1\Lab01.AssemblyInfoInputs.cache
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab01\obj\Debug\netcoreapp3.1\Lab01.AssemblyInfo.cs
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab01\obj\Debug\netcoreapp3.1\Lab01.csproj.CoreCompileInputs.cache
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab01\obj\Debug\netcoreapp3.1\Lab01.dll
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab01\obj\Debug\netcoreapp3.1\Lab01.pdb
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab01\obj\Debug\netcoreapp3.1\Lab01.genruntimeconfig.cache

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Workplace\\1University\\second_cource\\OOTP\\Csharp_3sem\\Lab1\\Lab1.csproj",
-      "projectName": "Lab1",
-      "projectPath": "C:\\Workplace\\1University\\second_cource\\OOTP\\Csharp_3sem\\Lab1\\Lab1.csproj",
+      "projectUniqueName": "C:\\Workplace\\1University\\second_cource\\OOTP\\Csharp_3sem\\Lab01\\Lab01.csproj",
+      "projectName": "Lab01",
+      "projectPath": "C:\\Workplace\\1University\\second_cource\\OOTP\\Csharp_3sem\\Lab01\\Lab01.csproj",
       "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Workplace\\1University\\second_cource\\OOTP\\Csharp_3sem\\Lab1\\obj\\",
+      "outputPath": "C:\\Workplace\\1University\\second_cource\\OOTP\\Csharp_3sem\\Lab01\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
