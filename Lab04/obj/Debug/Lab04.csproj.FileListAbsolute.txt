@@ -1,0 +1,7 @@
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab04\bin\Debug\Lab04.exe.config
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab04\bin\Debug\Lab04.exe
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab04\bin\Debug\Lab04.pdb
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab04\obj\Debug\Lab04.csprojAssemblyReference.cache
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab04\obj\Debug\Lab04.csproj.CoreCompileInputs.cache
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab04\obj\Debug\Lab04.exe
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab04\obj\Debug\Lab04.pdb
