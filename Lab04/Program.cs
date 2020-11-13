@@ -46,7 +46,7 @@ namespace Lab04
 
             for (int i = 0; i < 10; i++)
             {
-                setFirst = setFirst << i;
+                setFirst <<= i;
                 setFirst1 = setFirst1 << i;
             }
             setFirst.PrintElem();
