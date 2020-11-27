@@ -76,7 +76,7 @@ namespace Lab04
             Random rnd = new Random();
             for (int i = 0; i < 10; i++)
             {
-                setN = setN << rnd.Next(0,10);
+                setN = setN << rnd.Next(0, 10);
             }
             setN.PrintElem();
             setN = StatisticOperation.Regulize(setN);

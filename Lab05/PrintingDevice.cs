@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Lab05
 {
-    abstract class PrintingDevice : Product
+    abstract class PrintingDevice : Product 
     {
         public abstract int PrintingSpeed { get; set; }
         public override string ToString()
         {
-            return base.ToString() + $"Printing Speed is {PrintingSpeed}";
+            return base.ToString() + $"Printing Speed is {PrintingSpeed}. ";
         }
     }
 }

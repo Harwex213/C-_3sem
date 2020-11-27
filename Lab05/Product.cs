@@ -10,7 +10,7 @@ namespace Lab05
     abstract class Product
     {
         public virtual int Price { get; set; }
-        public virtual string Name { get; set; }
+        public virtual string Name { get; set; } = "";
         public virtual string InfoAbout { get; set; }
         public virtual string Producer { get; set; }
         public virtual DateTime CreationDate { get; set; }

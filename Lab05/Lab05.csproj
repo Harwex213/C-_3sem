@@ -65,7 +65,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Computer.cs" />
+    <Compile Include="Exception.cs" />
     <Compile Include="IDevice.cs" />
+    <Compile Include="Laboratory.cs" />
+    <Compile Include="LaboratoryCore.cs" />
+    <Compile Include="LaboratoryManager.cs" />
     <Compile Include="Plotter.cs" />
     <Compile Include="Printer.cs" />
     <Compile Include="PrintingDevice.cs" />

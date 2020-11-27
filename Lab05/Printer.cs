@@ -24,7 +24,7 @@ namespace Lab05
                     Console.WriteLine("This Printing Device is Plotter");
                     break;
             }
-            temp.ToString();
+            Console.WriteLine(temp.ToString());
         }
 
         public override string ToString()

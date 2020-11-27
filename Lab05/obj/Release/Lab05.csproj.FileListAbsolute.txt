@@ -1,0 +1,9 @@
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab05\bin\Release\Lab05.exe.config
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab05\bin\Release\Lab05.exe
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab05\bin\Release\Lab05.pdb
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab05\bin\Release\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab05\obj\Release\Lab05.csprojAssemblyReference.cache
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab05\obj\Release\Lab05.csproj.CoreCompileInputs.cache
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab05\obj\Release\Lab05.csproj.CopyComplete
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab05\obj\Release\Lab05.exe
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab05\obj\Release\Lab05.pdb
