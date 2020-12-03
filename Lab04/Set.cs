@@ -9,114 +9,98 @@ using System.Threading.Tasks;
 namespace Lab04
 {
     //Множество Set
-    // >> (set-item) - удаление из множества
-    // << (set+item) - добавление в множество
     // !=            - проверка множеств на неравенство
     // >             - проверка множествa на подмножество 
     // %             - пересечение множеств
-    class Set
+    class Set<T> : IGenericInterface<T> // where T : struct
     {
-        public List<int> Items { get; set; } = new List<int>();
+        public List<T> Items { get; set; } = new List<T>();
 
         public Owner ThisOwner { get; set; } = new Owner();
 
         public Set() { }
-
-        public static Set operator <<(Set set, int newElement)
+        public Set(params T[] arr)
         {
-            set.Items.Add(newElement);
-            return set;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Items.Add(arr[i]);
+            }
         }
-        public static Set operator >>(Set set, int oldElement)
+        public static bool operator ==(Set<T> setFirst, Set<T> setSecond)
         {
-            set.Items.Remove(oldElement);
-            return set;
-        }
-        public static bool operator ==(Set setFirst, Set setSecond)
-        {
-            bool check = true;
-            if (setFirst.Items.Count == setSecond.Items.Count)
-                for (int i = 0; i < setSecond.Items.Count; i++)
-                {
-                    if (setFirst.Items[i] != setSecond.Items[i])
-                        check = false;
-                }
-            return check;
-        }
-        public static bool operator !=(Set setFirst, Set setSecond)
-        {
-            bool check = true;
-            if (setFirst.Items.Count == setSecond.Items.Count)
-                for (int i = 0; i < setSecond.Items.Count; i++)
-                {
-                    if (setFirst.Items[i] == setSecond.Items[i])
-                        check = false;
-                }
-            return check;
-        }
-        public static bool operator <(Set setFirst, Set setSecond)
-        {
-            bool check = false;
+            for (int i = 0; i < setFirst.Items.Count; i++)
+            {
+                if (!setSecond.Items.Contains(setFirst.Items[i]))
+                    return false;
+            }
             for (int i = 0; i < setSecond.Items.Count; i++)
             {
-                for (int j = 0; j < setFirst.Items.Count; j++)
-                {
-                    if (setSecond.Items[i] == setFirst.Items[j])
-                        check = true;
-                }
-                if (!check)
+                if (!setFirst.Items.Contains(setSecond.Items[i]))
                     return false;
             }
             return true;
         }
-        public static bool operator >(Set setFirst, Set setSecond)
+        public static bool operator !=(Set<T> setFirst, Set<T> setSecond)
         {
-            bool check = false;
             for (int i = 0; i < setFirst.Items.Count; i++)
             {
-                for (int j = 0; j < setSecond.Items.Count; j++)
-                {
-                    if (setFirst.Items[i] == setSecond.Items[j])
-                        check = true;
-                }
-                if (!check)
+                if (setSecond.Items.Contains(setFirst.Items[i]))
+                    return false;
+            }
+            for (int i = 0; i < setSecond.Items.Count; i++)
+            {
+                if (setFirst.Items.Contains(setSecond.Items[i]))
                     return false;
             }
             return true;
         }
-        public static Set operator %(Set setFirst, Set setSecond)
+        public static bool operator <(Set<T> setFirst, Set<T> setSecond)
         {
-            Set interSet = new Set();
-            bool counter = false;
+            bool check = true;
             for (int i = 0; i < setFirst.Items.Count; i++)
             {
-                for (int j = 0; j < setSecond.Items.Count; j++)
-                {
-                    if (setFirst.Items[i] == setSecond.Items[j])
-                        counter = true;
-                }
-                if (counter)
-                    interSet.Items.Add(setFirst.Items[i]);
+                if (!setSecond.Items.Contains(setFirst.Items[i]))
+                    check = false;
+            }
+            return check;
+        }
+        public static bool operator >(Set<T> setFirst, Set<T> setSecond)
+        {
+            bool check = true;
+            for (int i = 0; i < setSecond.Items.Count; i++)
+            {
+                if (!setFirst.Items.Contains(setSecond.Items[i]))
+                    check = false;
+            }
+            return check;
+        }
+        public static Set<T> operator %(Set<T> setFirst, Set<T> setSecond)
+        {
+            Set<T> interSet = new Set<T>();
+            for (int i = 0; i < setSecond.Items.Count; i++)
+            {
+                if (setFirst.Items.Contains(setSecond.Items[i]))
+                    interSet.Items.Add(setSecond.Items[i]);
             }
             interSet.Items.Sort();
             return interSet;
         }
-        public void PrintElem()
+        public void Add(T value)
+        {
+            Items.Add(value);
+        }
+
+        public void Remove(int index)
+        {
+            Items.RemoveAt(index);
+        }
+
+        public void PrintCollection()
         {
             for (int i = 0; i < Items.Count; i++)
             {
-                Console.Write($"{Items[i]} ");
-            }
-            Console.WriteLine();
-        }
-
-        public class Date
-        { 
-            public static void PrintDate()
-            {
-                Console.WriteLine("10.23.2020");
+                Console.WriteLine(Items[i]);
             }
         }
-
     }
 }
