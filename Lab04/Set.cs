@@ -1,5 +1,6 @@
 ﻿using System;
 using System.CodeDom;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization.Formatters;
@@ -101,6 +102,27 @@ namespace Lab04
             {
                 Console.WriteLine(Items[i]);
             }
+        }
+
+        public void WriteInFile()
+        {
+            using (StreamWriter f = new StreamWriter(@"C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab04\file.txt", true, System.Text.Encoding.Default))
+            {
+                f.WriteLine(this.ToString());
+                f.WriteLine(Items.Count);
+                f.WriteLine("Items:");
+                foreach (var i in Items) f.WriteLine(i);
+            }
+
+        }
+
+        public static void ReadInFile()
+        {
+            using (StreamReader f = new StreamReader(@"C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab04\file.txt", System.Text.Encoding.Default))
+            {
+                while (!f.EndOfStream) Console.WriteLine(f.ReadLine());
+            }
+
         }
     }
 }

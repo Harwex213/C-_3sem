@@ -12,7 +12,7 @@ namespace Lab09
         {
             StringBuilder rc = new StringBuilder();
 
-            for (int i = 0, j = 0; i < str.Length; i++)
+            for (int i = 0; i < str.Length; i++)
                 if (str[i] != ',' && str[i] != '.' && str[i] != '!' && str[i] != ':' && str[i] != ';' && str[i] != '?')
                     rc.Append(str[i], 1);
 
