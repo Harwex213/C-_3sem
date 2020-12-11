@@ -61,13 +61,13 @@ namespace Lab03
         public static int PassableScore { get; set; } = 4;
         private static char city;
         static private int count = 0;
+        private static Random random = new Random();
 
         public Abiturient()
         {
             ID = this.GetHashCode();
-            var random = new Random();
             for (int i = 0; i < Scores.Length; i++)
-                Scores[i] = random.Next(4, 10);
+                Scores[i] = random.Next(3, 10);
             count++;
         }
         public Abiturient(int id, string name, int telephone) : this()

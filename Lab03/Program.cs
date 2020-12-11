@@ -8,6 +8,11 @@ using System.Threading.Tasks;
 
 namespace Lab03
 {
+    class Student
+    {
+        public string Name { get; set; } = "";
+        public string Last { get; set; } = "";
+    }
     class Program
     {
         static void Main(string[] args)
@@ -28,9 +33,9 @@ namespace Lab03
                 new Abiturient {Name = "Dima", Last = "Kaminskiy"},
                 new Abiturient {Name = "Nikita", Last = "Kravchenko"},
                 new Abiturient {Name = "Kirill", Last = "Kravchenko"},
-                new Abiturient {Name = "Ephim", Last = "Kopil"}
+                new Abiturient {Name = "Ephim", Last = "Kopol"}
             };
-            var linqRequest3 = (from abit in abiturients from score in abit.Scores where score < 4 select abit).Distinct().ToArray<Abiturient>();
+            var linqRequest3 = (from abit in abiturients where abit.Scores.Any(item => item < 4) select abit).ToArray<Abiturient>();
             Console.WriteLine("Список студентов, оценки которых ниже 4:");
             foreach (var item in linqRequest3)
                 Console.WriteLine(item);
@@ -38,14 +43,23 @@ namespace Lab03
             Console.WriteLine("Список студентов, у которых сумма оценок выше 20:");
             foreach (var item in linqRequest3)
                 Console.WriteLine(item);
-            linqRequest3 = (from abit in abiturients from score in abit.Scores where score == 10 select abit).Distinct().ToArray<Abiturient>();
+            linqRequest3 = (from abit in abiturients where abit.Scores.Any(item => item == 10) select abit).Distinct().ToArray<Abiturient>();
             Console.WriteLine("Список студентов, у которых есть оценка 10:");
             foreach (var item in linqRequest3)
                 Console.WriteLine(item);
-            linqRequest3 = (from abit in abiturients orderby abit.Name select abit).ToArray<Abiturient>();
-            linqRequest3 = (from abit in abiturients orderby abit.Name select abit).ToArray<Abiturient>();
 
-            linqRequest3 = (from abit in abiturients orderby abit.Name select abit).ToArray<Abiturient>();
+            var students = new List<Student>
+            {
+                new Student {Name = "Oleg", Last = "Kaportsev"},
+                new Student {Name = "Igor", Last = "Skvortsov"},
+                new Student {Name = "Havok", Last = "Havok"}
+            };
+
+            var linqRequest4 = (from abit in abiturients
+                                where abit.Scores.Average() > 5 && abit.Last.Contains("o")
+                                join stud in students on abit.Last equals stud.Last
+                                orderby abit.Name
+                                select new { Name = "Anonim", Last = "Anonim" }).Distinct();
 
             Console.WriteLine("Done");
             // Lab 3.
