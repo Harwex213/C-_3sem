@@ -9,24 +9,24 @@ namespace Lab10
 {
     class University : IEnumerable<Student>
     {
-        private List<Student> students = new List<Student>();
+        public List<Student> Students { get; set; } = new List<Student>();
         public University()
         {
-            students.Add(new Student("Oleg", "POIT"));
-            students.Add(new Student("Igor", "ISIT"));
-            students.Add(new Student("Max", "POIT"));
-            students.Add(new Student("Kasimir", "ISIT"));
-            students.Add(new Student("Nikita", "POIT"));
+            Students.Add(new Student("Oleg", "POIT"));
+            Students.Add(new Student("Igor", "ISIT"));
+            Students.Add(new Student("Max", "POIT"));
+            Students.Add(new Student("Kasimir", "ISIT"));
+            Students.Add(new Student("Nikita", "POIT"));
         }
 
         public IEnumerator<Student> GetEnumerator()
         {
-            throw new NotImplementedException();
+            return Students.GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            throw new NotImplementedException();
+            return Students.GetEnumerator();
         }
     }
 }
