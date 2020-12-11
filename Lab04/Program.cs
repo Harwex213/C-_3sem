@@ -22,9 +22,9 @@ namespace Lab04
                 Set<int> tempVar3 = new Set<int>(11, 31, 12, 3101, 3123);
                 var tempVar4 = tempVar3 % tempVar2;
                 tempVar4.PrintCollection();
-                int x = 40 ^ 20;
                 tempVar1.WriteInFile();
                 Set<int>.ReadInFile();
+                Set<Owner> tempVar5 = new Set<Owner>(new Owner() { Name = "Igor", Organization = "Google" }, new Owner() { Name = "Lera", Organization = "Microsoft" }, new Owner());
             }
             catch (Exception e)
             {

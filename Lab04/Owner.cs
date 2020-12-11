@@ -9,16 +9,10 @@ namespace Lab04
     class Owner
     {
         public int Id { get; set; }
-        public static int Counter{ get; set; }
-        public static string Name { get; set; }
-        public static string Organization { get; set; }
-
-        public Owner() {
-            Id = Counter++;
-        }
-        static Owner()
+        public string Name { get; set; }
+        public string Organization { get; set; }
+        public Owner()
         {
-            Counter = 0;
             Name = "Oleg";
             Organization = "Harwex Corporation";
         }

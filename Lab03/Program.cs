@@ -6,29 +6,49 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-/*
-1. Определить класс, содержащий:
-      - Конструкторы - DONE        
-      - Статический конструктор - 
-      - Закрытый конструктор. Как его вызывать? - 
-      - Поле только для чтения - 
-      - Поле константу - 
-      - Свойства (get, set) для всех полей класса (они должны быть закрытыми). Для одного ограничить доступ по set - 
-      - В одном из методов использовать ref и out - 
-      - Статическое поле, хранящее количество созданных объектов и статический метод вывода информации - 
-      - Сделать класс partial - 
-      - Переопределить Equals, GetHashCode, ToString - 
-2. Продемонстрировать все методы, свойства, конструкторы и прочее - 
-3. Создать массив объектов моего класса, задание - 
-4. Создать и вывести анонимный тип - 
-*/
-
 namespace Lab03
 {
     class Program
     {
         static void Main(string[] args)
         {
+            // Lab 11.
+            string[] arrayString = { "June", "July", "August", "September", "October", "November", "December", "January", "February", "March", "April", "May" };
+            var linqRequest = (from month in arrayString where month.Length >= 8 select month).ToArray<string>();
+            linqRequest = (from month in arrayString where month == "December" || month == "January" || month == "February" select month).ToArray<string>();
+            linqRequest = (from month in arrayString orderby month select month).ToArray<string>();
+            var linqRequest2 = (from month in arrayString where month.Contains('u') select month).Count();
+
+            List<Abiturient> abiturients = new List<Abiturient>
+            {
+                new Abiturient {Name = "Oleg", Last = "Kaportsev"},
+                new Abiturient {Name = "Igor", Last = "Skvortsov"},
+                new Abiturient {Name = "Lera", Last = "Fedoruk"},
+                new Abiturient {Name = "Max", Last = "Yarmolik"},
+                new Abiturient {Name = "Dima", Last = "Kaminskiy"},
+                new Abiturient {Name = "Nikita", Last = "Kravchenko"},
+                new Abiturient {Name = "Kirill", Last = "Kravchenko"},
+                new Abiturient {Name = "Ephim", Last = "Kopil"}
+            };
+            var linqRequest3 = (from abit in abiturients from score in abit.Scores where score < 4 select abit).Distinct().ToArray<Abiturient>();
+            Console.WriteLine("Список студентов, оценки которых ниже 4:");
+            foreach (var item in linqRequest3)
+                Console.WriteLine(item);
+            linqRequest3 = (from abit in abiturients where abit.Scores.Sum() > 20 select abit).ToArray<Abiturient>();
+            Console.WriteLine("Список студентов, у которых сумма оценок выше 20:");
+            foreach (var item in linqRequest3)
+                Console.WriteLine(item);
+            linqRequest3 = (from abit in abiturients from score in abit.Scores where score == 10 select abit).Distinct().ToArray<Abiturient>();
+            Console.WriteLine("Список студентов, у которых есть оценка 10:");
+            foreach (var item in linqRequest3)
+                Console.WriteLine(item);
+            linqRequest3 = (from abit in abiturients orderby abit.Name select abit).ToArray<Abiturient>();
+            linqRequest3 = (from abit in abiturients orderby abit.Name select abit).ToArray<Abiturient>();
+
+            linqRequest3 = (from abit in abiturients orderby abit.Name select abit).ToArray<Abiturient>();
+
+            Console.WriteLine("Done");
+            // Lab 3.
             Abiturient.Info();
 
             Random rnd = new Random();

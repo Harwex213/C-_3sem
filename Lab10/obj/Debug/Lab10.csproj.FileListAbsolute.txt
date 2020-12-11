@@ -1,0 +1,7 @@
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab10\bin\Debug\Lab10.exe.config
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab10\bin\Debug\Lab10.exe
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab10\bin\Debug\Lab10.pdb
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab10\obj\Debug\Lab10.csprojAssemblyReference.cache
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab10\obj\Debug\Lab10.csproj.CoreCompileInputs.cache
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab10\obj\Debug\Lab10.exe
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab10\obj\Debug\Lab10.pdb

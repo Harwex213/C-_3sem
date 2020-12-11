@@ -54,7 +54,7 @@ namespace Lab03
             }
         }
         public int Telephone { get; set; } = 0;
-        public int[] Scores { get; set; } = new int[0];
+        public int[] Scores { get; set; } = new int[5];
 
         private readonly int ID;
         const string university = "BSTU";
@@ -65,6 +65,9 @@ namespace Lab03
         public Abiturient()
         {
             ID = this.GetHashCode();
+            var random = new Random();
+            for (int i = 0; i < Scores.Length; i++)
+                Scores[i] = random.Next(4, 10);
             count++;
         }
         public Abiturient(int id, string name, int telephone) : this()
