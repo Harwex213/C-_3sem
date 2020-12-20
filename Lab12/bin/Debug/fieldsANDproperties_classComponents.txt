@@ -1,0 +1,16 @@
+Info about class OOP_lab12.Program+Student
+Properties count: 6
+Fields count: 3
+
+Fields:
+Type: Field	 Name: id
+Type: Field	 Name: totalCountOfStudents
+Type: Field	 Name: university
+
+Properties:
+Type: Property	 Name: FullName
+Type: Property	 Name: Birthday
+Type: Property	 Name: Telephone
+Type: Property	 Name: Faculty
+Type: Property	 Name: Kours
+Type: Property	 Name: Group

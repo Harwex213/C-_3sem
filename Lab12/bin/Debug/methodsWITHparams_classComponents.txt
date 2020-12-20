@@ -1,0 +1,7 @@
+Info about class OOP_lab12.Program+Student
+Count of methods which includes param with type String: 4
+
+public  Void set_Telephone (String value)
+public  Void set_Faculty (String value)
+public static  Void sortingByFaculty (Student[] arr, String facultyName)
+public static  Void sortingByGroup (Student[] arr, String facultyName, Int32 groupNum)
