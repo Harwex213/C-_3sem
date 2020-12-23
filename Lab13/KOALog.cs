@@ -38,5 +38,26 @@ namespace Lab13
                 logfile.WriteLine("------------------------------");
             }
         }
+        public static void FindInfo(string Name)
+        {
+            using (StreamReader sr = new StreamReader(@"C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab13\files\KOAlog.txt"))
+            {
+                int num = 0;
+                string buf = null;
+
+                while ((buf = sr.ReadLine()) != null)
+                {
+                    num++;
+                    if (buf.Contains(Name))
+                    {
+                        buf = sr.ReadLine();
+                        if (buf != null) Console.WriteLine(buf);
+                        num++;
+                    }
+
+                }
+                Console.WriteLine(num + " строк записей ");
+            }
+        }
     }
 }

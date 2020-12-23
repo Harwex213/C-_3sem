@@ -27,6 +27,8 @@ namespace Lab13
 
             KOAFileManager.createZIP(@"C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab13\files\KOAFiles");
             KOALog.writeToLog("KOAFileManager.createZIP()");
+
+            KOALog.FindInfo("9:36");
         }
     }
 }

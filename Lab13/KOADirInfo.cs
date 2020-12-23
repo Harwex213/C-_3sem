@@ -20,7 +20,7 @@ namespace Lab13
 
         static public void getDirinfo(string dir)
         {
-            System.Console.WriteLine("\n----------------------");
+            System.Console.WriteLine("----------------------");
             DirectoryInfo dirInfo = new DirectoryInfo(dir);
             if (!dirInfo.Exists)
             {
@@ -32,8 +32,7 @@ namespace Lab13
             Console.WriteLine($"Directory create time: {dirInfo.CreationTime}");
             Console.WriteLine("\nParent directories:");
             getParentDirs(dirInfo.Parent);
-            System.Console.WriteLine("----------------------\n");
-
+            System.Console.WriteLine("----------------------");
         }
     }
 }
