@@ -12,8 +12,8 @@ namespace Lab13
         {
             try
             {
-                KOADiskInfo.getFreeDrivesSpace();
                 KOALog.writeToLog("KOADiskInfo.getFreeDrivesSpace()");
+                KOADiskInfo.getFreeDrivesSpace();
 
                 KOAFileInfo.getFileinfo(@"C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab13\files\KOALog.txt");
                 KOALog.writeToLog("KOAFileInfo.getFileinfo()", "KOALog.txt", @"C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab13\files\KOALog.txt");
@@ -24,13 +24,11 @@ namespace Lab13
                 KOAFileManager.getAllDirsAndFilesOfDisk(@"C:\");
                 KOALog.writeToLog("KOAFileManager.getAllDirsAndFilesOfDisk()", "", @"C:\");
 
-                KOAFileManager.getAllFilesWithExtension(@"C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab13\files\KOAFiles", ".txt");
+                KOAFileManager.getAllFilesWithExtension(@"C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab13\files\info", ".txt");
                 KOALog.writeToLog("KOAFileManager.getAllDirsAndFilesOfDisk()", "", @"C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab13\files\KOAFiles");
 
-                KOAFileManager.createZIP(@"C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab13\files\KOAFiles");
+                KOAFileManager.createZIP(@"C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab13\files\KOAInspect\KOAFiles");
                 KOALog.writeToLog("KOAFileManager.createZIP()");
-
-                KOALog.FindInfo("9:36");
             }
             catch (Exception e)
             {

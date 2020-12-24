@@ -18,20 +18,20 @@ namespace Lab13
                     {
                         DirectoryInfo subDir = dir.CreateSubdirectory("KOAInspect");
                         DirectoryInfo dr = new DirectoryInfo(diskName);
-                        using (StreamWriter file = new StreamWriter(subDir.FullName + @"\" + "HDVdirinfo.txt"))
+                        using (StreamWriter file = new StreamWriter(subDir.FullName + @"\" + "KOAdirinfo.txt"))
                         {
                             file.WriteLine("----------Directories----------");
                             foreach (var d in dr.GetDirectories())
                                 file.WriteLine($"{d.Name}");
-                            file.WriteLine("-------------------------------");
+                            file.WriteLine("----------------------");
 
                             file.WriteLine("----------Files----------");
                             foreach (var d in dr.GetFiles())
                                 file.WriteLine($"{d.Name}");
-                            file.WriteLine("-------------------------");
+                            file.WriteLine("----------------------");
                         }
-                        FileInfo dirinfo = new FileInfo(subDir.FullName + @"\" + "HDVdirinfo.txt");
-                        dirinfo.CopyTo(subDir.FullName + @"\" + "HDVdirinfoCOPY.txt");
+                        FileInfo dirinfo = new FileInfo(subDir.FullName + @"\" + "KOAdirinfo.txt");
+                        dirinfo.CopyTo(subDir.FullName + @"\" + "KOAdirinfoCOPY.txt");
                         dirinfo.Delete();
                     }
                     break;
@@ -53,7 +53,7 @@ namespace Lab13
                     foreach (var file in directory.GetFiles($"*{extension}"))
                         file.CopyTo(Files.FullName + @"\" + file.Name);
 
-                    Files.MoveTo(temp.GetDirectories("KOAInspect")[0].FullName + "\\HDVFiles");
+                    Files.MoveTo(temp.GetDirectories("KOAInspect")[0].FullName + "\\KOAFiles");
                 }
             }
         }

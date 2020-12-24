@@ -15,9 +15,10 @@ namespace Lab13
             }
             System.Console.WriteLine($"Full puth: {fileInfo.FullName}");
             System.Console.WriteLine($"Size: {fileInfo.Length} byte");
-            System.Console.WriteLine($"Name: {fileInfo.Name}");
             System.Console.WriteLine($"Full extension: {fileInfo.Extension}");
+            System.Console.WriteLine($"Name: {fileInfo.Name}");
             System.Console.WriteLine($"Full create time: {fileInfo.CreationTime}");
+            System.Console.WriteLine($"Last access time: {fileInfo.LastAccessTime}");
             System.Console.WriteLine("----------------------");
         }
     }

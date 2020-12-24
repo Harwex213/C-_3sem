@@ -1,30 +1,30 @@
 ----------------Logger----------------
 ------------------------------
 Action: KOADiskInfo.getFreeDrivesSpace()
-Time: 12/22/2020 9:36:38 PM
+Time: 12/24/2020 9:28:22 AM
 ------------------------------
 ------------------------------
 Action: KOAFileInfo.getFileinfo()
 File name: KOALog.txt
 Path: C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab13\files\KOALog.txt
-Time: 12/22/2020 9:36:38 PM
+Time: 12/24/2020 9:28:22 AM
 ------------------------------
 ------------------------------
 Action: KOADirInfo.getDirinfo()
 Path: C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab13
-Time: 12/22/2020 9:36:38 PM
+Time: 12/24/2020 9:28:22 AM
 ------------------------------
 ------------------------------
 Action: KOAFileManager.getAllDirsAndFilesOfDisk()
 Path: C:\
-Time: 12/22/2020 9:36:38 PM
+Time: 12/24/2020 9:28:22 AM
 ------------------------------
 ------------------------------
 Action: KOAFileManager.getAllDirsAndFilesOfDisk()
 Path: C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab13\files\KOAFiles
-Time: 12/22/2020 9:36:38 PM
+Time: 12/24/2020 9:28:22 AM
 ------------------------------
 ------------------------------
 Action: KOAFileManager.createZIP()
-Time: 12/22/2020 9:36:38 PM
+Time: 12/24/2020 9:28:22 AM
 ------------------------------
