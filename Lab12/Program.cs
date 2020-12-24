@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Text;
 
@@ -7,293 +9,349 @@ namespace OOP_lab12
 {
     class Program
     {
-        #region student
-
-        public interface IsomeInterface1 { };
-        public interface IsomeInterface2 { };
-
-        public partial class Student : IsomeInterface1, IsomeInterface2
+        #region abiturient
+        partial class Abiturient
         {
+            //Readonly Field - ID
+            public int Identificator { get; set; } = 0;
 
-            public static int totalCountOfStudents = 0;
-            public readonly int id;
-            private string fullName;
-            private DateTime birthday;
-            private string telephone;
-            private string faculty;
-            private int kours;
-            private int group;
-            public const string university = "BSTU";
+            private string name = "";
+            public string Name
+            {
+                get { return name; }
+                set
+                {
+                    if (value != null)
+                        name = value;
+                }
+            }
+            private string middle = "";
+            public string Middle
+            {
+                get { return middle; }
+                set
+                {
+                    if (value != null)
+                        middle = value;
+                }
+            }
+            private string last = "";
+            public string Last
+            {
+                get { return name; }
+                set
+                {
+                    if (value != null)
+                        last = value;
+                }
+            }
+            private string adress = "";
+            public string Adress
+            {
+                get { return name; }
+                set
+                {
+                    if (value != null)
+                        adress = value;
+                }
+            }
+            public int Telephone { get; set; } = 0;
+            public int[] Scores { get; set; } = new int[5];
 
-            public string FullName
+            private readonly int ID;
+            const string university = "BSTU";
+            public static int PassableScore { get; set; } = 4;
+            private static char city;
+            static private int count = 0;
+            private static Random random = new Random();
+
+            public Abiturient()
             {
-                get { return this.fullName; }
-                private set { this.fullName = value; }
+                ID = this.GetHashCode();
+                for (int i = 0; i < Scores.Length; i++)
+                    Scores[i] = random.Next(3, 10);
+                count++;
             }
-            public DateTime Birthday
+            public Abiturient(int id, string name, int telephone) : this()
             {
-                get { return this.birthday; }
-                private set { this.birthday = value; }
+                Identificator = id;
+                Name = name;
+                Telephone = telephone;
+            }
+            public Abiturient(int id, string last, int[] scores) : this(scores, id)
+            {
+                Last = last;
+            }
+            private Abiturient(int[] scores, int id = -1, string name = "anonymous", int telephone = 112) : this()
+            {
+                Scores = scores;
+                Identificator = id;
+                Name = name;
+                Telephone = telephone;
             }
 
-            public string Telephone
+            static Abiturient()
             {
-                get { return this.telephone; }
-                set { this.telephone = value; }
+                city = 'A';
             }
 
-            public string Faculty
-            {
-                get { return this.faculty; }
-                set { this.faculty = value; }
-            }
-
-            public int Kours
-            {
-                get { return this.kours; }
-                set { this.kours = value; }
-            }
-
-            public int Group
-            {
-                get { return this.group; }
-                set { this.group = value; }
-            }
         }
-
-        public partial class Student
+        partial class Abiturient
         {
-            public Student()
+            //static methods
+            public static void Info()
             {
-                this.id = Student.totalCountOfStudents++;
-                this.fullName = "";
-                this.birthday = DateTime.MinValue;
-                this.telephone = "";
-                this.faculty = "";
-                this.kours = 0;
-                this.group = 0;
+                Console.WriteLine("Abiturients of city - {0}.", city);
             }
-            /*private*/
-            public Student(string fullName, string faculty, int kours, int group, DateTime date, string telephone)
+            public static void CalculateAverageScore(out int average, params int[] scores)
             {
-                this.id = Student.totalCountOfStudents++;
-                this.fullName = fullName;
-                this.birthday = date;
-                this.telephone = telephone;
-                this.faculty = faculty;
-                this.kours = kours;
-                this.group = group;
+                average = 0;
+                for (int i = 0; i < scores.Length; i++)
+                    average += scores[i];
+                average /= scores.Length;
             }
-            static Student() { Console.WriteLine("Вызвался статический конструктор"); }
-            ~Student()
+            public static void SetMaxScore(ref int score)
             {
-                Student.totalCountOfStudents--;
+                score = 10;
             }
-            public int Sum(int a, int b) { return a + b; }
-            public int getAge() { return (DateTime.Now.Year - this.birthday.Year); }
+            public static void SetCity(char newCity)
+            {
+                city = newCity;
+            }
+
+            //class methods
+            public void AddScores(params object[] scores)
+            {
+                for (int i = 0; i < scores.Length && i < Scores.Length; i++)
+                    Scores[i] = (int)scores[i];
+            }
+            public int MaxScore()
+            {
+                int i = 0;
+                foreach (var item in Scores)
+                    if (i < item)
+                        i = item;
+                return i;
+            }
+            public int MinScore()
+            {
+                int i = 0;
+                foreach (var item in Scores)
+                    if (i > item)
+                        i = item;
+                return i;
+            }
+            public bool CheckOnPassableScores()
+            {
+                bool outcome = true;
+                foreach (var item in Scores)
+                    if (item < PassableScore)
+                        outcome = false;
+                return outcome;
+            }
+            public bool ChekOnSumWall(int wall)
+            {
+                int sum = 0;
+                foreach (var item in Scores)
+                    sum += item;
+                return (wall < sum) ? true : false;
+            }
+            public void PrintScores()
+            {
+                foreach (var item in Scores)
+                {
+                    Console.Write($"{item} ");
+                }
+                Console.WriteLine();
+            }
+
+            //override methods
+            public override string ToString() => $"[Identificator: {Identificator}; Name: {Name}; Middle : {Middle}; Last : {Last}; Adress : {Adress}; Telephone: {Telephone};]";
+
             public override bool Equals(object obj)
             {
-                Student temp = obj as Student;
-                if (temp == null)
-                    return false;
-                return (temp.birthday == this.birthday && temp.faculty == this.faculty && temp.fullName == this.fullName && temp.group == this.group && temp.kours == this.kours && temp.telephone == this.telephone);
+                if (obj is Abiturient && obj != null)
+                {
+                    Abiturient temp;
+                    temp = (Abiturient)obj;
+                    if (temp.Identificator == this.Identificator
+                        && temp.Name == this.Name
+                        && temp.Middle == this.Middle
+                        && temp.Last == this.Last
+                        && temp.Adress == this.Adress
+                        && temp.Telephone == this.Telephone) return true;
+                    return true;
+                }
+                return false;
             }
+
             public override int GetHashCode()
             {
-                Console.WriteLine("Вызвался переопределенный метод GetHashCode");
-                return base.GetHashCode();
+                return this.ToString().GetHashCode();
+            }
+        }
+        #endregion
+
+        #region student
+        class Student
+        {
+            public string Name { get; set; } = "Anonim";
+            public string Speciality { get; set; } = "ISIT";
+            public Student() { }
+            public Student(string name, string speciality)
+            {
+                Name = name;
+                Speciality = speciality;
+            }
+            public void MakeLab()
+            {
+                Console.WriteLine("Starting work on Lab...");
             }
             public override string ToString()
             {
-                return ($"Студент: {this.id}, Университет: {Student.university}, ФИО: {this.fullName}, Факультет: {this.faculty}, Курс: {this.kours}, Группа: {this.group}, Телефон: {this.telephone}");
+                return base.ToString() + $"Name: {Name}" + $"Speciality: {Speciality}";
             }
-
-            public static void sortingByFaculty(Student[] arr, string facultyName)
-            {
-                for (int i = 0; i < arr.Length; i++)
-                {
-                    if (arr[i].Faculty.Equals(facultyName))
-                    {
-                        Console.WriteLine($"Студент: {arr[i].id}");
-                        Console.WriteLine($"ФИО: {arr[i].FullName}");
-                        Console.WriteLine($"Факультет: { arr[i].Faculty}");
-                        Console.WriteLine($"Курс: { arr[i].Kours}");
-                        Console.WriteLine($"Группа: { arr[i].Group}");
-                    }
-                }
-            }
-
-            public static void sortingByGroup(Student[] arr, string facultyName, int groupNum)
-            {
-                for (int i = 0; i < arr.Length; i++)
-                {
-                    if (arr[i].Group == groupNum && arr[i].Faculty.Equals(facultyName))
-                    {
-                        Console.WriteLine($"Студент: {arr[i].id}");
-                        Console.WriteLine($"ФИО: {arr[i].FullName}");
-                        Console.WriteLine($"Факультет: { arr[i].Faculty}");
-                        Console.WriteLine($"Курс: { arr[i].Kours}");
-                        Console.WriteLine($"Группа: { arr[i].Group}");
-                    }
-                }
-            }
-
         }
         #endregion
 
         static void Main(string[] args)
         {
-            Reflector.all_ClassComponents_toFile("OOP_lab12.Program+Student");
-            Console.WriteLine("All components of the class 'OOP_lab12.Program+Student' were written to file.\n");
+            // First class.
+            Abiturient abiturient = new Abiturient(1, "Kaportsev", new int[] { 1, 234, 5, 24, 1 });
 
-            Reflector.public_ClassComponents_toFile("OOP_lab12.Program+Student");
-            Console.WriteLine("Public components of the class 'OOP_lab12.Program+Student' were written to file.\n");
+            Console.WriteLine(Reflector.GetAssemblyName(abiturient.GetType()));
 
-            Reflector.fieldsANDproperties_ClassComponents_toFile("OOP_lab12.Program+Student");
-            Console.WriteLine("Fields and properties of the class 'OOP_lab12.Program+Student' were written to file.\n");
+            if (Reflector.IsPublicConstructors(abiturient.GetType()))
+                Console.WriteLine("У класса есть публичные конструкторы...");
+            else 
+                Console.WriteLine("У класса нет публичных конструкторов...");
 
-            Reflector.interfeices_ClassComponents_toFile("OOP_lab12.Program+Student");
-            Console.WriteLine("Interfeices of the class 'OOP_lab12.Program+Student' were written to file.\n");
+            Console.WriteLine("Public Methods:");
+            foreach (var i in Reflector.GetPublicMethods(abiturient.GetType())) 
+                Console.WriteLine(i);
 
-            Reflector.methodsWITHparams_ClassComponents_toFile("OOP_lab12.Program+Student", "String");
-            Console.WriteLine("Methods which includes param with type 'String' of the class 'OOP_lab12.Program+Student' were written to file.\n");
+            Console.WriteLine("Fields:");
+            foreach (var i in Reflector.GetFields(abiturient.GetType())) 
+                Console.WriteLine(i);
 
-            Reflector.lateBinding("OOP_lab12.Program+Student");
+            Console.WriteLine("Interfaces:");
+            foreach (var i in Reflector.GetInterfaces(abiturient.GetType())) 
+                Console.WriteLine(i);
+
+            Reflector.OutputMetodsNameFromParamType(abiturient.GetType());
+
+            // Second class.
+            Student student = new Student("Kaportsev", "POIT");
+
+            Console.WriteLine(Reflector.GetAssemblyName(student.GetType()));
+
+            if (Reflector.IsPublicConstructors(student.GetType()))
+                Console.WriteLine("У класса есть публичные конструкторы...");
+            else
+                Console.WriteLine("У класса нет публичных конструкторов...");
+
+            Console.WriteLine("Public Methods:");
+            foreach (var i in Reflector.GetPublicMethods(student.GetType())) 
+                Console.WriteLine(i);
+
+            Console.WriteLine("Fields:");
+            foreach (var i in Reflector.GetFields(student.GetType())) 
+                Console.WriteLine(i);
+
+            Console.WriteLine("Interfaces:");
+            foreach (var i in Reflector.GetInterfaces(student.GetType())) 
+                Console.WriteLine(i);
+
+            Reflector.OutputMetodsNameFromParamType(student.GetType());
+            
+            // Standart class.
+            List<int> standart = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8 };
+            Console.WriteLine(Reflector.GetAssemblyName(standart.GetType()));
+
+            if (Reflector.IsPublicConstructors(standart.GetType()))
+                Console.WriteLine("У класса есть публичные конструкторы...");
+            else
+                Console.WriteLine("У класса нет публичных конструкторов...");
+
+            Console.WriteLine("Public Methods:");
+            foreach (var i in Reflector.GetPublicMethods(standart.GetType()))
+                Console.WriteLine(i);
+
+            Console.WriteLine("Fields:");
+            foreach (var i in Reflector.GetFields(standart.GetType()))
+                Console.WriteLine(i);
+
+            Console.WriteLine("Interfaces:");
+            foreach (var i in Reflector.GetInterfaces(standart.GetType()))
+                Console.WriteLine(i);
+
+            Reflector.OutputMetodsNameFromParamType(standart.GetType());
+
+            // Invoke.
+            object[] param = new object[1];
+            using (StreamReader fstream = new StreamReader(@"C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab12\files\Params.txt"))
+            {
+                string textFromFile = null;
+                while ((textFromFile = fstream.ReadLine()) != null)
+                    param[0] = Convert.ToInt32(textFromFile);
+            }
+            Reflector.Invoke(standart, "Add", param);
+
+            Random rand = new Random();
+            param[0] = rand.Next();
+            Reflector.Invoke(standart, "Add", param);
         }
 
-        public class Reflector
+        public static class Reflector
         {
-            public static void all_ClassComponents_toFile(string className)
+            static public string GetAssemblyName(Type t)
             {
-                Type classType = Type.GetType(className, true, true);
-                using (StreamWriter file = new StreamWriter(@"C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab12\files\all_classComponents.txt"))
-                {
-                    file.WriteLine($"Info about class {className}");
-                    file.WriteLine($"Properties count: {classType.GetProperties().Length}");
-                    file.WriteLine($"Methods count: {classType.GetMethods().Length}");
-                    file.WriteLine($"Constructors count: {classType.GetConstructors().Length}");
-                    file.WriteLine($"Fields count: {classType.GetFields().Length}");
-                    file.WriteLine($"");
-                    foreach (MemberInfo item in classType.GetMembers())
-                        file.WriteLine($"Type: {item.MemberType}\t Name: {item.Name}");
-                }
+                Assembly a = t.Assembly;
+                return a.GetName().Name;
             }
-
-            public static void public_ClassComponents_toFile(string className)
+            static public bool IsPublicConstructors(Type t)
             {
-                Type classType = Type.GetType(className, true, true);
-                using (StreamWriter file = new StreamWriter(@"C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab12\files\public_classComponents.txt"))
-                {
-                    file.WriteLine($"Info about class {className}");
-                    file.WriteLine($"Public properties count: {classType.GetProperties(BindingFlags.Public | BindingFlags.Instance).Length}");
-                    file.WriteLine($"Public methods count: {classType.GetMethods(BindingFlags.Public | BindingFlags.Instance).Length}");
-                    file.WriteLine($"Public constructors count: {classType.GetConstructors(BindingFlags.Public | BindingFlags.Instance).Length}");
-                    file.WriteLine($"Public fields count: {classType.GetFields(BindingFlags.Public | BindingFlags.Instance).Length}");
-                    file.WriteLine($"");
-                    foreach (MemberInfo item in classType.GetMembers(BindingFlags.Public | BindingFlags.Instance))
-                        file.WriteLine($"Type: {item.MemberType}\t Name: {item.Name}");
-                }
+                var constructors = t.GetConstructors();
+
+                return constructors.Length > 0;
             }
-
-            public static void fieldsANDproperties_ClassComponents_toFile(string className)
+            static public IEnumerable<string> GetPublicMethods(Type t)
             {
-                Type classType = Type.GetType(className, true, true);
-                using (StreamWriter file = new StreamWriter(@"C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab12\files\fieldsANDproperties_classComponents.txt"))
-                {
-                    file.WriteLine($"Info about class {className}");
-                    file.WriteLine($"Properties count: {classType.GetProperties().Length}");
-                    file.WriteLine($"Fields count: {classType.GetFields().Length}");
-                    file.WriteLine("\nFields:");
-                    foreach (MemberInfo item in classType.GetFields())
-                        file.WriteLine($"Type: {item.MemberType}\t Name: {item.Name}");
-
-                    file.WriteLine("\nProperties:");
-                    foreach (MemberInfo item in classType.GetProperties())
-                        file.WriteLine($"Type: {item.MemberType}\t Name: {item.Name}");
-
-                }
+                var metods = from i in t.GetMethods() select i.Name;
+                return metods;
             }
-
-            public static void interfeices_ClassComponents_toFile(string className)
+            static public IEnumerable<string> GetFields(Type t)
             {
-                Type classType = Type.GetType(className, true, true);
-                using (StreamWriter file = new StreamWriter(@"C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab12\files\interfeices_classComponents.txt"))
-                {
-                    file.WriteLine($"Info about class {className}");
-                    file.WriteLine($"Interfeices count: {classType.GetInterfaces().Length}");
-                    foreach (MemberInfo item in classType.GetInterfaces())
-                        file.WriteLine($"Type: {item.MemberType}\t Name: {item.Name}");
-                }
+                var fields = from i in t.GetFields() select i.Name;
+                return fields;
             }
-
-            public static void methodsWITHparams_ClassComponents_toFile(string className, string paramType)
+            static public IEnumerable<string> GetInterfaces(Type t)
             {
-                Type classType = Type.GetType(className, true, true);
-                using (StreamWriter file = new StreamWriter(@"C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab12\files\methodsWITHparams_classComponents.txt"))
-                {
-                    file.WriteLine($"Info about class {className}");
-                    int count = 0;
-                    foreach (MethodInfo method in classType.GetMethods())
-                        foreach (ParameterInfo p in method.GetParameters())
-                            if (paramType.Equals(p.ParameterType.Name))
-                                count++;
-
-                    file.WriteLine($"Count of methods which includes param with type {paramType}: {count}");
-
-                    if (count != 0)
-                    {
-                        file.WriteLine($"");
-                        foreach (MethodInfo method in classType.GetMethods())
-                        {
-                            string modificator = "";
-                            if (method.IsPrivate)
-                                modificator += "private ";
-                            if (method.IsAbstract)
-                                modificator += "abstract ";
-                            if (method.IsPublic)
-                                modificator += "public ";
-                            if (method.IsStatic)
-                                modificator += "static ";
-                            if (method.IsVirtual)
-                                modificator += "virtual ";
-
-                            bool isConsiste = false;
-                            foreach (ParameterInfo param in method.GetParameters())
-                            {
-                                if (paramType.Equals(param.ParameterType.Name))
-                                {
-                                    isConsiste = true;
-                                    break;
-                                }
-                            }
-
-                            if (isConsiste)
-                            {
-                                file.Write($"{modificator} {method.ReturnType.Name} {method.Name} (");
-
-                                ParameterInfo[] parameters = method.GetParameters();
-                                for (int i = 0; i < parameters.Length; i++)
-                                {
-                                    file.Write($"{parameters[i].ParameterType.Name} {parameters[i].Name}");
-                                    if (i + 1 < parameters.Length) file.Write(", ");
-                                }
-                                file.WriteLine(")");
-                                isConsiste = false;
-                            }
-                        }
-                    }
-                }
+                var fields = from i in t.GetInterfaces() select i.Name;
+                return fields;
             }
-
-            public static void lateBinding(string className, string methodName = "Sum")
+            static public void OutputMetodsNameFromParamType(Type t)
             {
-                Type classType = Type.GetType(className, false, true);
-                object obj = Activator.CreateInstance(classType);
-                MethodInfo methodInfo = classType.GetMethod(methodName);
-                StreamReader streamReader = new StreamReader(@"C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab12\files\paramsForSum.txt");
-
-                object result = methodInfo.Invoke(obj, new object[] { Convert.ToInt32(streamReader.ReadLine()), Convert.ToInt32(streamReader.ReadLine()) });
-                Console.WriteLine($"Result of invoked func: {result}");
+                Console.WriteLine("\n--------------------\nВведите тип параметра:");
+                string paramType = Console.ReadLine();
+                var methods = t.GetMethods();
+                var resultMethods = from i in methods
+                                   where
+                  (from c in i.GetParameters() select c.ParameterType.Name).Contains(paramType)
+                                   select i.Name;
+                foreach (var i in resultMethods)
+                    Console.WriteLine(i);
+                Console.WriteLine("--------------------\n");
+            }
+            static public void Invoke(object t, string methodName, object[] arr)
+            {
+                MethodInfo m = t.GetType().GetMethod(methodName);
+                m.Invoke(t, arr);
+            }
+            static public object Create(Type t)
+            {
+                object obj = Activator.CreateInstance(t);
+                return obj;
             }
         }
     }

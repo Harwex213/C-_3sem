@@ -1,4 +1,0 @@
-Info about class OOP_lab12.Program+Student
-Interfeices count: 2
-Type: NestedType	 Name: IsomeInterface1
-Type: NestedType	 Name: IsomeInterface2
