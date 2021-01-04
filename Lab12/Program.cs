@@ -10,7 +10,8 @@ namespace OOP_lab12
     class Program
     {
         #region abiturient
-        partial class Abiturient
+        interface IInterface1 { }
+        partial class Abiturient : IInterface1
         {
             //Readonly Field - ID
             public int Identificator { get; set; } = 0;
@@ -300,6 +301,9 @@ namespace OOP_lab12
             Random rand = new Random();
             param[0] = rand.Next();
             Reflector.Invoke(standart, "Add", param);
+
+            var someClass = Reflector.Create(typeof(Abiturient));
+            Console.WriteLine(someClass.ToString());
         }
 
         public static class Reflector
@@ -350,8 +354,7 @@ namespace OOP_lab12
             }
             static public object Create(Type t)
             {
-                object obj = Activator.CreateInstance(t);
-                return obj;
+                return Activator.CreateInstance(t);
             }
         }
     }

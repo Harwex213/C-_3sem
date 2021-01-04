@@ -23,10 +23,7 @@ namespace Lab13
             System.Console.WriteLine("----------------------");
             DirectoryInfo dirInfo = new DirectoryInfo(dir);
             if (!dirInfo.Exists)
-            {
-                System.Console.WriteLine("File has not found");
-                return;
-            }
+                throw new Exception($"Directory {dirInfo.Name} dosn't found");
             Console.WriteLine($"Count of subdirectories: {dirInfo.GetDirectories().Length}");
             Console.WriteLine($"Count of subfiles: {dirInfo.GetFiles().Length}");
             Console.WriteLine($"Directory create time: {dirInfo.CreationTime}");

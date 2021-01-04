@@ -43,22 +43,21 @@ namespace Lab13
         }
         public static void FindInfo(string Name)
         {
+            int num = 0;
+            string buff = null;
+            string data = "";
+            string resultData = "";
+            bool findSmth = false;
             using (StreamReader sr = new StreamReader(@"C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab13\files\KOAlog.txt"))
             {
-                int num = 0;
-                string buff = null;
-                string data = "";
-                string resultData = "";
-                bool findSmth = false;
-
                 while ((buff = sr.ReadLine()) != null)
                 {
                     num++;
-                    if (buff.Contains("----------------Logger----------------"))
-                        continue;
                     if (buff.Contains("----------------------") && data.Contains(Name))
                     {
+                        resultData += "----------------------";
                         resultData += data;
+                        resultData += "----------------------";
                         data = "";
                         findSmth = true;
                     }
@@ -75,6 +74,10 @@ namespace Lab13
                     Console.WriteLine("Пользователь не совершал действий за последний час.");
                 }
                 Console.WriteLine(num + " строк записей.");
+            }
+            using (logfile = new StreamWriter(@"C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab13\files\KOAlog.txt", false))
+            {
+                logfile.WriteLine(resultData);
             }
         }
     }
