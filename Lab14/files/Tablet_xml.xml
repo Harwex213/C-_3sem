@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Tablet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <OperationPeriod />
+  <CurrentOperationPeriod />
+  <RezolutionHeight>720</RezolutionHeight>
+  <RezolutionWidth>1280</RezolutionWidth>
+  <AmountOfRAM>4</AmountOfRAM>
+  <TypeOfCPU>AMD</TypeOfCPU>
+</Tablet>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<ArrayOfTablet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Tablet>
+    <OperationPeriod />
+    <CurrentOperationPeriod />
+    <RezolutionHeight>1280</RezolutionHeight>
+    <RezolutionWidth>720</RezolutionWidth>
+    <AmountOfRAM>4</AmountOfRAM>
+    <TypeOfCPU>Intel</TypeOfCPU>
+  </Tablet>
+  <Tablet>
+    <OperationPeriod />
+    <CurrentOperationPeriod />
+    <RezolutionHeight>1024</RezolutionHeight>
+    <RezolutionWidth>720</RezolutionWidth>
+    <AmountOfRAM>2</AmountOfRAM>
+    <TypeOfCPU>Intel</TypeOfCPU>
+  </Tablet>
+  <Tablet>
+    <OperationPeriod />
+    <CurrentOperationPeriod />
+    <RezolutionHeight>1920</RezolutionHeight>
+    <RezolutionWidth>1080</RezolutionWidth>
+    <AmountOfRAM>6</AmountOfRAM>
+    <TypeOfCPU>ARM</TypeOfCPU>
+  </Tablet>
+  <Tablet>
+    <OperationPeriod />
+    <CurrentOperationPeriod />
+    <RezolutionHeight>1280</RezolutionHeight>
+    <RezolutionWidth>720</RezolutionWidth>
+    <AmountOfRAM>4</AmountOfRAM>
+    <TypeOfCPU>AMD</TypeOfCPU>
+  </Tablet>
+</ArrayOfTablet>

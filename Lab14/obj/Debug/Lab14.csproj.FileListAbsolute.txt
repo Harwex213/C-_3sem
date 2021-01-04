@@ -1,0 +1,10 @@
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab14\bin\Debug\Lab14.exe.config
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab14\bin\Debug\Lab14.exe
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab14\bin\Debug\Lab14.pdb
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab14\bin\Debug\Newtonsoft.Json.dll
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab14\bin\Debug\Newtonsoft.Json.xml
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab14\obj\Debug\Lab14.csprojAssemblyReference.cache
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab14\obj\Debug\Lab14.csproj.CoreCompileInputs.cache
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab14\obj\Debug\Lab14.csproj.CopyComplete
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab14\obj\Debug\Lab14.exe
+C:\Workplace\1University\second_cource\OOTP\Csharp_3sem\Lab14\obj\Debug\Lab14.pdb
