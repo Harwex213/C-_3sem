@@ -35,7 +35,7 @@ namespace Lab14
             #endregion
 
             Console.WriteLine();
-            #region SapFormatter
+            #region SoapFormatter
             // Serialization.
             SoapFormatter soapF = new SoapFormatter();
             using (FileStream fstream = new FileStream(@"..\..\files\Tablet_soap.dat", FileMode.OpenOrCreate))
@@ -91,6 +91,7 @@ namespace Lab14
             { listXmlS.Serialize(fstream, tablets); }
             Console.WriteLine("Сериализация List выполнена : XML формат");
             // Deserialization.
+            Console.WriteLine("Десериализация начата : xml формат");
             using (FileStream fstream = new FileStream(@"..\..\files\TabletsList_xml.xml", FileMode.Open))
             {
                 List<Tablet> deserialTablets = (List<Tablet>)listXmlS.Deserialize(fstream);
@@ -114,7 +115,7 @@ namespace Lab14
             Console.WriteLine();
 
             XmlNodeList childnodesTwo = xRoot.SelectNodes("//Tablet/TypeOfCPU");
-            foreach (XmlNode n in childnodes)
+            foreach (XmlNode n in childnodesTwo)
                 Console.WriteLine(n.InnerText);
             #endregion
 
