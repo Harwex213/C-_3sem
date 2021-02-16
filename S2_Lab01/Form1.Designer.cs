@@ -101,6 +101,7 @@ namespace S2_Lab01
             this.ButtonSin.TabIndex = 5;
             this.ButtonSin.Text = "sin";
             this.ButtonSin.UseVisualStyleBackColor = true;
+            this.ButtonSin.Click += new System.EventHandler(this.ButtonTrigonometry_Click);
             // 
             // Button01
             // 
@@ -199,6 +200,7 @@ namespace S2_Lab01
             this.ButtonCos.TabIndex = 17;
             this.ButtonCos.Text = "cos";
             this.ButtonCos.UseVisualStyleBackColor = true;
+            this.ButtonCos.Click += new System.EventHandler(this.ButtonTrigonometry_Click);
             // 
             // ButtonTan
             // 
@@ -209,6 +211,7 @@ namespace S2_Lab01
             this.ButtonTan.TabIndex = 18;
             this.ButtonTan.Text = "tan";
             this.ButtonTan.UseVisualStyleBackColor = true;
+            this.ButtonTan.Click += new System.EventHandler(this.ButtonTrigonometry_Click);
             // 
             // ButtonCot
             // 
@@ -219,6 +222,7 @@ namespace S2_Lab01
             this.ButtonCot.TabIndex = 19;
             this.ButtonCot.Text = "cot";
             this.ButtonCot.UseVisualStyleBackColor = true;
+            this.ButtonCot.Click += new System.EventHandler(this.ButtonTrigonometry_Click);
             // 
             // ButtonArcSin
             // 
@@ -229,6 +233,7 @@ namespace S2_Lab01
             this.ButtonArcSin.TabIndex = 20;
             this.ButtonArcSin.Text = "arcsin";
             this.ButtonArcSin.UseVisualStyleBackColor = true;
+            this.ButtonArcSin.Click += new System.EventHandler(this.ButtonTrigonometry_Click);
             // 
             // ButtonArcCos
             // 
@@ -239,6 +244,7 @@ namespace S2_Lab01
             this.ButtonArcCos.TabIndex = 21;
             this.ButtonArcCos.Text = "arccos";
             this.ButtonArcCos.UseVisualStyleBackColor = true;
+            this.ButtonArcCos.Click += new System.EventHandler(this.ButtonTrigonometry_Click);
             // 
             // ButtonArcTan
             // 
@@ -249,6 +255,7 @@ namespace S2_Lab01
             this.ButtonArcTan.TabIndex = 22;
             this.ButtonArcTan.Text = "arctan";
             this.ButtonArcTan.UseVisualStyleBackColor = true;
+            this.ButtonArcTan.Click += new System.EventHandler(this.ButtonTrigonometry_Click);
             // 
             // ButtonArcCot
             // 
@@ -259,6 +266,7 @@ namespace S2_Lab01
             this.ButtonArcCot.TabIndex = 23;
             this.ButtonArcCot.Text = "arccot";
             this.ButtonArcCot.UseVisualStyleBackColor = true;
+            this.ButtonArcCot.Click += new System.EventHandler(this.ButtonTrigonometry_Click);
             // 
             // ButtonMinus
             // 
@@ -291,6 +299,7 @@ namespace S2_Lab01
             this.ButtonMemoryIn.TabIndex = 28;
             this.ButtonMemoryIn.Text = "M IN";
             this.ButtonMemoryIn.UseVisualStyleBackColor = true;
+            this.ButtonMemoryIn.Click += new System.EventHandler(this.ButtonMemoryIn_Click);
             // 
             // ButtonMemoryOut
             // 
@@ -301,6 +310,7 @@ namespace S2_Lab01
             this.ButtonMemoryOut.TabIndex = 29;
             this.ButtonMemoryOut.Text = "M OUT";
             this.ButtonMemoryOut.UseVisualStyleBackColor = true;
+            this.ButtonMemoryOut.Click += new System.EventHandler(this.ButtonMemoryOut_Click);
             // 
             // ButtonPow
             // 
@@ -391,6 +401,8 @@ namespace S2_Lab01
             this.Controls.Add(this.Button05);
             this.Controls.Add(this.DataOut);
             this.Controls.Add(this.Button00);
+            this.MaximumSize = new System.Drawing.Size(676, 410);
+            this.MinimumSize = new System.Drawing.Size(676, 410);
             this.Name = "Calculator";
             this.Text = "Mega Super Calculator 3000";
             this.ResumeLayout(false);

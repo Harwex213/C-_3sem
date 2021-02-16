@@ -11,7 +11,7 @@ namespace S2_Lab01
         double Grades { get; set; }
         // Memory Save & Out.
         void MemoryIn(double value);
-        void MemoryOut(double value);
+        double MemoryOut();
         // Trigonometry.
         double Sin();
         double Cos();
