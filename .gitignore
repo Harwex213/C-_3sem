@@ -3,8 +3,8 @@
 /Lab14/bin/Debug
 /Lab15/bin/Debug
 /Lab15/obj/Debug
-/Lab01/bin
-/Lab01/obj
+/Lab01/bin/Debug/notcoreapp3.1
+/Lab01/obj/Debug/
 /Lab03/obj
 /Lab04/obj
 /Lab05/obj
@@ -14,3 +14,4 @@
 /Lab14/obj
 /S2_Lab01/obj/Debug
 /S2_Lab01/bin/Debug
+/S2_Lab02/obj/Debug
