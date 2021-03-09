@@ -1,7 +1,7 @@
 ﻿
 namespace S2_Lab02
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -409,7 +409,7 @@ namespace S2_Lab02
             this.DataGroup.TabStop = false;
             this.DataGroup.Text = "Данные";
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -421,7 +421,7 @@ namespace S2_Lab02
             this.Controls.Add(this.AirAddGroup);
             this.MaximumSize = new System.Drawing.Size(701, 668);
             this.MinimumSize = new System.Drawing.Size(701, 668);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Form Input";
             this.AirTypeGroup.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize) (this.AirLoadCapacitySetter)).EndInit();

@@ -17,62 +17,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1191e5e8-3097-4c1a-86b9-0f97b658835a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/riderModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03/bin/Debug/Lab03.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03/bin/Debug/Lab03.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03/bin/Debug/Lab03.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03/bin/Debug/Lab03.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03/obj/Debug/Lab03.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03/obj/Debug/Lab03.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03/obj/Debug/Lab03.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03/obj/Debug/Lab03.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03/obj/Debug/Lab03.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03/obj/Debug/Lab03.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab03/obj/Debug/Lab03.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab03/obj/Debug/Lab03.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab04/bin/Debug/Lab04.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab04/bin/Debug/Lab04.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab04/bin/Debug/Lab04.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab04/bin/Debug/Lab04.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab04/obj/Debug/Lab04.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lab04/obj/Debug/Lab04.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab04/obj/Debug/Lab04.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab04/obj/Debug/Lab04.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab04/obj/Debug/Lab04.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab04/obj/Debug/Lab04.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab04/obj/Debug/Lab04.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab04/obj/Debug/Lab04.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab05/bin/Debug/Lab05.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05/bin/Debug/Lab05.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab05/bin/Debug/Lab05.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05/bin/Debug/Lab05.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab05/obj/Debug/Lab05.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05/obj/Debug/Lab05.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab05/obj/Debug/Lab05.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05/obj/Debug/Lab05.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab05/obj/Debug/Lab05.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05/obj/Debug/Lab05.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab05/obj/Debug/Lab05.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab05/obj/Debug/Lab05.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab09/bin/Debug/Lab09.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab09/bin/Debug/Lab09.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab09/bin/Debug/Lab09.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab09/bin/Debug/Lab09.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab09/obj/Debug/Lab09.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lab09/obj/Debug/Lab09.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab09/obj/Debug/Lab09.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab09/obj/Debug/Lab09.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab09/obj/Debug/Lab09.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab09/obj/Debug/Lab09.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab09/obj/Debug/Lab09.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab09/obj/Debug/Lab09.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10/bin/Debug/Lab10.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab10/bin/Debug/Lab10.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10/bin/Debug/Lab10.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab10/bin/Debug/Lab10.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10/obj/Debug/Lab10.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lab10/obj/Debug/Lab10.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10/obj/Debug/Lab10.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab10/obj/Debug/Lab10.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10/obj/Debug/Lab10.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab10/obj/Debug/Lab10.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab10/obj/Debug/Lab10.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab10/obj/Debug/Lab10.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab12/bin/Debug/Lab12.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab12/bin/Debug/Lab12.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab12/bin/Debug/Lab12.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab12/bin/Debug/Lab12.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab12/obj/Debug/Lab12.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lab12/obj/Debug/Lab12.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab12/obj/Debug/Lab12.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab12/obj/Debug/Lab12.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab12/obj/Debug/Lab12.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab12/obj/Debug/Lab12.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab12/obj/Debug/Lab12.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab12/obj/Debug/Lab12.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab13/bin/Debug/Lab13.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab13/bin/Debug/Lab13.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab13/bin/Debug/Lab13.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab13/bin/Debug/Lab13.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab13/obj/Debug/Lab13.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lab13/obj/Debug/Lab13.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab13/obj/Debug/Lab13.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab13/obj/Debug/Lab13.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab13/obj/Debug/Lab13.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab13/obj/Debug/Lab13.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab13/obj/Debug/Lab13.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab13/obj/Debug/Lab13.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab14/obj/Debug/Lab14.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab14/obj/Debug/Lab14.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab14/obj/Debug/Lab14.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Lab14/obj/Debug/Lab14.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab14/obj/Debug/Lab14.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab14/obj/Debug/Lab14.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab14/obj/Debug/Lab14.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Lab14/obj/Debug/Lab14.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab14/obj/Debug/Lab14.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Lab14/obj/Debug/Lab14.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab01/obj/Debug/netcoreapp3.1/Lab01.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01/obj/Debug/netcoreapp3.1/Lab01.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab01/obj/Debug/netcoreapp3.1/Lab01.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01/obj/Debug/netcoreapp3.1/Lab01.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab01/obj/Lab01.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01/obj/Lab01.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab01/obj/Lab01.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01/obj/Lab01.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab01/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab01/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab01/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/S2_Lab02/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/Form1.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/S2_Lab02.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/S2_Lab02.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S3_Exm/obj/Debug/S3_Exm.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/S3_Exm/obj/Debug/S3_Exm.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +50,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3502052" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
@@ -351,8 +306,17 @@
       <option name="presentableId" value="Default" />
       <updated>1615035982752</updated>
       <workItem from="1615035988795" duration="1738000" />
-      <workItem from="1615037994615" duration="3315000" />
+      <workItem from="1615037994615" duration="3524000" />
+      <workItem from="1615287429401" duration="498000" />
     </task>
+    <task id="LOCAL-00001" summary="Lab02: Design complete">
+      <created>1615041454107</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615041454107</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -374,5 +338,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Lab02: Design complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab02: Design complete" />
   </component>
 </project>
