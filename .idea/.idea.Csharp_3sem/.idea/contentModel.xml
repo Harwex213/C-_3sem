@@ -162,10 +162,14 @@
       <e p="S2_Lab02" t="IncludeRecursive">
         <e p="App.config" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Form1.cs" t="Include" />
-        <e p="Form1.Designer.cs" t="Include" />
-        <e p="Form1.resx" t="Include" />
+        <e p="DataTable.cs" t="Include" />
+        <e p="DataTable.Designer.cs" t="Include" />
+        <e p="DataTable.resx" t="Include" />
+        <e p="MainForm.cs" t="Include" />
+        <e p="MainForm.Designer.cs" t="Include" />
+        <e p="MainForm.resx" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
