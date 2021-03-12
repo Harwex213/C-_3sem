@@ -163,9 +163,6 @@
         <e p="App.config" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="CrewMember.cs" t="Include" />
-        <e p="DataTable.cs" t="Include" />
-        <e p="DataTable.Designer.cs" t="Include" />
-        <e p="DataTable.resx" t="Include" />
         <e p="MainForm.cs" t="Include" />
         <e p="MainForm.Designer.cs" t="Include" />
         <e p="MainForm.resx" t="Include" />

@@ -11,12 +11,15 @@ namespace S2_Lab02
     {
         private List<Plane> _planes;
         private List<CrewMember> _crew;
+        private List<int> _planesIdList;
 
         public MainForm()
         {
             InitializeComponent();
             _planes = new List<Plane>();
             _crew = new List<CrewMember>();
+            _planesIdList = new List<int>();
+            DataView.Nodes.Add("Airport","Аэропорт");
             AirYearReleaseDatePicker.Format = DateTimePickerFormat.Custom;
             AirTechServiceDatePicker.Format = DateTimePickerFormat.Custom;
             AirYearReleaseDatePicker.CustomFormat = "dd.MM.yyyy";
@@ -35,14 +38,63 @@ namespace S2_Lab02
             CrewMemberIdLabel.Text = CrewMemberIdLabel.Text.Insert(10, Convert.ToString(_crew.Count));
         }
 
-        private static bool Validate(object plane)
+        private void AddPlaneToDataView(Plane plane)
+        {
+            // Добавляем узел Самолёт в узел Аэропот.
+            DataView.Nodes["Airport"].Nodes.Add(plane.Id.ToString(), "Самолёт " + plane.Id);
+            // Создаём ветви узла Самолёта.
+            var nodeCrew = new TreeNode("Crew");
+            var idCrewMember = 0;
+            foreach (var crewMember in plane.Crew)
+            {
+                nodeCrew.Nodes.Add( idCrewMember.ToString(),crewMember.Position);
+                var crewMemberNode = new TreeNode[]
+                {
+                    new("FirstName: " + crewMember.FirstName),
+                    new("LastName: " + crewMember.LastName),
+                    new("Patronymic: " + crewMember.Patronymic),
+                    new("Age: " + crewMember.Age),
+                    new("WorkExperience: " + crewMember.WorkExperience)
+                };
+                nodeCrew.Nodes[idCrewMember.ToString()].Nodes.AddRange(crewMemberNode);
+                idCrewMember++;
+            }
+
+            var planeNode = new[]
+            {
+                new("Id: " + plane.Id),
+                new("Model: " + plane.Model),
+                new("Type: " + plane.Type),
+                new("DateRelease: " + plane.DateRelease),
+                new("DateTechService: " + plane.DateTechService),
+                new("LoadCapacity: " + plane.LoadCapacity),
+                new("SeatsAmount: " + plane.PassengersSeatsAmount),
+                nodeCrew
+            };
+            // Добавляем ветви в узел.
+            DataView.Nodes["Airport"].Nodes[plane.Id.ToString()].Nodes.AddRange(planeNode);
+        }
+        private void GenerateNewDataView()
+        {
+            DataView.Nodes["Airport"].Nodes.Clear();
+            foreach (var plane in _planes)
+                AddPlaneToDataView(plane);
+        }
+
+        private bool Validate(object plane)
         {
             var results = new List<ValidationResult>();
             var resultString = "";
-            var resultOfValidation = Validator.TryValidateObject(plane, new ValidationContext(plane), results, true);
-            if (resultOfValidation)
+            if (Validator.TryValidateObject(plane, new ValidationContext(plane), results, true))
             {
-                resultString = "Объет успешно добавлен.";
+                if (plane is Plane tempPlane)
+                {
+                    resultString = !_planesIdList.Contains(tempPlane.Id) ?
+                        "Объет успешно добавлен." :
+                        "Самолёт с таким Id уже был добавлен раннее.";
+                }
+                else
+                    resultString = "Объет успешно добавлен.";
             }
             else
             {
@@ -50,7 +102,7 @@ namespace S2_Lab02
                     resultString += error + "\n";
             }
             MessageBox.Show(resultString, "Результат");
-            return resultOfValidation;
+            return resultString == "Объет успешно добавлен.";
         }
 
         private void AirAddButton_Click(object sender, EventArgs e)
@@ -77,8 +129,10 @@ namespace S2_Lab02
                 return;
             
             _planes.Add(plane);
+            _planesIdList.Add(plane.Id);
             RefreshCrew();
             RefreshCrewAmount();
+            AddPlaneToDataView(plane);
         }
 
         private void AirFormCleanButton_Click(object sender, EventArgs e)
@@ -142,6 +196,7 @@ namespace S2_Lab02
             var json = streamReader.ReadToEnd();
             _planes = JsonConvert.DeserializeObject<List<Plane>>(json);
             MessageBox.Show("Данные успешно считаны.");
+            GenerateNewDataView();
         }
     }
 }

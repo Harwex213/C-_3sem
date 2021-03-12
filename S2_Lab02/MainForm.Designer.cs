@@ -66,13 +66,14 @@ namespace S2_Lab02
             this.DataReadButton = new System.Windows.Forms.Button();
             this.DataSaveButton = new System.Windows.Forms.Button();
             this.DataGroup = new System.Windows.Forms.GroupBox();
-            this.AirDataViewButton = new System.Windows.Forms.Button();
             this.AirAddButton = new System.Windows.Forms.Button();
             this.CrewDeleteButton = new System.Windows.Forms.Button();
             this.CrewMemberDeleteButton = new System.Windows.Forms.Button();
             this.AirFormCleanButton = new System.Windows.Forms.Button();
-            this.FormGroup = new System.Windows.Forms.GroupBox();
             this.DataView = new System.Windows.Forms.TreeView();
+            this.AirSearchButton = new System.Windows.Forms.Button();
+            this.FormGroup = new System.Windows.Forms.GroupBox();
+            this.DataViewClearButton = new System.Windows.Forms.Button();
             this.AirTypeGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.AirLoadCapacitySetter)).BeginInit();
             this.AirAddGroup.SuspendLayout();
@@ -404,7 +405,7 @@ namespace S2_Lab02
             this.CrewMemberAddButton.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.CrewMemberAddButton.Location = new System.Drawing.Point(315, 341);
             this.CrewMemberAddButton.Name = "CrewMemberAddButton";
-            this.CrewMemberAddButton.Size = new System.Drawing.Size(356, 70);
+            this.CrewMemberAddButton.Size = new System.Drawing.Size(356, 68);
             this.CrewMemberAddButton.TabIndex = 17;
             this.CrewMemberAddButton.Text = "Добавить члена экипажа";
             this.CrewMemberAddButton.UseVisualStyleBackColor = true;
@@ -415,7 +416,7 @@ namespace S2_Lab02
             this.DataReadButton.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.DataReadButton.Location = new System.Drawing.Point(179, 21);
             this.DataReadButton.Name = "DataReadButton";
-            this.DataReadButton.Size = new System.Drawing.Size(168, 86);
+            this.DataReadButton.Size = new System.Drawing.Size(168, 69);
             this.DataReadButton.TabIndex = 18;
             this.DataReadButton.Text = "Считать данные";
             this.DataReadButton.UseVisualStyleBackColor = true;
@@ -426,7 +427,7 @@ namespace S2_Lab02
             this.DataSaveButton.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.DataSaveButton.Location = new System.Drawing.Point(6, 21);
             this.DataSaveButton.Name = "DataSaveButton";
-            this.DataSaveButton.Size = new System.Drawing.Size(167, 86);
+            this.DataSaveButton.Size = new System.Drawing.Size(167, 69);
             this.DataSaveButton.TabIndex = 19;
             this.DataSaveButton.Text = "Сохранить данные";
             this.DataSaveButton.UseVisualStyleBackColor = true;
@@ -438,27 +439,17 @@ namespace S2_Lab02
             this.DataGroup.Controls.Add(this.DataSaveButton);
             this.DataGroup.Location = new System.Drawing.Point(315, 492);
             this.DataGroup.Name = "DataGroup";
-            this.DataGroup.Size = new System.Drawing.Size(356, 113);
+            this.DataGroup.Size = new System.Drawing.Size(356, 96);
             this.DataGroup.TabIndex = 21;
             this.DataGroup.TabStop = false;
             this.DataGroup.Text = "Данные";
             // 
-            // AirDataViewButton
-            // 
-            this.AirDataViewButton.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
-            this.AirDataViewButton.Location = new System.Drawing.Point(12, 611);
-            this.AirDataViewButton.Name = "AirDataViewButton";
-            this.AirDataViewButton.Size = new System.Drawing.Size(659, 68);
-            this.AirDataViewButton.TabIndex = 22;
-            this.AirDataViewButton.Text = "Просмотреть";
-            this.AirDataViewButton.UseVisualStyleBackColor = true;
-            // 
             // AirAddButton
             // 
             this.AirAddButton.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
-            this.AirAddButton.Location = new System.Drawing.Point(6, 21);
+            this.AirAddButton.Location = new System.Drawing.Point(12, 492);
             this.AirAddButton.Name = "AirAddButton";
-            this.AirAddButton.Size = new System.Drawing.Size(142, 86);
+            this.AirAddButton.Size = new System.Drawing.Size(297, 96);
             this.AirAddButton.TabIndex = 23;
             this.AirAddButton.Text = "Добавить Самолёт";
             this.AirAddButton.UseVisualStyleBackColor = true;
@@ -467,9 +458,9 @@ namespace S2_Lab02
             // CrewDeleteButton
             // 
             this.CrewDeleteButton.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
-            this.CrewDeleteButton.Location = new System.Drawing.Point(494, 416);
+            this.CrewDeleteButton.Location = new System.Drawing.Point(494, 415);
             this.CrewDeleteButton.Name = "CrewDeleteButton";
-            this.CrewDeleteButton.Size = new System.Drawing.Size(175, 70);
+            this.CrewDeleteButton.Size = new System.Drawing.Size(175, 71);
             this.CrewDeleteButton.TabIndex = 24;
             this.CrewDeleteButton.Text = "Удалить Экипаж";
             this.CrewDeleteButton.UseVisualStyleBackColor = true;
@@ -478,9 +469,9 @@ namespace S2_Lab02
             // CrewMemberDeleteButton
             // 
             this.CrewMemberDeleteButton.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
-            this.CrewMemberDeleteButton.Location = new System.Drawing.Point(315, 416);
+            this.CrewMemberDeleteButton.Location = new System.Drawing.Point(315, 415);
             this.CrewMemberDeleteButton.Name = "CrewMemberDeleteButton";
-            this.CrewMemberDeleteButton.Size = new System.Drawing.Size(173, 70);
+            this.CrewMemberDeleteButton.Size = new System.Drawing.Size(173, 71);
             this.CrewMemberDeleteButton.TabIndex = 25;
             this.CrewMemberDeleteButton.Text = "Удалить Члена";
             this.CrewMemberDeleteButton.UseVisualStyleBackColor = true;
@@ -488,44 +479,64 @@ namespace S2_Lab02
             // 
             // AirFormCleanButton
             // 
-            this.AirFormCleanButton.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
-            this.AirFormCleanButton.Location = new System.Drawing.Point(154, 21);
+            this.AirFormCleanButton.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.AirFormCleanButton.Location = new System.Drawing.Point(6, 21);
             this.AirFormCleanButton.Name = "AirFormCleanButton";
-            this.AirFormCleanButton.Size = new System.Drawing.Size(137, 86);
+            this.AirFormCleanButton.Size = new System.Drawing.Size(164, 67);
             this.AirFormCleanButton.TabIndex = 26;
             this.AirFormCleanButton.Text = "Очистить форму";
             this.AirFormCleanButton.UseVisualStyleBackColor = true;
             this.AirFormCleanButton.Click += new System.EventHandler(this.AirFormCleanButton_Click);
             // 
+            // DataView
+            // 
+            this.DataView.Location = new System.Drawing.Point(677, 12);
+            this.DataView.Name = "DataView";
+            this.DataView.Size = new System.Drawing.Size(472, 676);
+            this.DataView.TabIndex = 28;
+            // 
+            // AirSearchButton
+            // 
+            this.AirSearchButton.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.AirSearchButton.Location = new System.Drawing.Point(12, 594);
+            this.AirSearchButton.Name = "AirSearchButton";
+            this.AirSearchButton.Size = new System.Drawing.Size(297, 94);
+            this.AirSearchButton.TabIndex = 29;
+            this.AirSearchButton.Text = "Поиск";
+            this.AirSearchButton.UseVisualStyleBackColor = true;
+            // 
             // FormGroup
             // 
+            this.FormGroup.Controls.Add(this.DataViewClearButton);
             this.FormGroup.Controls.Add(this.AirFormCleanButton);
-            this.FormGroup.Controls.Add(this.AirAddButton);
-            this.FormGroup.Location = new System.Drawing.Point(12, 492);
+            this.FormGroup.Location = new System.Drawing.Point(315, 594);
             this.FormGroup.Name = "FormGroup";
-            this.FormGroup.Size = new System.Drawing.Size(297, 113);
-            this.FormGroup.TabIndex = 27;
+            this.FormGroup.Size = new System.Drawing.Size(356, 94);
+            this.FormGroup.TabIndex = 30;
             this.FormGroup.TabStop = false;
             this.FormGroup.Text = "Форма";
             // 
-            // DataView
+            // DataViewClearButton
             // 
-            this.DataView.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.DataView.Location = new System.Drawing.Point(677, 12);
-            this.DataView.Name = "DataView";
-            this.DataView.Size = new System.Drawing.Size(588, 333);
-            this.DataView.TabIndex = 28;
+            this.DataViewClearButton.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.DataViewClearButton.Location = new System.Drawing.Point(179, 21);
+            this.DataViewClearButton.Name = "DataViewClearButton";
+            this.DataViewClearButton.Size = new System.Drawing.Size(168, 67);
+            this.DataViewClearButton.TabIndex = 30;
+            this.DataViewClearButton.Text = "Очистить Список";
+            this.DataViewClearButton.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1482, 693);
-            this.Controls.Add(this.DataView);
+            this.ClientSize = new System.Drawing.Size(1161, 779);
             this.Controls.Add(this.FormGroup);
+            this.Controls.Add(this.AirAddButton);
+            this.Controls.Add(this.AirSearchButton);
+            this.Controls.Add(this.DataView);
             this.Controls.Add(this.CrewMemberDeleteButton);
             this.Controls.Add(this.CrewDeleteButton);
-            this.Controls.Add(this.AirDataViewButton);
             this.Controls.Add(this.DataGroup);
             this.Controls.Add(this.CrewMemberAddButton);
             this.Controls.Add(this.CrewAddGroup);
@@ -547,9 +558,12 @@ namespace S2_Lab02
             this.ResumeLayout(false);
         }
 
-        private System.Windows.Forms.TreeView DataView;
+        private System.Windows.Forms.Button DataViewClearButton;
 
+        private System.Windows.Forms.Button AirSearchButton;
         private System.Windows.Forms.GroupBox FormGroup;
+
+        private System.Windows.Forms.TreeView DataView;
 
         private System.Windows.Forms.Button AirFormCleanButton;
 
@@ -564,7 +578,6 @@ namespace S2_Lab02
 
         private System.Windows.Forms.Label AirCrewAmountLabel;
         private System.Windows.Forms.NumericUpDown AirCrewAmountSetter;
-        private System.Windows.Forms.Button AirDataViewButton;
 
         private System.Windows.Forms.GroupBox DataGroup;
 

@@ -22,7 +22,7 @@ namespace S2_Lab02
         public int CrewAmount { get; set; }
         [Compare("CrewAmount", ErrorMessage = "Созданное количество членов экипажа не соотвествует их ожидаемому числу")]
         public int CrewActualAmount { get; }
-        private List<CrewMember> Crew { get; }
+        public List<CrewMember> Crew { get; }
 
         public Plane()
         {
