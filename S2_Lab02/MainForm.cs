@@ -184,19 +184,38 @@ namespace S2_Lab02
 
         private void DataSaveButton_Click(object sender, EventArgs e)
         {
-            var json = JsonConvert.SerializeObject(_planes);
-            using var streamWriter = new StreamWriter(@"data/save.json");
-            streamWriter.Write(json);
-            MessageBox.Show("Данные успешно сохранены.");
+            try
+            {
+                var json = JsonConvert.SerializeObject(_planes);
+                using var streamWriter = new StreamWriter(@"data/save.json");
+                streamWriter.Write(json);
+                MessageBox.Show("Данные успешно сохранены.");
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
         }
 
         private void DataReadButton_Click(object sender, EventArgs e)
         {
-            using var streamReader = new StreamReader(@"data/save.json");
-            var json = streamReader.ReadToEnd();
-            _planes = JsonConvert.DeserializeObject<List<Plane>>(json);
-            MessageBox.Show("Данные успешно считаны.");
-            GenerateNewDataView();
+            try
+            {
+                using var streamReader = new StreamReader(@"data/save.json");
+                var json = streamReader.ReadToEnd();
+                _planes = JsonConvert.DeserializeObject<List<Plane>>(json);
+                MessageBox.Show("Данные успешно считаны.");
+                GenerateNewDataView();
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+            }
+        }
+
+        private void DataViewClearButton_Click(object sender, EventArgs e)
+        {
+            DataView.Nodes["Airport"].Nodes.Clear();
         }
     }
 }

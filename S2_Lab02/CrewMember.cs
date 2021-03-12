@@ -20,7 +20,7 @@ namespace S2_Lab02
         public int WorkExperience { get; set; }
         [Required(ErrorMessage = "Должность должна быть задана")]
         [StringLength(30, ErrorMessage = "Название должности слишком длинное")]
-        [RegularExpression(@"([А-Я]{1}(([а-я]*)|(\s*))+)", ErrorMessage = "Название должности задано неверно.")]
+        [RegularExpression(@"([A-Z]{1}[a-z]*\s[a-z]*)|([А-Я]{1}[а-я]*\s[а-я]*)", ErrorMessage = "Название должности задано неверно.")]
         public string Position { get; set; }
     }
 }

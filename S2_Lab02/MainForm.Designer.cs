@@ -525,12 +525,13 @@ namespace S2_Lab02
             this.DataViewClearButton.TabIndex = 30;
             this.DataViewClearButton.Text = "Очистить Список";
             this.DataViewClearButton.UseVisualStyleBackColor = true;
+            this.DataViewClearButton.Click += new System.EventHandler(this.DataViewClearButton_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1161, 779);
+            this.ClientSize = new System.Drawing.Size(1161, 723);
             this.Controls.Add(this.FormGroup);
             this.Controls.Add(this.AirAddButton);
             this.Controls.Add(this.AirSearchButton);

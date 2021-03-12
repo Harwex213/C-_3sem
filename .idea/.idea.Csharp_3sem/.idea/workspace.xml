@@ -16,16 +16,11 @@
     <projectFile>S3_Exm/S3_Exm.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1191e5e8-3097-4c1a-86b9-0f97b658835a" name="Default Changelist" comment="Lab02: serialization with Json made">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="1191e5e8-3097-4c1a-86b9-0f97b658835a" name="Default Changelist" comment="Lab02: DataView generation complete">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/DataTable.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/DataTable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/DataTable.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/S2_Lab02/MainForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/MainForm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/Plane.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/Plane.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/S2_Lab02.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/S2_Lab02.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.exe" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.pdb" afterDir="false" />
     </list>
@@ -48,18 +43,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/23BD44B4-B3BB-4072-991D-175B46E28280/12/JsonSerializer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/215F2307-E820-492D-A272-E3ABA04F3DFF/32/49bc854d/TextBox.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00E25C71-8E2F-4828-8B8C-5088590E8D84/a0/c07769e0/ValidationAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/23BD44B4-B3BB-4072-991D-175B46E28280/5/JsonConvert.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/45/1a369336/Number.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/215F2307-E820-492D-A272-E3ABA04F3DFF/74/30b7de83/TreeNode.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00E25C71-8E2F-4828-8B8C-5088590E8D84/03/2629deec/RegularExpressionAttribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/215F2307-E820-492D-A272-E3ABA04F3DFF/32/49bc854d/TextBox.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00E25C71-8E2F-4828-8B8C-5088590E8D84/a0/c07769e0/ValidationAttribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -72,9 +61,9 @@
       <option value="$PROJECT_DIR$/S2_Lab02/DataTable.cs" />
       <option value="$PROJECT_DIR$/Lab15/Program.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/PlaneIdCheckAttribute.cs" />
-      <option value="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/Plane.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/MainForm.cs" />
     </changedPaths>
   </component>
@@ -352,7 +341,8 @@
       <workItem from="1615381484787" duration="2276000" />
       <workItem from="1615385979125" duration="692000" />
       <workItem from="1615463860137" duration="10027000" />
-      <workItem from="1615530673829" duration="12475000" />
+      <workItem from="1615530673829" duration="12748000" />
+      <workItem from="1615559444523" duration="983000" />
     </task>
     <task id="LOCAL-00001" summary="Lab02: Design complete">
       <created>1615041454107</created>
@@ -389,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615536303955</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Lab02: DataView generation complete">
+      <created>1615546390503</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1615546390503</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,30 +413,26 @@
     <MESSAGE value="New GitIgnore" />
     <MESSAGE value="Lab02: validation done (unless some bug)" />
     <MESSAGE value="Lab02: serialization with Json made" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab02: serialization with Json made" />
+    <MESSAGE value="Lab02: DataView generation complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab02: DataView generation complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/S2_Lab02/MainForm.cs</url>
-          <line>199</line>
-          <properties documentPath="D:\Wordplace\2_Blue\1University\second_cource_2\OOP\Csharp_University\S2_Lab02\MainForm.cs" initialLine="199" containingFunctionPresentation="method 'DataReadButton_Click'">
+          <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00E25C71-8E2F-4828-8B8C-5088590E8D84/03/2629deec/RegularExpressionAttribute.cs</url>
+          <line>58</line>
+          <properties documentPath="C:\Users\Lenovo\AppData\Roaming\JetBrains\Rider2020.3\resharper-host\DecompilerCache\decompiler\00E25C71-8E2F-4828-8B8C-5088590E8D84\03\2629deec\RegularExpressionAttribute.cs" initialLine="58" containingFunctionPresentation="method 'IsValid'">
             <startOffsets>
-              <option value="7510" />
+              <option value="3225" />
             </startOffsets>
             <endOffsets>
-              <option value="7532" />
+              <option value="3263" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="17" />
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="DotNetProject">
-        <watch expression="DataView.Nodes[&quot;Airport&quot;].Nodes" language="C#" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
