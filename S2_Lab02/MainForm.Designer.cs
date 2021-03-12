@@ -72,6 +72,7 @@ namespace S2_Lab02
             this.CrewMemberDeleteButton = new System.Windows.Forms.Button();
             this.AirFormCleanButton = new System.Windows.Forms.Button();
             this.FormGroup = new System.Windows.Forms.GroupBox();
+            this.DataView = new System.Windows.Forms.TreeView();
             this.AirTypeGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.AirLoadCapacitySetter)).BeginInit();
             this.AirAddGroup.SuspendLayout();
@@ -418,6 +419,7 @@ namespace S2_Lab02
             this.DataReadButton.TabIndex = 18;
             this.DataReadButton.Text = "Считать данные";
             this.DataReadButton.UseVisualStyleBackColor = true;
+            this.DataReadButton.Click += new System.EventHandler(this.DataReadButton_Click);
             // 
             // DataSaveButton
             // 
@@ -506,11 +508,20 @@ namespace S2_Lab02
             this.FormGroup.TabStop = false;
             this.FormGroup.Text = "Форма";
             // 
+            // DataView
+            // 
+            this.DataView.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.DataView.Location = new System.Drawing.Point(677, 12);
+            this.DataView.Name = "DataView";
+            this.DataView.Size = new System.Drawing.Size(588, 333);
+            this.DataView.TabIndex = 28;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(681, 686);
+            this.ClientSize = new System.Drawing.Size(1482, 693);
+            this.Controls.Add(this.DataView);
             this.Controls.Add(this.FormGroup);
             this.Controls.Add(this.CrewMemberDeleteButton);
             this.Controls.Add(this.CrewDeleteButton);
@@ -535,6 +546,8 @@ namespace S2_Lab02
             this.FormGroup.ResumeLayout(false);
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.TreeView DataView;
 
         private System.Windows.Forms.GroupBox FormGroup;
 
