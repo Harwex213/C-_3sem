@@ -16,11 +16,11 @@
     <projectFile>S3_Exm/S3_Exm.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1191e5e8-3097-4c1a-86b9-0f97b658835a" name="Default Changelist" comment="Lab02: DataView generation complete">
+    <list default="true" id="1191e5e8-3097-4c1a-86b9-0f97b658835a" name="Default Changelist" comment="Lab03: made search">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/MainForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/MainForm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/Plane.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/Plane.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/SearchForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/SearchForm.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.exe" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.pdb" afterDir="false" />
     </list>
@@ -60,11 +60,13 @@
       <option value="$PROJECT_DIR$/S2_Lab02/DataTable.Designer.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/DataTable.cs" />
       <option value="$PROJECT_DIR$/Lab15/Program.cs" />
-      <option value="$PROJECT_DIR$/S2_Lab02/PlaneIdCheckAttribute.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" />
-      <option value="$PROJECT_DIR$/S2_Lab02/Plane.cs" />
-      <option value="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/PlaneIdCheckAttribute.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/SearchForm.Designer.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/MainForm.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/Plane.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/SearchForm.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pNugI2TykzfhNUzryyjUwIWkcm" />
@@ -342,7 +344,8 @@
       <workItem from="1615385979125" duration="692000" />
       <workItem from="1615463860137" duration="10027000" />
       <workItem from="1615530673829" duration="12748000" />
-      <workItem from="1615559444523" duration="983000" />
+      <workItem from="1615559444523" duration="3527000" />
+      <workItem from="1615571752997" duration="5591000" />
     </task>
     <task id="LOCAL-00001" summary="Lab02: Design complete">
       <created>1615041454107</created>
@@ -386,7 +389,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615546390503</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Lab02: some fixes">
+      <created>1615560535404</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615560535404</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Lab03: made search">
+      <created>1615576111018</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1615576111018</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,25 +431,8 @@
     <MESSAGE value="Lab02: validation done (unless some bug)" />
     <MESSAGE value="Lab02: serialization with Json made" />
     <MESSAGE value="Lab02: DataView generation complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab02: DataView generation complete" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00E25C71-8E2F-4828-8B8C-5088590E8D84/03/2629deec/RegularExpressionAttribute.cs</url>
-          <line>58</line>
-          <properties documentPath="C:\Users\Lenovo\AppData\Roaming\JetBrains\Rider2020.3\resharper-host\DecompilerCache\decompiler\00E25C71-8E2F-4828-8B8C-5088590E8D84\03\2629deec\RegularExpressionAttribute.cs" initialLine="58" containingFunctionPresentation="method 'IsValid'">
-            <startOffsets>
-              <option value="3225" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3263" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Lab02: some fixes" />
+    <MESSAGE value="Lab03: made search" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab03: made search" />
   </component>
 </project>

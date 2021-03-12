@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.IO;
+using System.Threading;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 
@@ -9,14 +10,14 @@ namespace S2_Lab02
 {
     public partial class MainForm : Form
     {
-        private List<Plane> _planes;
+        public List<Plane> Planes { get; set; }
         private List<CrewMember> _crew;
         private List<int> _planesIdList;
 
         public MainForm()
         {
             InitializeComponent();
-            _planes = new List<Plane>();
+            Planes = new List<Plane>();
             _crew = new List<CrewMember>();
             _planesIdList = new List<int>();
             DataView.Nodes.Add("Airport","Аэропорт");
@@ -77,7 +78,7 @@ namespace S2_Lab02
         private void GenerateNewDataView()
         {
             DataView.Nodes["Airport"].Nodes.Clear();
-            foreach (var plane in _planes)
+            foreach (var plane in Planes)
                 AddPlaneToDataView(plane);
         }
 
@@ -128,7 +129,7 @@ namespace S2_Lab02
             if (!Validate(plane)) 
                 return;
             
-            _planes.Add(plane);
+            Planes.Add(plane);
             _planesIdList.Add(plane.Id);
             RefreshCrew();
             RefreshCrewAmount();
@@ -147,6 +148,12 @@ namespace S2_Lab02
             AirLoadCapacitySetter.Text = "10";
             AirPassengersSeatsSetter.Text = "10";
             AirCrewAmountSetter.Text = "1";
+            CrewMemberNameInput.Text = "";
+            CrewMemberSurnameInput.Text = "";
+            CrewMemberPatronymicInput.Text = "";
+            CrewMemberPositionList.Text = "";
+            CrewMemberAgeSetter.Text = "18";
+            CrewMemberWorkExperienceSetter.Text = "5";
         }
 
         private void CrewMemberAddButton_Click(object sender, EventArgs e)
@@ -186,7 +193,7 @@ namespace S2_Lab02
         {
             try
             {
-                var json = JsonConvert.SerializeObject(_planes);
+                var json = JsonConvert.SerializeObject(Planes);
                 using var streamWriter = new StreamWriter(@"data/save.json");
                 streamWriter.Write(json);
                 MessageBox.Show("Данные успешно сохранены.");
@@ -203,7 +210,7 @@ namespace S2_Lab02
             {
                 using var streamReader = new StreamReader(@"data/save.json");
                 var json = streamReader.ReadToEnd();
-                _planes = JsonConvert.DeserializeObject<List<Plane>>(json);
+                Planes = JsonConvert.DeserializeObject<List<Plane>>(json);
                 MessageBox.Show("Данные успешно считаны.");
                 GenerateNewDataView();
             }
@@ -216,6 +223,13 @@ namespace S2_Lab02
         private void DataViewClearButton_Click(object sender, EventArgs e)
         {
             DataView.Nodes["Airport"].Nodes.Clear();
+        }
+
+        private void AirSearchButton_Click(object sender, EventArgs e)
+        {
+            var searchForm = new Thread(() => Application.Run(new SearchForm(this)));
+            searchForm.Start();
+            Enabled = false;
         }
     }
 }

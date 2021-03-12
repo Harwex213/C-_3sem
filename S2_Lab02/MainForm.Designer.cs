@@ -504,6 +504,7 @@ namespace S2_Lab02
             this.AirSearchButton.TabIndex = 29;
             this.AirSearchButton.Text = "Поиск";
             this.AirSearchButton.UseVisualStyleBackColor = true;
+            this.AirSearchButton.Click += new System.EventHandler(this.AirSearchButton_Click);
             // 
             // FormGroup
             // 

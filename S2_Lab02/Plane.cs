@@ -34,5 +34,41 @@ namespace S2_Lab02
             Crew = listCrew;
             CrewActualAmount = Crew.Count;
         }
+
+        public override string ToString()
+        {
+            var crewToString = "";
+
+            foreach (var crewMember in Crew)
+            {
+                crewToString = crewToString + "--------\r\n" +
+                               $"\tFirstname: {crewMember.FirstName}\r\n" +
+                               $"\tLastname: {crewMember.LastName}\r\n" +
+                               $"\tPatronymic: {crewMember.Patronymic}.\r\n" +
+                               $"\tAge: {crewMember.Age}.\r\n" +
+                               $"\tWorkExp: {crewMember.WorkExperience}.\r\n" +
+                               $"\tPosition: {crewMember.Position}.\r\n" +
+                               "--------\r\n";
+            }
+            return $"\r\n//////Самолёт {Id}//////\r\n" +
+                   $"Тип: {Type}\r\n" +
+                   $"Модель: {Model}\r\n" +
+                   $"Дата выпуска: {DateRelease}\r\n" +
+                   $"Дата тех. обслуживания: {DateTechService}\r\n" +
+                   $"Грузоподъёмность: {LoadCapacity}\r\n" +
+                   $"Пассажирские места: {PassengersSeatsAmount}\r\n" +
+                   $"\tЭкипаж:\r\n" + crewToString +
+                   "\r\n////////////\r\n";
+            // return "//////////////////////////////////////////////\n" +
+            //        "Самолёт\t" + Id + "\n" +
+            //        "Тип\t" + Type + "\n" +
+            //        "Модель:\t" + Model + "\n" +
+            //        "Дата выпуска:\t" + "\n" +
+            //        "Дата тех. обслуживания:\t" + "\n" +
+            //        "Грузоподъёмность:\t" + "\n" +
+            //        "Пассажирские места\t" + "\n" +
+            //        "Экипаж:\n" + crewToString + "\n" +
+            //        "//////////////////////////////////////////////\n";
+        }
     }
 }

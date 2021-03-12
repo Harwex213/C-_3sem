@@ -179,6 +179,9 @@
           <e p="Settings.settings" t="Include" />
         </e>
         <e p="S2_Lab02.csproj" t="IncludeRecursive" />
+        <e p="SearchForm.cs" t="Include" />
+        <e p="SearchForm.Designer.cs" t="Include" />
+        <e p="SearchForm.resx" t="Include" />
       </e>
       <e p="S3_Exm" t="IncludeRecursive">
         <e p="App.config" t="Include" />
