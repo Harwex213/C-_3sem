@@ -16,29 +16,18 @@
     <projectFile>S3_Exm/S3_Exm.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1191e5e8-3097-4c1a-86b9-0f97b658835a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/S2_Lab02/DataTable.cs" afterDir="false" />
+    <list default="true" id="1191e5e8-3097-4c1a-86b9-0f97b658835a" name="Default Changelist" comment="New GitIgnore">
+      <change afterPath="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S2_Lab02/MainForm.resx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S2_Lab02/Plane.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S2_Lab02/PlaneIdCheckAttribute.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/bin/Debug/netcoreapp3.1/Lab01.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/bin/Debug/netcoreapp3.1/Lab01.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/obj/Debug/netcoreapp3.1/Lab01.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/obj/Debug/netcoreapp3.1/Lab01.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/obj/Debug/netcoreapp3.1/Lab01.genruntimeconfig.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/obj/Debug/netcoreapp3.1/Lab01.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab15/Lab15.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Lab15/Lab15.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/Form1.resx" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/MainForm.resx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/S2_Lab02/MainForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/MainForm.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/S2_Lab02/S2_Lab02.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/S2_Lab02.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.exe" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S3_Exm/bin/Debug/S3_Exm.exe" beforeDir="false" afterPath="$PROJECT_DIR$/S3_Exm/bin/Debug/S3_Exm.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S3_Exm/bin/Debug/S3_Exm.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/S3_Exm/bin/Debug/S3_Exm.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S3_Exm/obj/Debug/S3_Exm.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/S3_Exm/obj/Debug/S3_Exm.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S3_Exm/obj/Debug/S3_Exm.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/S3_Exm/obj/Debug/S3_Exm.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S3_Exm/obj/Debug/S3_Exm.exe" beforeDir="false" afterPath="$PROJECT_DIR$/S3_Exm/obj/Debug/S3_Exm.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S3_Exm/obj/Debug/S3_Exm.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/S3_Exm/obj/Debug/S3_Exm.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +38,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/215F2307-E820-492D-A272-E3ABA04F3DFF/32/49bc854d/TextBox.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00E25C71-8E2F-4828-8B8C-5088590E8D84/a0/c07769e0/ValidationAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/45/1a369336/Number.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00E25C71-8E2F-4828-8B8C-5088590E8D84/03/2629deec/RegularExpressionAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/S2_Lab02/Form1.Designer.cs" />
@@ -58,9 +53,12 @@
       <option value="$PROJECT_DIR$/S2_Lab02/DataForm.Designer.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/DataTable.Designer.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/DataTable.cs" />
-      <option value="$PROJECT_DIR$/S2_Lab02/MainForm.cs" />
-      <option value="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" />
       <option value="$PROJECT_DIR$/Lab15/Program.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/PlaneIdCheckAttribute.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/Plane.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/MainForm.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pNugI2TykzfhNUzryyjUwIWkcm" />
@@ -80,11 +78,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.32421875" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Project.Lab15">
+  <component name="RunManager" selected=".NET Project.S2_Lab02">
     <configuration name="Lab01" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -333,6 +332,10 @@
       <workItem from="1615287429401" duration="498000" />
       <workItem from="1615287987685" duration="4338000" />
       <workItem from="1615380067139" duration="1305000" />
+      <workItem from="1615381484787" duration="2276000" />
+      <workItem from="1615385979125" duration="692000" />
+      <workItem from="1615463860137" duration="10027000" />
+      <workItem from="1615530673829" duration="4511000" />
     </task>
     <task id="LOCAL-00001" summary="Lab02: Design complete">
       <created>1615041454107</created>
@@ -348,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615288108189</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="New GitIgnore">
+      <created>1615381559006</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615381559006</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,6 +382,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Lab02: Design complete" />
     <MESSAGE value="Remake Path" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remake Path" />
+    <MESSAGE value="New GitIgnore" />
+    <option name="LAST_COMMIT_MESSAGE" value="New GitIgnore" />
   </component>
 </project>

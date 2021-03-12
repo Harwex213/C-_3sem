@@ -41,12 +41,13 @@ namespace S2_Lab02
             this.AirLoadCapacityLabel = new System.Windows.Forms.Label();
             this.AirTechServiceLabel = new System.Windows.Forms.Label();
             this.AirAddGroup = new System.Windows.Forms.GroupBox();
+            this.AirIdInput = new System.Windows.Forms.TextBox();
+            this.AirIdLabel = new System.Windows.Forms.Label();
             this.AirTechServiceDatePicker = new System.Windows.Forms.DateTimePicker();
             this.AirCrewAmountLabel = new System.Windows.Forms.Label();
             this.AirCrewAmountSetter = new System.Windows.Forms.NumericUpDown();
             this.AirPassengersSeatsLabel = new System.Windows.Forms.Label();
             this.AirPassengersSeatsSetter = new System.Windows.Forms.NumericUpDown();
-            this.AirIdLabel = new System.Windows.Forms.Label();
             this.CrewAddGroup = new System.Windows.Forms.GroupBox();
             this.CrewMemberPositionList = new System.Windows.Forms.ComboBox();
             this.CrewMemberWorkExperienceLabel = new System.Windows.Forms.Label();
@@ -64,9 +65,13 @@ namespace S2_Lab02
             this.CrewMemberAddButton = new System.Windows.Forms.Button();
             this.DataReadButton = new System.Windows.Forms.Button();
             this.DataSaveButton = new System.Windows.Forms.Button();
-            this.AirAddButton = new System.Windows.Forms.Button();
             this.DataGroup = new System.Windows.Forms.GroupBox();
-            this.AirDataView = new System.Windows.Forms.Button();
+            this.AirDataViewButton = new System.Windows.Forms.Button();
+            this.AirAddButton = new System.Windows.Forms.Button();
+            this.CrewDeleteButton = new System.Windows.Forms.Button();
+            this.CrewMemberDeleteButton = new System.Windows.Forms.Button();
+            this.AirFormCleanButton = new System.Windows.Forms.Button();
+            this.FormGroup = new System.Windows.Forms.GroupBox();
             this.AirTypeGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.AirLoadCapacitySetter)).BeginInit();
             this.AirAddGroup.SuspendLayout();
@@ -76,18 +81,19 @@ namespace S2_Lab02
             ((System.ComponentModel.ISupportInitialize) (this.CrewMemberWorkExperienceSetter)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.CrewMemberAgeSetter)).BeginInit();
             this.DataGroup.SuspendLayout();
+            this.FormGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // AirYearReleaseDatePicker
             // 
-            this.AirYearReleaseDatePicker.Location = new System.Drawing.Point(6, 232);
+            this.AirYearReleaseDatePicker.Location = new System.Drawing.Point(6, 257);
             this.AirYearReleaseDatePicker.Name = "AirYearReleaseDatePicker";
-            this.AirYearReleaseDatePicker.Size = new System.Drawing.Size(261, 22);
+            this.AirYearReleaseDatePicker.Size = new System.Drawing.Size(285, 22);
             this.AirYearReleaseDatePicker.TabIndex = 2;
             // 
             // AirYearReleaseLabel
             // 
-            this.AirYearReleaseLabel.Location = new System.Drawing.Point(6, 210);
+            this.AirYearReleaseLabel.Location = new System.Drawing.Point(6, 235);
             this.AirYearReleaseLabel.Name = "AirYearReleaseLabel";
             this.AirYearReleaseLabel.Size = new System.Drawing.Size(100, 19);
             this.AirYearReleaseLabel.TabIndex = 3;
@@ -127,14 +133,14 @@ namespace S2_Lab02
             // 
             this.AirModelList.FormattingEnabled = true;
             this.AirModelList.Items.AddRange(new object[] {"AirBus", "Albatros", "Boeing", "Turbay", "Vought"});
-            this.AirModelList.Location = new System.Drawing.Point(6, 183);
+            this.AirModelList.Location = new System.Drawing.Point(6, 96);
             this.AirModelList.Name = "AirModelList";
-            this.AirModelList.Size = new System.Drawing.Size(261, 24);
+            this.AirModelList.Size = new System.Drawing.Size(180, 24);
             this.AirModelList.TabIndex = 8;
             // 
             // AirModelLabel
             // 
-            this.AirModelLabel.Location = new System.Drawing.Point(6, 162);
+            this.AirModelLabel.Location = new System.Drawing.Point(6, 75);
             this.AirModelLabel.Name = "AirModelLabel";
             this.AirModelLabel.Size = new System.Drawing.Size(164, 14);
             this.AirModelLabel.TabIndex = 9;
@@ -145,9 +151,9 @@ namespace S2_Lab02
             this.AirTypeGroup.Controls.Add(this.AirTypeCargo);
             this.AirTypeGroup.Controls.Add(this.AirTypePassenger);
             this.AirTypeGroup.Controls.Add(this.AirTypeMilitary);
-            this.AirTypeGroup.Location = new System.Drawing.Point(6, 53);
+            this.AirTypeGroup.Location = new System.Drawing.Point(6, 126);
             this.AirTypeGroup.Name = "AirTypeGroup";
-            this.AirTypeGroup.Size = new System.Drawing.Size(261, 106);
+            this.AirTypeGroup.Size = new System.Drawing.Size(285, 106);
             this.AirTypeGroup.TabIndex = 10;
             this.AirTypeGroup.TabStop = false;
             this.AirTypeGroup.Text = "Тип самолёта";
@@ -155,7 +161,7 @@ namespace S2_Lab02
             // AirLoadCapacitySetter
             // 
             this.AirLoadCapacitySetter.Increment = new decimal(new int[] {5, 0, 0, 0});
-            this.AirLoadCapacitySetter.Location = new System.Drawing.Point(6, 326);
+            this.AirLoadCapacitySetter.Location = new System.Drawing.Point(6, 351);
             this.AirLoadCapacitySetter.Maximum = new decimal(new int[] {500, 0, 0, 0});
             this.AirLoadCapacitySetter.Minimum = new decimal(new int[] {10, 0, 0, 0});
             this.AirLoadCapacitySetter.Name = "AirLoadCapacitySetter";
@@ -165,7 +171,7 @@ namespace S2_Lab02
             // 
             // AirLoadCapacityLabel
             // 
-            this.AirLoadCapacityLabel.Location = new System.Drawing.Point(6, 304);
+            this.AirLoadCapacityLabel.Location = new System.Drawing.Point(6, 329);
             this.AirLoadCapacityLabel.Name = "AirLoadCapacityLabel";
             this.AirLoadCapacityLabel.Size = new System.Drawing.Size(261, 19);
             this.AirLoadCapacityLabel.TabIndex = 12;
@@ -173,7 +179,7 @@ namespace S2_Lab02
             // 
             // AirTechServiceLabel
             // 
-            this.AirTechServiceLabel.Location = new System.Drawing.Point(6, 257);
+            this.AirTechServiceLabel.Location = new System.Drawing.Point(6, 282);
             this.AirTechServiceLabel.Name = "AirTechServiceLabel";
             this.AirTechServiceLabel.Size = new System.Drawing.Size(261, 19);
             this.AirTechServiceLabel.TabIndex = 14;
@@ -181,38 +187,55 @@ namespace S2_Lab02
             // 
             // AirAddGroup
             // 
+            this.AirAddGroup.Controls.Add(this.AirIdInput);
+            this.AirAddGroup.Controls.Add(this.AirIdLabel);
             this.AirAddGroup.Controls.Add(this.AirTechServiceDatePicker);
+            this.AirAddGroup.Controls.Add(this.AirModelList);
             this.AirAddGroup.Controls.Add(this.AirCrewAmountLabel);
             this.AirAddGroup.Controls.Add(this.AirCrewAmountSetter);
             this.AirAddGroup.Controls.Add(this.AirPassengersSeatsLabel);
             this.AirAddGroup.Controls.Add(this.AirPassengersSeatsSetter);
-            this.AirAddGroup.Controls.Add(this.AirIdLabel);
             this.AirAddGroup.Controls.Add(this.AirTypeGroup);
             this.AirAddGroup.Controls.Add(this.AirTechServiceLabel);
             this.AirAddGroup.Controls.Add(this.AirYearReleaseDatePicker);
             this.AirAddGroup.Controls.Add(this.AirYearReleaseLabel);
             this.AirAddGroup.Controls.Add(this.AirLoadCapacityLabel);
-            this.AirAddGroup.Controls.Add(this.AirModelList);
-            this.AirAddGroup.Controls.Add(this.AirLoadCapacitySetter);
             this.AirAddGroup.Controls.Add(this.AirModelLabel);
+            this.AirAddGroup.Controls.Add(this.AirLoadCapacitySetter);
             this.AirAddGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.AirAddGroup.Location = new System.Drawing.Point(12, 12);
             this.AirAddGroup.Name = "AirAddGroup";
-            this.AirAddGroup.Size = new System.Drawing.Size(275, 448);
+            this.AirAddGroup.Size = new System.Drawing.Size(297, 474);
             this.AirAddGroup.TabIndex = 15;
             this.AirAddGroup.TabStop = false;
             this.AirAddGroup.Text = "Добавление Самолёта";
             // 
+            // AirIdInput
+            // 
+            this.AirIdInput.Location = new System.Drawing.Point(6, 50);
+            this.AirIdInput.Name = "AirIdInput";
+            this.AirIdInput.Size = new System.Drawing.Size(180, 22);
+            this.AirIdInput.TabIndex = 26;
+            // 
+            // AirIdLabel
+            // 
+            this.AirIdLabel.Font = new System.Drawing.Font("Open Sans", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.AirIdLabel.Location = new System.Drawing.Point(6, 15);
+            this.AirIdLabel.Name = "AirIdLabel";
+            this.AirIdLabel.Size = new System.Drawing.Size(255, 28);
+            this.AirIdLabel.TabIndex = 21;
+            this.AirIdLabel.Text = "ID Самолёта";
+            // 
             // AirTechServiceDatePicker
             // 
-            this.AirTechServiceDatePicker.Location = new System.Drawing.Point(6, 279);
+            this.AirTechServiceDatePicker.Location = new System.Drawing.Point(6, 304);
             this.AirTechServiceDatePicker.Name = "AirTechServiceDatePicker";
-            this.AirTechServiceDatePicker.Size = new System.Drawing.Size(261, 22);
+            this.AirTechServiceDatePicker.Size = new System.Drawing.Size(285, 22);
             this.AirTechServiceDatePicker.TabIndex = 20;
             // 
             // AirCrewAmountLabel
             // 
-            this.AirCrewAmountLabel.Location = new System.Drawing.Point(6, 398);
+            this.AirCrewAmountLabel.Location = new System.Drawing.Point(6, 423);
             this.AirCrewAmountLabel.Name = "AirCrewAmountLabel";
             this.AirCrewAmountLabel.Size = new System.Drawing.Size(261, 19);
             this.AirCrewAmountLabel.TabIndex = 19;
@@ -220,17 +243,17 @@ namespace S2_Lab02
             // 
             // AirCrewAmountSetter
             // 
-            this.AirCrewAmountSetter.Location = new System.Drawing.Point(6, 420);
-            this.AirCrewAmountSetter.Maximum = new decimal(new int[] {14, 0, 0, 0});
-            this.AirCrewAmountSetter.Minimum = new decimal(new int[] {1, 0, 0, 0});
+            this.AirCrewAmountSetter.Location = new System.Drawing.Point(6, 445);
+            this.AirCrewAmountSetter.Maximum = new decimal(new int[] {7, 0, 0, 0});
+            this.AirCrewAmountSetter.Minimum = new decimal(new int[] {3, 0, 0, 0});
             this.AirCrewAmountSetter.Name = "AirCrewAmountSetter";
             this.AirCrewAmountSetter.Size = new System.Drawing.Size(120, 22);
             this.AirCrewAmountSetter.TabIndex = 18;
-            this.AirCrewAmountSetter.Value = new decimal(new int[] {1, 0, 0, 0});
+            this.AirCrewAmountSetter.Value = new decimal(new int[] {3, 0, 0, 0});
             // 
             // AirPassengersSeatsLabel
             // 
-            this.AirPassengersSeatsLabel.Location = new System.Drawing.Point(6, 351);
+            this.AirPassengersSeatsLabel.Location = new System.Drawing.Point(6, 376);
             this.AirPassengersSeatsLabel.Name = "AirPassengersSeatsLabel";
             this.AirPassengersSeatsLabel.Size = new System.Drawing.Size(261, 19);
             this.AirPassengersSeatsLabel.TabIndex = 17;
@@ -238,22 +261,13 @@ namespace S2_Lab02
             // 
             // AirPassengersSeatsSetter
             // 
-            this.AirPassengersSeatsSetter.Location = new System.Drawing.Point(6, 373);
+            this.AirPassengersSeatsSetter.Location = new System.Drawing.Point(6, 398);
             this.AirPassengersSeatsSetter.Maximum = new decimal(new int[] {300, 0, 0, 0});
-            this.AirPassengersSeatsSetter.Minimum = new decimal(new int[] {1, 0, 0, 0});
+            this.AirPassengersSeatsSetter.Minimum = new decimal(new int[] {10, 0, 0, 0});
             this.AirPassengersSeatsSetter.Name = "AirPassengersSeatsSetter";
             this.AirPassengersSeatsSetter.Size = new System.Drawing.Size(120, 22);
             this.AirPassengersSeatsSetter.TabIndex = 16;
-            this.AirPassengersSeatsSetter.Value = new decimal(new int[] {1, 0, 0, 0});
-            // 
-            // AirIdLabel
-            // 
-            this.AirIdLabel.Font = new System.Drawing.Font("Roboto Black", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
-            this.AirIdLabel.Location = new System.Drawing.Point(6, 18);
-            this.AirIdLabel.Name = "AirIdLabel";
-            this.AirIdLabel.Size = new System.Drawing.Size(156, 32);
-            this.AirIdLabel.TabIndex = 15;
-            this.AirIdLabel.Text = "Air ID: 0";
+            this.AirPassengersSeatsSetter.Value = new decimal(new int[] {10, 0, 0, 0});
             // 
             // CrewAddGroup
             // 
@@ -270,9 +284,9 @@ namespace S2_Lab02
             this.CrewAddGroup.Controls.Add(this.CrewMemberNameLabel);
             this.CrewAddGroup.Controls.Add(this.CrewMemberNameInput);
             this.CrewAddGroup.Controls.Add(this.CrewMemberIdLabel);
-            this.CrewAddGroup.Location = new System.Drawing.Point(293, 12);
+            this.CrewAddGroup.Location = new System.Drawing.Point(315, 12);
             this.CrewAddGroup.Name = "CrewAddGroup";
-            this.CrewAddGroup.Size = new System.Drawing.Size(378, 322);
+            this.CrewAddGroup.Size = new System.Drawing.Size(356, 326);
             this.CrewAddGroup.TabIndex = 16;
             this.CrewAddGroup.TabStop = false;
             this.CrewAddGroup.Text = "Добавление экипажа";
@@ -380,26 +394,27 @@ namespace S2_Lab02
             this.CrewMemberIdLabel.Font = new System.Drawing.Font("Roboto Black", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.CrewMemberIdLabel.Location = new System.Drawing.Point(6, 18);
             this.CrewMemberIdLabel.Name = "CrewMemberIdLabel";
-            this.CrewMemberIdLabel.Size = new System.Drawing.Size(363, 32);
+            this.CrewMemberIdLabel.Size = new System.Drawing.Size(319, 32);
             this.CrewMemberIdLabel.TabIndex = 18;
-            this.CrewMemberIdLabel.Text = "Член экипажа номер: 1";
+            this.CrewMemberIdLabel.Text = "Добавлено: 0";
             // 
             // CrewMemberAddButton
             // 
-            this.CrewMemberAddButton.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
-            this.CrewMemberAddButton.Location = new System.Drawing.Point(293, 340);
+            this.CrewMemberAddButton.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.CrewMemberAddButton.Location = new System.Drawing.Point(315, 341);
             this.CrewMemberAddButton.Name = "CrewMemberAddButton";
-            this.CrewMemberAddButton.Size = new System.Drawing.Size(378, 80);
+            this.CrewMemberAddButton.Size = new System.Drawing.Size(356, 70);
             this.CrewMemberAddButton.TabIndex = 17;
             this.CrewMemberAddButton.Text = "Добавить члена экипажа";
             this.CrewMemberAddButton.UseVisualStyleBackColor = true;
+            this.CrewMemberAddButton.Click += new System.EventHandler(this.CrewMemberAddButton_Click);
             // 
             // DataReadButton
             // 
             this.DataReadButton.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
-            this.DataReadButton.Location = new System.Drawing.Point(187, 21);
+            this.DataReadButton.Location = new System.Drawing.Point(179, 21);
             this.DataReadButton.Name = "DataReadButton";
-            this.DataReadButton.Size = new System.Drawing.Size(182, 86);
+            this.DataReadButton.Size = new System.Drawing.Size(168, 86);
             this.DataReadButton.TabIndex = 18;
             this.DataReadButton.Text = "Считать данные";
             this.DataReadButton.UseVisualStyleBackColor = true;
@@ -409,60 +424,107 @@ namespace S2_Lab02
             this.DataSaveButton.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
             this.DataSaveButton.Location = new System.Drawing.Point(6, 21);
             this.DataSaveButton.Name = "DataSaveButton";
-            this.DataSaveButton.Size = new System.Drawing.Size(180, 86);
+            this.DataSaveButton.Size = new System.Drawing.Size(167, 86);
             this.DataSaveButton.TabIndex = 19;
             this.DataSaveButton.Text = "Сохранить данные";
             this.DataSaveButton.UseVisualStyleBackColor = true;
-            // 
-            // AirAddButton
-            // 
-            this.AirAddButton.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
-            this.AirAddButton.Location = new System.Drawing.Point(12, 460);
-            this.AirAddButton.Name = "AirAddButton";
-            this.AirAddButton.Size = new System.Drawing.Size(275, 79);
-            this.AirAddButton.TabIndex = 20;
-            this.AirAddButton.Text = "Добавить самолёт";
-            this.AirAddButton.UseVisualStyleBackColor = true;
+            this.DataSaveButton.Click += new System.EventHandler(this.DataSaveButton_Click);
             // 
             // DataGroup
             // 
             this.DataGroup.Controls.Add(this.DataReadButton);
             this.DataGroup.Controls.Add(this.DataSaveButton);
-            this.DataGroup.Location = new System.Drawing.Point(293, 426);
+            this.DataGroup.Location = new System.Drawing.Point(315, 492);
             this.DataGroup.Name = "DataGroup";
-            this.DataGroup.Size = new System.Drawing.Size(378, 113);
+            this.DataGroup.Size = new System.Drawing.Size(356, 113);
             this.DataGroup.TabIndex = 21;
             this.DataGroup.TabStop = false;
             this.DataGroup.Text = "Данные";
             // 
-            // AirDataView
+            // AirDataViewButton
             // 
-            this.AirDataView.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
-            this.AirDataView.Location = new System.Drawing.Point(12, 545);
-            this.AirDataView.Name = "AirDataView";
-            this.AirDataView.Size = new System.Drawing.Size(659, 68);
-            this.AirDataView.TabIndex = 22;
-            this.AirDataView.Text = "Просмотреть";
-            this.AirDataView.UseVisualStyleBackColor = true;
+            this.AirDataViewButton.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.AirDataViewButton.Location = new System.Drawing.Point(12, 611);
+            this.AirDataViewButton.Name = "AirDataViewButton";
+            this.AirDataViewButton.Size = new System.Drawing.Size(659, 68);
+            this.AirDataViewButton.TabIndex = 22;
+            this.AirDataViewButton.Text = "Просмотреть";
+            this.AirDataViewButton.UseVisualStyleBackColor = true;
+            // 
+            // AirAddButton
+            // 
+            this.AirAddButton.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.AirAddButton.Location = new System.Drawing.Point(6, 21);
+            this.AirAddButton.Name = "AirAddButton";
+            this.AirAddButton.Size = new System.Drawing.Size(142, 86);
+            this.AirAddButton.TabIndex = 23;
+            this.AirAddButton.Text = "Добавить Самолёт";
+            this.AirAddButton.UseVisualStyleBackColor = true;
+            this.AirAddButton.Click += new System.EventHandler(this.AirAddButton_Click);
+            // 
+            // CrewDeleteButton
+            // 
+            this.CrewDeleteButton.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.CrewDeleteButton.Location = new System.Drawing.Point(494, 416);
+            this.CrewDeleteButton.Name = "CrewDeleteButton";
+            this.CrewDeleteButton.Size = new System.Drawing.Size(175, 70);
+            this.CrewDeleteButton.TabIndex = 24;
+            this.CrewDeleteButton.Text = "Удалить Экипаж";
+            this.CrewDeleteButton.UseVisualStyleBackColor = true;
+            this.CrewDeleteButton.Click += new System.EventHandler(this.CrewDeleteButton_Click);
+            // 
+            // CrewMemberDeleteButton
+            // 
+            this.CrewMemberDeleteButton.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.CrewMemberDeleteButton.Location = new System.Drawing.Point(315, 416);
+            this.CrewMemberDeleteButton.Name = "CrewMemberDeleteButton";
+            this.CrewMemberDeleteButton.Size = new System.Drawing.Size(173, 70);
+            this.CrewMemberDeleteButton.TabIndex = 25;
+            this.CrewMemberDeleteButton.Text = "Удалить Члена";
+            this.CrewMemberDeleteButton.UseVisualStyleBackColor = true;
+            this.CrewMemberDeleteButton.Click += new System.EventHandler(this.CrewMemberDeleteButton_Click);
+            // 
+            // AirFormCleanButton
+            // 
+            this.AirFormCleanButton.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.AirFormCleanButton.Location = new System.Drawing.Point(154, 21);
+            this.AirFormCleanButton.Name = "AirFormCleanButton";
+            this.AirFormCleanButton.Size = new System.Drawing.Size(137, 86);
+            this.AirFormCleanButton.TabIndex = 26;
+            this.AirFormCleanButton.Text = "Очистить форму";
+            this.AirFormCleanButton.UseVisualStyleBackColor = true;
+            this.AirFormCleanButton.Click += new System.EventHandler(this.AirFormCleanButton_Click);
+            // 
+            // FormGroup
+            // 
+            this.FormGroup.Controls.Add(this.AirFormCleanButton);
+            this.FormGroup.Controls.Add(this.AirAddButton);
+            this.FormGroup.Location = new System.Drawing.Point(12, 492);
+            this.FormGroup.Name = "FormGroup";
+            this.FormGroup.Size = new System.Drawing.Size(297, 113);
+            this.FormGroup.TabIndex = 27;
+            this.FormGroup.TabStop = false;
+            this.FormGroup.Text = "Форма";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(681, 627);
-            this.Controls.Add(this.AirDataView);
+            this.ClientSize = new System.Drawing.Size(681, 686);
+            this.Controls.Add(this.FormGroup);
+            this.Controls.Add(this.CrewMemberDeleteButton);
+            this.Controls.Add(this.CrewDeleteButton);
+            this.Controls.Add(this.AirDataViewButton);
             this.Controls.Add(this.DataGroup);
-            this.Controls.Add(this.AirAddButton);
             this.Controls.Add(this.CrewMemberAddButton);
             this.Controls.Add(this.CrewAddGroup);
             this.Controls.Add(this.AirAddGroup);
-            this.MaximumSize = new System.Drawing.Size(699, 674);
-            this.MinimumSize = new System.Drawing.Size(699, 674);
             this.Name = "MainForm";
             this.Text = "Form Input";
             this.AirTypeGroup.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize) (this.AirLoadCapacitySetter)).EndInit();
             this.AirAddGroup.ResumeLayout(false);
+            this.AirAddGroup.PerformLayout();
             ((System.ComponentModel.ISupportInitialize) (this.AirCrewAmountSetter)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.AirPassengersSeatsSetter)).EndInit();
             this.CrewAddGroup.ResumeLayout(false);
@@ -470,21 +532,32 @@ namespace S2_Lab02
             ((System.ComponentModel.ISupportInitialize) (this.CrewMemberWorkExperienceSetter)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.CrewMemberAgeSetter)).EndInit();
             this.DataGroup.ResumeLayout(false);
+            this.FormGroup.ResumeLayout(false);
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.GroupBox FormGroup;
+
+        private System.Windows.Forms.Button AirFormCleanButton;
+
+        private System.Windows.Forms.Button AirAddButton;
+        private System.Windows.Forms.Button CrewDeleteButton;
+        private System.Windows.Forms.Button CrewMemberDeleteButton;
+
+        private System.Windows.Forms.Label AirIdLabel;
+        private System.Windows.Forms.TextBox AirIdInput;
 
         private System.Windows.Forms.DateTimePicker AirTechServiceDatePicker;
 
         private System.Windows.Forms.Label AirCrewAmountLabel;
         private System.Windows.Forms.NumericUpDown AirCrewAmountSetter;
-        private System.Windows.Forms.Button AirDataView;
+        private System.Windows.Forms.Button AirDataViewButton;
 
         private System.Windows.Forms.GroupBox DataGroup;
 
         private System.Windows.Forms.Button CrewMemberAddButton;
         private System.Windows.Forms.Button DataReadButton;
         private System.Windows.Forms.Button DataSaveButton;
-        private System.Windows.Forms.Button AirAddButton;
 
         private System.Windows.Forms.ComboBox CrewMemberPositionList;
         private System.Windows.Forms.Label CrewMemberPositionLabel;
@@ -509,8 +582,6 @@ namespace S2_Lab02
 
         private System.Windows.Forms.Label AirPassengersSeatsLabel;
         private System.Windows.Forms.NumericUpDown AirPassengersSeatsSetter;
-
-        private System.Windows.Forms.Label AirIdLabel;
 
         private System.Windows.Forms.GroupBox AirAddGroup;
         private System.Windows.Forms.Label AirTechServiceLabel;
