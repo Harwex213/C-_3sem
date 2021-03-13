@@ -246,5 +246,12 @@ namespace S2_Lab02
         {
             MessageBox.Show("Version: 1.0\n Developer: Kaportsev O.A.");
         }
+
+        private void AirSearchButton_Click(object sender, EventArgs e)
+        {
+            var searchForm = new Thread(() => Application.Run(new SearchForm(this)));
+            searchForm.Start();
+            Enabled = false;
+        }
     }
 }
