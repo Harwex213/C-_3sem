@@ -18,10 +18,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1191e5e8-3097-4c1a-86b9-0f97b658835a" name="Default Changelist" comment="Lab03: made search">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/S2_Lab02/MainForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/MainForm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/Plane.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/Plane.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/SearchForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/SearchForm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/MainForm.resx" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/MainForm.resx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.exe" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.pdb" afterDir="false" />
     </list>
@@ -62,13 +61,13 @@
       <option value="$PROJECT_DIR$/S2_Lab02/DataTable.Designer.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/DataTable.cs" />
       <option value="$PROJECT_DIR$/Lab15/Program.cs" />
-      <option value="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/PlaneIdCheckAttribute.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/SearchForm.Designer.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/SearchForm.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/Plane.cs" />
-      <option value="$PROJECT_DIR$/S2_Lab02/MainForm.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/MainForm.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pNugI2TykzfhNUzryyjUwIWkcm" />
@@ -349,7 +348,7 @@
       <workItem from="1615559444523" duration="3527000" />
       <workItem from="1615571752997" duration="6385000" />
       <workItem from="1615581414529" duration="32000" />
-      <workItem from="1615631385495" duration="1549000" />
+      <workItem from="1615631385495" duration="3975000" />
     </task>
     <task id="LOCAL-00001" summary="Lab02: Design complete">
       <created>1615041454107</created>
@@ -414,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615577492257</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Lab03: made search">
+      <created>1615633207145</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1615633207145</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,6 +450,7 @@
     <MESSAGE value="Lab02: DataView generation complete" />
     <MESSAGE value="Lab02: some fixes" />
     <MESSAGE value="Lab02:" />
+    <MESSAGE value="Search complete" />
     <MESSAGE value="Lab03: made search" />
     <option name="LAST_COMMIT_MESSAGE" value="Lab03: made search" />
   </component>

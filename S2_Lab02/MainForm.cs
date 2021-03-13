@@ -6,6 +6,7 @@ using System.IO;
 using System.Threading;
 using System.Windows.Forms;
 using Newtonsoft.Json;
+using Timer = System.Threading.Timer;
 
 namespace S2_Lab02
 {
@@ -14,6 +15,7 @@ namespace S2_Lab02
         public List<Plane> Planes { get; set; }
         private List<CrewMember> _crew;
         private List<int> _planesIdList;
+        private Timer _timer;
 
         public MainForm()
         {
@@ -26,8 +28,13 @@ namespace S2_Lab02
             AirTechServiceDatePicker.Format = DateTimePickerFormat.Custom;
             AirYearReleaseDatePicker.CustomFormat = "dd.MM.yyyy";
             AirTechServiceDatePicker.CustomFormat = "dd.MM.yyyy";
+            _timer = new Timer(Time, null, 0, 1000);
         }
-        
+
+        private void Time(object obj)
+        { 
+            StatusItemTimeSetLabel.Text = DateTime.Now.ToLongDateString() + " " + DateTime.Now.ToLongTimeString();
+        }
         private void RefreshCrew()
         {
             _crew = new List<CrewMember>();
@@ -35,7 +42,6 @@ namespace S2_Lab02
 
         private void RefreshCrewAmount()
         {
-            
             CrewMemberIdLabel.Text = CrewMemberIdLabel.Text.Remove(10);
             CrewMemberIdLabel.Text = CrewMemberIdLabel.Text.Insert(10, Convert.ToString(_crew.Count));
         }
@@ -68,13 +74,15 @@ namespace S2_Lab02
                 new("Model: " + plane.Model),
                 new("Type: " + plane.Type),
                 new("DateRelease: " + plane.DateRelease.ToString("dd.MM.yyyy")),
-                new("DateTechService: " + plane.DateTechService.ToString("dd.MM.yyyy")),
+                new("DateTechService: " + plane.DateTechService),
                 new("LoadCapacity: " + plane.LoadCapacity),
                 new("SeatsAmount: " + plane.PassengersSeatsAmount),
                 nodeCrew
             };
             // Добавляем ветви в узел.
             DataView.Nodes["Airport"].Nodes[plane.Id.ToString()].Nodes.AddRange(planeNode);
+
+            StatusItemObjectsSetAmountLabel.Text = Planes.Count.ToString();
         }
         private void GenerateNewDataView()
         {
@@ -224,6 +232,7 @@ namespace S2_Lab02
         private void DataViewClearButton_Click(object sender, EventArgs e)
         {
             DataView.Nodes["Airport"].Nodes.Clear();
+            StatusItemObjectsSetAmountLabel.Text = "0";
         }
 
         private void AirSearchButton_Click(object sender, EventArgs e)
@@ -231,6 +240,11 @@ namespace S2_Lab02
             var searchForm = new Thread(() => Application.Run(new SearchForm(this)));
             searchForm.Start();
             Enabled = false;
+        }
+
+        private void MenuItemAboutProgram_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Version: 1.0\n Developer: Kaportsev O.A.");
         }
     }
 }
