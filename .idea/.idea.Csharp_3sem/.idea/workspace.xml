@@ -16,11 +16,7 @@
     <projectFile>S3_Exm/S3_Exm.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1191e5e8-3097-4c1a-86b9-0f97b658835a" name="Default Changelist" comment="Lab03: all done, except Last Action displaying">
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/MainForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/MainForm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.exe" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.pdb" afterDir="false" />
-    </list>
+    <list default="true" id="1191e5e8-3097-4c1a-86b9-0f97b658835a" name="Default Changelist" comment="Merger complete" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -346,7 +342,7 @@
       <workItem from="1615559444523" duration="3527000" />
       <workItem from="1615571752997" duration="6385000" />
       <workItem from="1615581414529" duration="32000" />
-      <workItem from="1615631385495" duration="4296000" />
+      <workItem from="1615631385495" duration="4327000" />
     </task>
     <task id="LOCAL-00001" summary="Lab02: Design complete">
       <created>1615041454107</created>
@@ -425,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615635448229</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Merger complete">
+      <created>1615635744944</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1615635744944</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,6 +461,7 @@
     <MESSAGE value="Search complete" />
     <MESSAGE value="Lab03: made search" />
     <MESSAGE value="Lab03: all done, except Last Action displaying" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab03: all done, except Last Action displaying" />
+    <MESSAGE value="Merger complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merger complete" />
   </component>
 </project>

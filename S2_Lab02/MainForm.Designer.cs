@@ -82,8 +82,6 @@ namespace S2_Lab02
             this.StatusItemObjectsSetAmountLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.StatusItemTimeLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.StatusItemTimeSetLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.StatusItemLastActionLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.StatusItemLastActionSetLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.AirTypeGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.AirLoadCapacitySetter)).BeginInit();
             this.AirAddGroup.SuspendLayout();
@@ -565,8 +563,10 @@ namespace S2_Lab02
             // 
             // StatusStrip
             // 
-            this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {this.StatusItemObjectsAmountLabel, this.StatusItemObjectsSetAmountLabel, this.StatusItemTimeLabel, this.StatusItemTimeSetLabel, this.StatusItemLastActionLabel, this.StatusItemLastActionSetLabel});
+            this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {this.StatusItemObjectsAmountLabel, this.StatusItemObjectsSetAmountLabel, this.StatusItemTimeLabel, this.StatusItemTimeSetLabel});
             this.StatusStrip.Location = new System.Drawing.Point(0, 715);
+            this.StatusStrip.MaximumSize = new System.Drawing.Size(1086, 29);
+            this.StatusStrip.MinimumSize = new System.Drawing.Size(1086, 29);
             this.StatusStrip.Name = "StatusStrip";
             this.StatusStrip.Size = new System.Drawing.Size(1086, 29);
             this.StatusStrip.TabIndex = 33;
@@ -596,19 +596,6 @@ namespace S2_Lab02
             this.StatusItemTimeSetLabel.Name = "StatusItemTimeSetLabel";
             this.StatusItemTimeSetLabel.Size = new System.Drawing.Size(13, 24);
             this.StatusItemTimeSetLabel.Text = " ";
-            // 
-            // StatusItemLastActionLabel
-            // 
-            this.StatusItemLastActionLabel.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Left;
-            this.StatusItemLastActionLabel.Name = "StatusItemLastActionLabel";
-            this.StatusItemLastActionLabel.Size = new System.Drawing.Size(159, 24);
-            this.StatusItemLastActionLabel.Text = "Последнее действие:";
-            // 
-            // StatusItemLastActionSetLabel
-            // 
-            this.StatusItemLastActionSetLabel.Name = "StatusItemLastActionSetLabel";
-            this.StatusItemLastActionSetLabel.Size = new System.Drawing.Size(77, 24);
-            this.StatusItemLastActionSetLabel.Text = "                 ";
             // 
             // MainForm
             // 
@@ -651,10 +638,6 @@ namespace S2_Lab02
             this.ResumeLayout(false);
             this.PerformLayout();
         }
-
-        private System.Windows.Forms.ToolStripStatusLabel StatusItemLastActionSetLabel;
-
-        private System.Windows.Forms.ToolStripStatusLabel StatusItemLastActionLabel;
 
         private System.Windows.Forms.ToolStripStatusLabel StatusItemTimeSetLabel;
 
