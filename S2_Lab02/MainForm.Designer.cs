@@ -82,6 +82,12 @@ namespace S2_Lab02
             this.StatusItemObjectsSetAmountLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.StatusItemTimeLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.StatusItemTimeSetLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.AirAmountToGenerateSetter = new System.Windows.Forms.NumericUpDown();
+            this.AirTypeMilitary2 = new System.Windows.Forms.RadioButton();
+            this.AirTypePassenger2 = new System.Windows.Forms.RadioButton();
+            this.AirTypeCargo2 = new System.Windows.Forms.RadioButton();
+            this.AirTypeGroup2 = new System.Windows.Forms.GroupBox();
+            this.AirGenerateButton = new System.Windows.Forms.Button();
             this.AirTypeGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.AirLoadCapacitySetter)).BeginInit();
             this.AirAddGroup.SuspendLayout();
@@ -94,6 +100,8 @@ namespace S2_Lab02
             this.FormGroup.SuspendLayout();
             this.MenuStrip.SuspendLayout();
             this.StatusStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.AirAmountToGenerateSetter)).BeginInit();
+            this.AirTypeGroup2.SuspendLayout();
             this.SuspendLayout();
             // 
             // AirYearReleaseDatePicker
@@ -543,7 +551,7 @@ namespace S2_Lab02
             this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {this.MenuItemSearch, this.MenuItemAboutProgram});
             this.MenuStrip.Location = new System.Drawing.Point(0, 0);
             this.MenuStrip.Name = "MenuStrip";
-            this.MenuStrip.Size = new System.Drawing.Size(1086, 28);
+            this.MenuStrip.Size = new System.Drawing.Size(1323, 28);
             this.MenuStrip.TabIndex = 31;
             this.MenuStrip.Text = "menuStrip1";
             // 
@@ -597,11 +605,77 @@ namespace S2_Lab02
             this.StatusItemTimeSetLabel.Size = new System.Drawing.Size(13, 24);
             this.StatusItemTimeSetLabel.Text = " ";
             // 
+            // AirAmountToGenerateSetter
+            // 
+            this.AirAmountToGenerateSetter.Location = new System.Drawing.Point(1086, 140);
+            this.AirAmountToGenerateSetter.Maximum = new decimal(new int[] {15, 0, 0, 0});
+            this.AirAmountToGenerateSetter.Minimum = new decimal(new int[] {1, 0, 0, 0});
+            this.AirAmountToGenerateSetter.Name = "AirAmountToGenerateSetter";
+            this.AirAmountToGenerateSetter.Size = new System.Drawing.Size(123, 22);
+            this.AirAmountToGenerateSetter.TabIndex = 26;
+            this.AirAmountToGenerateSetter.Value = new decimal(new int[] {3, 0, 0, 0});
+            // 
+            // AirTypeMilitary2
+            // 
+            this.AirTypeMilitary2.Location = new System.Drawing.Point(6, 79);
+            this.AirTypeMilitary2.Name = "AirTypeMilitary2";
+            this.AirTypeMilitary2.Size = new System.Drawing.Size(104, 18);
+            this.AirTypeMilitary2.TabIndex = 7;
+            this.AirTypeMilitary2.TabStop = true;
+            this.AirTypeMilitary2.Text = "Военный";
+            this.AirTypeMilitary2.UseVisualStyleBackColor = true;
+            // 
+            // AirTypePassenger2
+            // 
+            this.AirTypePassenger2.Location = new System.Drawing.Point(6, 49);
+            this.AirTypePassenger2.Name = "AirTypePassenger2";
+            this.AirTypePassenger2.Size = new System.Drawing.Size(153, 24);
+            this.AirTypePassenger2.TabIndex = 6;
+            this.AirTypePassenger2.TabStop = true;
+            this.AirTypePassenger2.Text = "Пассажирский";
+            this.AirTypePassenger2.UseVisualStyleBackColor = true;
+            // 
+            // AirTypeCargo2
+            // 
+            this.AirTypeCargo2.Location = new System.Drawing.Point(6, 19);
+            this.AirTypeCargo2.Name = "AirTypeCargo2";
+            this.AirTypeCargo2.Size = new System.Drawing.Size(104, 24);
+            this.AirTypeCargo2.TabIndex = 5;
+            this.AirTypeCargo2.TabStop = true;
+            this.AirTypeCargo2.Text = "Грузовой";
+            this.AirTypeCargo2.UseVisualStyleBackColor = true;
+            // 
+            // AirTypeGroup2
+            // 
+            this.AirTypeGroup2.Controls.Add(this.AirTypeCargo2);
+            this.AirTypeGroup2.Controls.Add(this.AirTypePassenger2);
+            this.AirTypeGroup2.Controls.Add(this.AirTypeMilitary2);
+            this.AirTypeGroup2.Location = new System.Drawing.Point(1086, 31);
+            this.AirTypeGroup2.Name = "AirTypeGroup2";
+            this.AirTypeGroup2.Size = new System.Drawing.Size(225, 103);
+            this.AirTypeGroup2.TabIndex = 11;
+            this.AirTypeGroup2.TabStop = false;
+            this.AirTypeGroup2.Text = "Тип самолёта";
+            // 
+            // AirGenerateButton
+            // 
+            this.AirGenerateButton.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
+            this.AirGenerateButton.Location = new System.Drawing.Point(1086, 168);
+            this.AirGenerateButton.Name = "AirGenerateButton";
+            this.AirGenerateButton.Size = new System.Drawing.Size(231, 72);
+            this.AirGenerateButton.TabIndex = 34;
+            this.AirGenerateButton.Text = "Сгенерировать";
+            this.AirGenerateButton.UseVisualStyleBackColor = true;
+            this.AirGenerateButton.Click += new System.EventHandler(this.AirGenerateButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1086, 744);
+            this.ClientSize = new System.Drawing.Size(1323, 744);
+            this.Controls.Add(this.AirTypeGroup2);
+            this.Controls.Add(this.AirAmountToGenerateSetter);
+            this.Controls.Add(this.AirGenerateButton);
             this.Controls.Add(this.StatusStrip);
             this.Controls.Add(this.FormGroup);
             this.Controls.Add(this.AirAddButton);
@@ -615,7 +689,6 @@ namespace S2_Lab02
             this.Controls.Add(this.AirAddGroup);
             this.Controls.Add(this.MenuStrip);
             this.MainMenuStrip = this.MenuStrip;
-            this.MaximumSize = new System.Drawing.Size(1104, 791);
             this.MinimumSize = new System.Drawing.Size(1104, 791);
             this.Name = "MainForm";
             this.Text = "Form Input";
@@ -635,9 +708,18 @@ namespace S2_Lab02
             this.MenuStrip.PerformLayout();
             this.StatusStrip.ResumeLayout(false);
             this.StatusStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.AirAmountToGenerateSetter)).EndInit();
+            this.AirTypeGroup2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.NumericUpDown AirAmountToGenerateSetter;
+        private System.Windows.Forms.Button AirGenerateButton;
+        private System.Windows.Forms.RadioButton AirTypeCargo2;
+        private System.Windows.Forms.GroupBox AirTypeGroup2;
+        private System.Windows.Forms.RadioButton AirTypeMilitary2;
+        private System.Windows.Forms.RadioButton AirTypePassenger2;
 
         private System.Windows.Forms.ToolStripStatusLabel StatusItemTimeSetLabel;
 

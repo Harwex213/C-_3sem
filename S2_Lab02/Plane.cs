@@ -7,6 +7,8 @@ namespace S2_Lab02
 {
     public class Plane
     {
+        private static int _nextId;
+        
         [PlaneIdCheck]
         public int Id { get; set; }
 
@@ -23,17 +25,40 @@ namespace S2_Lab02
         public int CrewAmount { get; set; }
         [Compare("CrewAmount", ErrorMessage = "Созданное количество членов экипажа не соотвествует их ожидаемому числу")]
         public int CrewActualAmount { get; }
-        public List<CrewMember> Crew { get; }
+        public List<CrewMember> Crew { get; private set; }
 
         public Plane()
         {
             Crew = new List<CrewMember>();
+        }
+
+        public Plane(IPlaneFactory planeFactory) : this()
+        {
+            Type = planeFactory.CreateType().Name;
+            Model = planeFactory.CreateModel().Name;
         }
         
         public Plane(List<CrewMember> listCrew)
         {
             Crew = listCrew;
             CrewActualAmount = Crew.Count;
+        }
+
+        public Plane(List<CrewMember> listCrew, IPlaneFactory planeFactory) : this(planeFactory)
+        {
+            Crew = listCrew;
+            CrewActualAmount = Crew.Count;
+        }
+
+        public void GenerateNewData()
+        {
+            Id = _nextId++;
+            DateRelease = DateTime.Now;
+            DateTechService = DateTime.Now;
+            LoadCapacity = 100;
+            PassengersSeatsAmount = 100;
+            CrewAmount = 2;
+            Crew = new List<CrewMember>();
         }
 
         public override string ToString()
@@ -60,16 +85,6 @@ namespace S2_Lab02
                    $"Пассажирские места: {PassengersSeatsAmount}\r\n" +
                    $"\tЭкипаж:\r\n" + crewToString +
                    "\r\n////////////\r\n";
-            // return "//////////////////////////////////////////////\n" +
-            //        "Самолёт\t" + Id + "\n" +
-            //        "Тип\t" + Type + "\n" +
-            //        "Модель:\t" + Model + "\n" +
-            //        "Дата выпуска:\t" + "\n" +
-            //        "Дата тех. обслуживания:\t" + "\n" +
-            //        "Грузоподъёмность:\t" + "\n" +
-            //        "Пассажирские места\t" + "\n" +
-            //        "Экипаж:\n" + crewToString + "\n" +
-            //        "//////////////////////////////////////////////\n";
         }
     }
 }

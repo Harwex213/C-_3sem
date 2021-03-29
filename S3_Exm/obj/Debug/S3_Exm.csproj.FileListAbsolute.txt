@@ -8,7 +8,6 @@ D:\Wordplace\2_Синее\1University\second_cource_2\ООП\Csharp_University\S
 D:\Wordplace\2_Blue\1University\second_cource_2\OOP\Csharp_University\S3_Exm\bin\Debug\S3_Exm.exe.config
 D:\Wordplace\2_Blue\1University\second_cource_2\OOP\Csharp_University\S3_Exm\bin\Debug\S3_Exm.exe
 D:\Wordplace\2_Blue\1University\second_cource_2\OOP\Csharp_University\S3_Exm\bin\Debug\S3_Exm.pdb
-D:\Wordplace\2_Blue\1University\second_cource_2\OOP\Csharp_University\S3_Exm\obj\Debug\S3_Exm.csprojAssemblyReference.cache
 D:\Wordplace\2_Blue\1University\second_cource_2\OOP\Csharp_University\S3_Exm\obj\Debug\S3_Exm.csproj.CoreCompileInputs.cache
 D:\Wordplace\2_Blue\1University\second_cource_2\OOP\Csharp_University\S3_Exm\obj\Debug\S3_Exm.exe
 D:\Wordplace\2_Blue\1University\second_cource_2\OOP\Csharp_University\S3_Exm\obj\Debug\S3_Exm.pdb

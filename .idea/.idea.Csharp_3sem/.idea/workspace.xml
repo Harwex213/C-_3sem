@@ -16,7 +16,20 @@
     <projectFile>S3_Exm/S3_Exm.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1191e5e8-3097-4c1a-86b9-0f97b658835a" name="Default Changelist" comment="Merger complete" />
+    <list default="true" id="1191e5e8-3097-4c1a-86b9-0f97b658835a" name="Default Changelist" comment="Lab02: some fixes; finished">
+      <change afterPath="$PROJECT_DIR$/S2_Lab02/AbstractFactory.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S2_Lab02/Builder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/MainForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/MainForm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/Plane.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/Plane.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/S2_Lab02.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/S2_Lab02.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.exe" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S3_Exm/obj/Debug/S3_Exm.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/S3_Exm/obj/Debug/S3_Exm.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S3_Exm/obj/Debug/S3_Exm.csprojAssemblyReference.cache" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,11 +48,14 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://D:/Wordplace/2_Blue/1University/second_cource_2/OOP/Csharp_University/S2_Lab02/MainForm.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/c9/06187363/TimerQueueTimer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/23BD44B4-B3BB-4072-991D-175B46E28280/12/JsonSerializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/b5/88bdabc3/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/215F2307-E820-492D-A272-E3ABA04F3DFF/32/49bc854d/TextBox.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00E25C71-8E2F-4828-8B8C-5088590E8D84/a0/c07769e0/ValidationAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/23BD44B4-B3BB-4072-991D-175B46E28280/5/JsonConvert.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/215F2307-E820-492D-A272-E3ABA04F3DFF/05/88a5da3d/Control.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/2d/a5e6a882/Timer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/45/1a369336/Number.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/215F2307-E820-492D-A272-E3ABA04F3DFF/74/30b7de83/TreeNode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/db/8301dde9/TextReader.cs" root0="SKIP_HIGHLIGHTING" />
@@ -58,10 +74,12 @@
       <option value="$PROJECT_DIR$/S2_Lab02/PlaneIdCheckAttribute.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/SearchForm.Designer.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/SearchForm.cs" />
-      <option value="$PROJECT_DIR$/S2_Lab02/Plane.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/AbstractFactory.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/MainForm.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/Builder.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/Plane.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pNugI2TykzfhNUzryyjUwIWkcm" />
@@ -81,9 +99,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="XThreadsFramesViewSplitterKey" value="0.32421875" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.35779816" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Project.S2_Lab02">
@@ -343,6 +361,11 @@
       <workItem from="1615571752997" duration="6385000" />
       <workItem from="1615581414529" duration="32000" />
       <workItem from="1615631385495" duration="4327000" />
+      <workItem from="1615890211694" duration="137000" />
+      <workItem from="1615892207065" duration="485000" />
+      <workItem from="1617033151313" duration="8000" />
+      <workItem from="1617033237352" duration="6123000" />
+      <workItem from="1617046854426" duration="2272000" />
     </task>
     <task id="LOCAL-00001" summary="Lab02: Design complete">
       <created>1615041454107</created>
@@ -428,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615635744944</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Lab02: some fixes; finished">
+      <created>1615890330157</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1615890330157</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,6 +492,7 @@
     <MESSAGE value="Lab03: made search" />
     <MESSAGE value="Lab03: all done, except Last Action displaying" />
     <MESSAGE value="Merger complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merger complete" />
+    <MESSAGE value="Lab02: some fixes; finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab02: some fixes; finished" />
   </component>
 </project>

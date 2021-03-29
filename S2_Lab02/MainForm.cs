@@ -15,7 +15,6 @@ namespace S2_Lab02
         public List<Plane> Planes { get; set; }
         private List<CrewMember> _crew;
         private List<int> _planesIdList;
-        private Timer _timer;
 
         public MainForm()
         {
@@ -28,12 +27,6 @@ namespace S2_Lab02
             AirTechServiceDatePicker.Format = DateTimePickerFormat.Custom;
             AirYearReleaseDatePicker.CustomFormat = "dd.MM.yyyy";
             AirTechServiceDatePicker.CustomFormat = "dd.MM.yyyy";
-            _timer = new Timer(Time, null, 0, 1000);
-        }
-
-        private void Time(object obj)
-        { 
-            StatusItemTimeSetLabel.Text = DateTime.Now.ToLongDateString() + " " + DateTime.Now.ToLongTimeString();
         }
         private void RefreshCrew()
         {
@@ -245,6 +238,26 @@ namespace S2_Lab02
         private void MenuItemAboutProgram_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Version: 1.0\n Developer: Kaportsev O.A.");
+        }
+        
+        private void AirGenerateButton_Click(object sender, EventArgs e)
+        {
+            Plane plane = null;
+            if (AirTypeCargo2.Checked)
+                plane = new Plane(new CargoPlaneFactory());
+            else if (AirTypePassenger2.Checked)
+                plane = new Plane(new PassengerPlaneFactory());
+            else if (AirTypeMilitary2.Checked)
+                plane = new Plane(new WarPlaneFactory());
+            
+            if (plane == null)
+                return;
+            
+            for (int i = 0; i < AirAmountToGenerateSetter.Value; i++)
+            {
+                plane.GenerateNewData();
+                AddPlaneToDataView(plane);
+            }
         }
     }
 }
