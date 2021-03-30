@@ -61,6 +61,7 @@
     <Compile Include="AppSettings.cs" />
     <Compile Include="Builder.cs" />
     <Compile Include="CrewMember.cs" />
+    <Compile Include="Decorator.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

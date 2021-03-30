@@ -254,6 +254,19 @@ namespace S2_Lab02
             crewMemberBuilder.BuildPosition("Пилот");
 
             var crewMember = crewMemberBuilder.GetProduct();
+
+            #region PatternDecoratorUsing
+
+            crewMember.Salary = new PilotSalary();
+            crewMember.Salary = new FiveYearsWorkExperience(crewMember.Salary);
+            crewMember.Salary = new FlightAce(crewMember.Salary);
+            if (ShowSalaryCheckBox.Checked)
+            {
+                MessageBox.Show(@"Salary amount: " + crewMember.Salary.Cost());
+            }
+
+            #endregion
+
             var crew = new List<CrewMember>
             {
                 crewMember,

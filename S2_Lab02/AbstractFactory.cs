@@ -67,7 +67,6 @@
     #endregion
 
     #region Factory
-
     public interface IPlaneFactory
     {
         Type CreateType();

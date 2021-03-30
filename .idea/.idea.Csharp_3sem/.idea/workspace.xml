@@ -17,7 +17,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1191e5e8-3097-4c1a-86b9-0f97b658835a" name="Default Changelist" comment="Lab04 finished">
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/Builder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/Builder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S2_Lab02/Decorator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/AbstractFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/AbstractFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/MainForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/MainForm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/S2_Lab02.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/S2_Lab02.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.exe" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +47,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/c9/06187363/TimerQueueTimer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Immediate Window" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/23BD44B4-B3BB-4072-991D-175B46E28280/12/JsonSerializer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/b5/88bdabc3/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1E9166BF-CA65-4377-B09C-EA42D003812D/2e/4ed8fa74/Size.cs" root0="SKIP_HIGHLIGHTING" />
@@ -64,13 +74,14 @@
       <option value="$PROJECT_DIR$/S2_Lab02/PlaneIdCheckAttribute.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/SearchForm.Designer.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/SearchForm.cs" />
-      <option value="$PROJECT_DIR$/S2_Lab02/AbstractFactory.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/Plane.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/Builder.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/AppSettings.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/AbstractFactory.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/Decorator.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/MainForm.cs" />
-      <option value="$PROJECT_DIR$/S2_Lab02/AppSettings.cs" />
-      <option value="$PROJECT_DIR$/S2_Lab02/Builder.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pNugI2TykzfhNUzryyjUwIWkcm" />
@@ -357,7 +368,7 @@
       <workItem from="1617033151313" duration="8000" />
       <workItem from="1617033237352" duration="6123000" />
       <workItem from="1617046854426" duration="4306000" />
-      <workItem from="1617100737471" duration="3380000" />
+      <workItem from="1617100737471" duration="5662000" />
     </task>
     <task id="LOCAL-00001" summary="Lab02: Design complete">
       <created>1615041454107</created>
@@ -464,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617103866860</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Lab04 finished">
+      <created>1617104358991</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1617104358991</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -88,6 +88,7 @@ namespace S2_Lab02
             this.AirTypeCargo2 = new System.Windows.Forms.RadioButton();
             this.AirTypeGroup2 = new System.Windows.Forms.GroupBox();
             this.AirGenerateButton = new System.Windows.Forms.Button();
+            this.ShowSalaryCheckBox = new System.Windows.Forms.CheckBox();
             this.AirTypeGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.AirLoadCapacitySetter)).BeginInit();
             this.AirAddGroup.SuspendLayout();
@@ -668,11 +669,21 @@ namespace S2_Lab02
             this.AirGenerateButton.UseVisualStyleBackColor = true;
             this.AirGenerateButton.Click += new System.EventHandler(this.AirGenerateButton_Click);
             // 
+            // ShowSalaryCheckBox
+            // 
+            this.ShowSalaryCheckBox.Location = new System.Drawing.Point(1086, 246);
+            this.ShowSalaryCheckBox.Name = "ShowSalaryCheckBox";
+            this.ShowSalaryCheckBox.Size = new System.Drawing.Size(231, 39);
+            this.ShowSalaryCheckBox.TabIndex = 26;
+            this.ShowSalaryCheckBox.Text = "Показывать зарплату при генерации";
+            this.ShowSalaryCheckBox.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1323, 744);
+            this.Controls.Add(this.ShowSalaryCheckBox);
             this.Controls.Add(this.AirTypeGroup2);
             this.Controls.Add(this.AirAmountToGenerateSetter);
             this.Controls.Add(this.AirGenerateButton);
@@ -713,6 +724,8 @@ namespace S2_Lab02
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.CheckBox ShowSalaryCheckBox;
 
         private System.Windows.Forms.NumericUpDown AirAmountToGenerateSetter;
         private System.Windows.Forms.Button AirGenerateButton;

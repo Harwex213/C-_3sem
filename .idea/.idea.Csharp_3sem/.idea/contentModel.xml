@@ -166,6 +166,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Builder.cs" t="Include" />
         <e p="CrewMember.cs" t="Include" />
+        <e p="Decorator.cs" t="Include" />
         <e p="MainForm.cs" t="Include" />
         <e p="MainForm.Designer.cs" t="Include" />
         <e p="MainForm.resx" t="Include" />
