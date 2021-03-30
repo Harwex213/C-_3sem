@@ -170,6 +170,7 @@
         <e p="MainForm.Designer.cs" t="Include" />
         <e p="MainForm.resx" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
+        <e p="Observer.cs" t="Include" />
         <e p="packages.config" t="Include" />
         <e p="Plane.cs" t="Include" />
         <e p="PlaneIdCheckAttribute.cs" t="Include" />

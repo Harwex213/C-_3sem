@@ -33,11 +33,24 @@ namespace S2_Lab02
         public int CrewActualAmount { get; }
         public List<CrewMember> Crew { get; private set; }
 
-        
-        
+        private OnBoardComputer _onBoardComputer = new();
+        private Chassis _chassis = new();
+
         public Plane()
         {
             Crew = new List<CrewMember>();
+            
+            // Using Observer pattern.
+            var planeSubject = new PlaneSubject();
+            planeSubject.Attach(_onBoardComputer);
+            planeSubject.Attach(_chassis);
+            planeSubject.GetNewData();
+            planeSubject.GetNewData();
+            if (planeSubject.Height > 300)
+            {
+                planeSubject.Detach(_chassis);
+            }
+            planeSubject.GetNewData();
             
             // Using Strategy pattern.
             FlyBehavior = new FlyByNone();
