@@ -19,6 +19,8 @@ namespace S2_Lab02
         public MainForm()
         {
             InitializeComponent();
+            AppSettings.GetInstance().DoSomething(this);
+            
             Planes = new List<Plane>();
             _crew = new List<CrewMember>();
             _planesIdList = new List<int>();
@@ -243,12 +245,28 @@ namespace S2_Lab02
         private void AirGenerateButton_Click(object sender, EventArgs e)
         {
             Plane plane = null;
+
+            var crewMemberBuilder = new CrewMemberBuilder();
+            crewMemberBuilder.BuildFirstName("Oleg");
+            crewMemberBuilder.BuildLastName("Kaportsev");
+            crewMemberBuilder.BuildAge(19);
+            crewMemberBuilder.BuildWorkExperience(5);
+            crewMemberBuilder.BuildPosition("Пилот");
+
+            var crewMember = crewMemberBuilder.GetProduct();
+            var crew = new List<CrewMember>
+            {
+                crewMember,
+                crewMember.Clone()
+            };
+
+
             if (AirTypeCargo2.Checked)
-                plane = new Plane(new CargoPlaneFactory());
+                plane = new Plane(crew, new CargoPlaneFactory());
             else if (AirTypePassenger2.Checked)
-                plane = new Plane(new PassengerPlaneFactory());
+                plane = new Plane(crew, new PassengerPlaneFactory());
             else if (AirTypeMilitary2.Checked)
-                plane = new Plane(new WarPlaneFactory());
+                plane = new Plane(crew, new WarPlaneFactory());
             
             if (plane == null)
                 return;

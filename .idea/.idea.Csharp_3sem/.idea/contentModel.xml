@@ -162,6 +162,7 @@
       <e p="S2_Lab02" t="IncludeRecursive">
         <e p="AbstractFactory.cs" t="Include" />
         <e p="App.config" t="Include" />
+        <e p="AppSettings.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Builder.cs" t="Include" />
         <e p="CrewMember.cs" t="Include" />

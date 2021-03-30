@@ -1,8 +1,14 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace S2_Lab02
 {
-    public class CrewMember
+    public interface IPrototype<T> where T : new()
+    {
+        public T Clone();
+    }
+    
+    public class CrewMember : IPrototype<CrewMember>
     {
         [Required(ErrorMessage = "Имя должно быть задано")]
         [StringLength(15, ErrorMessage = "Имя слишком длинное")]
@@ -23,6 +29,12 @@ namespace S2_Lab02
         [RegularExpression(@"([A-Z]{1}[a-z]*\s*[a-z]*)|([А-Я]{1}[а-я]*\s*[а-я]*)", ErrorMessage = "Название должности задано неверно.")]
         public string Position { get; set; }
 
+        public CrewMember Clone()
+        {
+            var clone = (CrewMember)MemberwiseClone();
+            return clone;
+        }
+
         public override string ToString()
         {
             return "----------------------------------------------\n" +
@@ -34,5 +46,6 @@ namespace S2_Lab02
                    "Должность:\t" + Position + "\n" +
                    "----------------------------------------------\n";
         }
+        
     }
 }

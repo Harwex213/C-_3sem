@@ -613,7 +613,7 @@ namespace S2_Lab02
             this.AirAmountToGenerateSetter.Name = "AirAmountToGenerateSetter";
             this.AirAmountToGenerateSetter.Size = new System.Drawing.Size(123, 22);
             this.AirAmountToGenerateSetter.TabIndex = 26;
-            this.AirAmountToGenerateSetter.Value = new decimal(new int[] {3, 0, 0, 0});
+            this.AirAmountToGenerateSetter.Value = new decimal(new int[] {1, 0, 0, 0});
             // 
             // AirTypeMilitary2
             // 

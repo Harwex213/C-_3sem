@@ -58,7 +58,6 @@ namespace S2_Lab02
             LoadCapacity = 100;
             PassengersSeatsAmount = 100;
             CrewAmount = 2;
-            Crew = new List<CrewMember>();
         }
 
         public override string ToString()
