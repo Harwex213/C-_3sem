@@ -162,7 +162,6 @@
       <e p="S2_Lab02" t="IncludeRecursive">
         <e p="AbstractFactory.cs" t="Include" />
         <e p="App.config" t="Include" />
-        <e p="AppSettings.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Builder.cs" t="Include" />
         <e p="CrewMember.cs" t="Include" />
@@ -186,6 +185,8 @@
         <e p="SearchForm.cs" t="Include" />
         <e p="SearchForm.Designer.cs" t="Include" />
         <e p="SearchForm.resx" t="Include" />
+        <e p="Singleton.cs" t="Include" />
+        <e p="Strategy.cs" t="Include" />
       </e>
       <e p="S3_Exm" t="IncludeRecursive">
         <e p="App.config" t="Include" />

@@ -58,7 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbstractFactory.cs" />
-    <Compile Include="AppSettings.cs" />
+    <Compile Include="Singleton.cs" />
     <Compile Include="Builder.cs" />
     <Compile Include="CrewMember.cs" />
     <Compile Include="Decorator.cs" />
@@ -78,6 +78,7 @@
     <Compile Include="SearchForm.Designer.cs">
       <DependentUpon>SearchForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Strategy.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

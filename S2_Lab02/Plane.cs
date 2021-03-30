@@ -2,10 +2,16 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Globalization;
+using System.Windows.Forms;
 
 namespace S2_Lab02
 {
-    public class Plane
+    public abstract class ForerunnerPlane
+    {
+        protected IFlyStrategy FlyBehavior;
+    }
+    
+    public class Plane : ForerunnerPlane
     {
         private static int _nextId;
         
@@ -27,9 +33,15 @@ namespace S2_Lab02
         public int CrewActualAmount { get; }
         public List<CrewMember> Crew { get; private set; }
 
+        
+        
         public Plane()
         {
             Crew = new List<CrewMember>();
+            
+            // Using Strategy pattern.
+            FlyBehavior = new FlyByNone();
+            MessageBox.Show(FlyBehavior.Fly());
         }
 
         public Plane(IPlaneFactory planeFactory) : this()

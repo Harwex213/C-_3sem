@@ -16,17 +16,13 @@
     <projectFile>S3_Exm/S3_Exm.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1191e5e8-3097-4c1a-86b9-0f97b658835a" name="Default Changelist" comment="Lab04 finished">
-      <change afterPath="$PROJECT_DIR$/S2_Lab02/Decorator.cs" afterDir="false" />
+    <list default="true" id="1191e5e8-3097-4c1a-86b9-0f97b658835a" name="Default Changelist" comment="Pattern Decorator add">
+      <change afterPath="$PROJECT_DIR$/S2_Lab02/Strategy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/AbstractFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/AbstractFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/MainForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/MainForm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/AppSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/Singleton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/Plane.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/Plane.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/S2_Lab02/S2_Lab02.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/S2_Lab02.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.exe" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,13 +71,14 @@
       <option value="$PROJECT_DIR$/S2_Lab02/SearchForm.Designer.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/SearchForm.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/MainForm.Designer.cs" />
-      <option value="$PROJECT_DIR$/S2_Lab02/Plane.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/Builder.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/AppSettings.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/AbstractFactory.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/Decorator.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/MainForm.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/Strategy.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/Plane.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pNugI2TykzfhNUzryyjUwIWkcm" />
@@ -368,7 +365,7 @@
       <workItem from="1617033151313" duration="8000" />
       <workItem from="1617033237352" duration="6123000" />
       <workItem from="1617046854426" duration="4306000" />
-      <workItem from="1617100737471" duration="5662000" />
+      <workItem from="1617100737471" duration="7667000" />
     </task>
     <task id="LOCAL-00001" summary="Lab02: Design complete">
       <created>1615041454107</created>
@@ -482,7 +479,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617104358991</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Pattern Decorator add">
+      <created>1617106521792</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1617106521792</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,7 +523,8 @@
     <MESSAGE value="Lab02: some fixes; finished" />
     <MESSAGE value="Abstract Factory add" />
     <MESSAGE value="Lab04 finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab04 finished" />
+    <MESSAGE value="Pattern Decorator add" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pattern Decorator add" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
