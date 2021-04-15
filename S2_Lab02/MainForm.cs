@@ -255,8 +255,7 @@ namespace S2_Lab02
 
             var crewMember = crewMemberBuilder.GetProduct();
 
-            #region PatternDecoratorUsing
-
+            // Pattern Decorator using.
             crewMember.Salary = new PilotSalary();
             crewMember.Salary = new FiveYearsWorkExperience(crewMember.Salary);
             crewMember.Salary = new FlightAce(crewMember.Salary);
@@ -264,8 +263,6 @@ namespace S2_Lab02
             {
                 MessageBox.Show(@"Salary amount: " + crewMember.Salary.Cost());
             }
-
-            #endregion
 
             var crew = new List<CrewMember>
             {

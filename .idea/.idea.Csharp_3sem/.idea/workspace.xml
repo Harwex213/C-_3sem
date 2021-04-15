@@ -16,12 +16,11 @@
     <projectFile>S3_Exm/S3_Exm.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1191e5e8-3097-4c1a-86b9-0f97b658835a" name="Default Changelist" comment="Strategy pattern add">
-      <change afterPath="$PROJECT_DIR$/S2_Lab02/Observer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="1191e5e8-3097-4c1a-86b9-0f97b658835a" name="Default Changelist" comment="Observer pattern added">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/Plane.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/Plane.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/S2_Lab02.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/S2_Lab02.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/Decorator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/Decorator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab02/MainForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/MainForm.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.exe" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.pdb" afterDir="false" />
     </list>
@@ -44,7 +43,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/c9/06187363/TimerQueueTimer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Immediate Window" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/23BD44B4-B3BB-4072-991D-175B46E28280/12/JsonSerializer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/b5/88bdabc3/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1E9166BF-CA65-4377-B09C-EA42D003812D/2e/4ed8fa74/Size.cs" root0="SKIP_HIGHLIGHTING" />
@@ -76,12 +74,12 @@
       <option value="$PROJECT_DIR$/S2_Lab02/Builder.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/AppSettings.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/AbstractFactory.cs" />
-      <option value="$PROJECT_DIR$/S2_Lab02/Decorator.cs" />
-      <option value="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" />
-      <option value="$PROJECT_DIR$/S2_Lab02/MainForm.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/Strategy.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/Observer.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/Plane.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/MainForm.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab02/Decorator.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pNugI2TykzfhNUzryyjUwIWkcm" />
@@ -95,6 +93,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="sqlserver" />
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3502052" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -368,7 +367,9 @@
       <workItem from="1617033151313" duration="8000" />
       <workItem from="1617033237352" duration="6123000" />
       <workItem from="1617046854426" duration="4306000" />
-      <workItem from="1617100737471" duration="9400000" />
+      <workItem from="1617100737471" duration="10226000" />
+      <workItem from="1617706183800" duration="2186000" />
+      <workItem from="1617870822301" duration="55000" />
     </task>
     <task id="LOCAL-00001" summary="Lab02: Design complete">
       <created>1615041454107</created>
@@ -496,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617122253119</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Observer pattern added">
+      <created>1617124090232</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1617124090232</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -535,26 +543,10 @@
     <MESSAGE value="Lab04 finished" />
     <MESSAGE value="Pattern Decorator add" />
     <MESSAGE value="Strategy pattern add" />
-    <option name="LAST_COMMIT_MESSAGE" value="Strategy pattern add" />
+    <MESSAGE value="Observer pattern added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Observer pattern added" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/S2_Lab02/Plane.cs</url>
-          <line>43</line>
-          <properties documentPath="D:\Wordplace\2_Blue\1University\second_cource_2\OOP\Csharp_University\S2_Lab02\Plane.cs" initialLine="43" containingFunctionPresentation="constructor 'Plane'">
-            <startOffsets>
-              <option value="1484" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1522" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Frame#S2_Lab02.MainForm.AirGenerateButton_Click" memberName="crewMember" />

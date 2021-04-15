@@ -24,7 +24,8 @@
     public abstract class AwardsDecorator : Salary
     {
         protected readonly Salary Salary;
-        public AwardsDecorator(Salary salary)
+
+        protected AwardsDecorator(Salary salary)
         {
             Salary = salary;
         }

@@ -28,7 +28,6 @@ namespace S2_Lab02
         [StringLength(30, ErrorMessage = "Название должности слишком длинное")]
         [RegularExpression(@"([A-Z]{1}[a-z]*\s*[a-z]*)|([А-Я]{1}[а-я]*\s*[а-я]*)", ErrorMessage = "Название должности задано неверно.")]
         public string Position { get; set; }
-
         public Salary Salary { get; set; }
 
         public CrewMember Clone()
