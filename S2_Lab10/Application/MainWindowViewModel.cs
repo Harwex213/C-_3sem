@@ -6,10 +6,7 @@ namespace S2_Lab10
     {
         public MainWindowViewModel()
         {
-            _context = new DataBaseContext();
-            _context.DataBaseConnect();
+            
         }
-
-        private DataBaseContext _context;
     }
 }

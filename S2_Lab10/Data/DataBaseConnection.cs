@@ -5,9 +5,9 @@ using System.Windows;
 
 namespace S2_Lab10.Data
 {
-    public class DataBaseContext 
+    public class DataBaseConnection
     {
-        public DataBaseContext()
+        public DataBaseConnection()
         {
             _connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
         }
@@ -16,11 +16,11 @@ namespace S2_Lab10.Data
         private const string GeneralConnection = "Server=.;Database=master;Trusted_Connection=True";
         private const string DataBaseName = "lab10_OOP";
         
-        public void DataBaseConnect()
+        public SqlConnection DataBaseConnect()
         {
-            
-            if (DataBaseCheck())
-                return;
+            var testConnection = DataBaseCheck();
+            if (testConnection is not null)
+                return new SqlConnection(_connectionString);
             
             var createDatabase = "create database " + DataBaseName;
             var createTables = 
@@ -54,7 +54,7 @@ namespace S2_Lab10.Data
             }
             catch (Exception e)
             {
-                MessageBox.Show("МЫ ЕПТА В ДАТАБАЗЕ КРЕАТИОН");
+                MessageBox.Show("Database creation failed");
                 MessageBox.Show(e.Message);
             }
 
@@ -70,12 +70,14 @@ namespace S2_Lab10.Data
             }
             catch (Exception e)
             {
-                MessageBox.Show("МЫ ЕПТА В ТЕЙБЛ КРЕАТИОН");
+                MessageBox.Show("Table creation failed");
                 MessageBox.Show(e.Message);
             }
+            
+            return new SqlConnection(_connectionString);
         }
 
-        private bool DataBaseCheck()
+        private SqlConnection DataBaseCheck()
         {
             try
             {
@@ -83,13 +85,13 @@ namespace S2_Lab10.Data
                 connection.Open();
                 var sqlCreateDbQuery = $"SELECT database_id FROM sys.databases WHERE Name = '{DataBaseName}'";
                 var sqlDatabaseCheck = new SqlCommand(sqlCreateDbQuery, connection);
-                return (int)sqlDatabaseCheck.ExecuteScalar() > 0;
+                return (int) sqlDatabaseCheck.ExecuteScalar() > 0 ? connection : null;
             }
             catch (Exception e)
             {
-                MessageBox.Show("МЫ ЕПТА В TABLE CHECK NAHOY");
+                MessageBox.Show("The desired database was not found");
                 MessageBox.Show(e.Message);
-                return false;
+                return null;
             }
         }
     }
