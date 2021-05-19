@@ -3,12 +3,120 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:fa5="http://schemas.fontawesome.com/icons/"
         xmlns:local="clr-namespace:S2_Lab10"
         mc:Ignorable="d"
         Title="MainWindow" Height="460" Width="800"
-        MinHeight="460" MinWidth="800"
-        DataContext="">
-    <Grid>
+        MinHeight="460" MinWidth="800">
+    <Window.DataContext>
+        <local:MainWindowViewModel></local:MainWindowViewModel>
+    </Window.DataContext>
+        
+        
+    <DockPanel>
+        
+        <Grid DockPanel.Dock="Bottom" Height="50">
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+                <Button Click="Prev_OnClick"
+                        Margin="0,0,25,0">
+                    <fa5:ImageAwesome Icon="Solid_ArrowLeft"
+                                      Height="30">
+                    </fa5:ImageAwesome>
+                </Button>
+                <Button Click="Next_OnClick">
+                    <fa5:ImageAwesome Icon="Solid_ArrowRight"
+                                      Height="30">
+                    </fa5:ImageAwesome>
+                </Button>
+            </StackPanel>
+        </Grid>
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="250"/>
+            </Grid.ColumnDefinitions>
 
-    </Grid>
+            <DataGrid Grid.Column="0"
+                      x:Name="DataTable"
+                      ItemsSource="{Binding Products}"
+                      AutoGenerateColumns="False"
+                      IsReadOnly="True"
+                      SelectedItem="{Binding SelectedProduct}">
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding Path=Id}"
+                                        Header="Id"
+                                        Width="*"/>
+                    <DataGridTextColumn Binding="{Binding Path=Name}"
+                                        Header="Name"
+                                        Width="*"/>
+                    <DataGridTextColumn Binding="{Binding Path=Price}"
+                                        Header="Qty"
+                                        Width="*"/>
+                    <DataGridTextColumn Binding="{Binding Path=Weight}"
+                                        Header="Weight"
+                                        Width="*"/>
+                    
+                    <DataGridTemplateColumn Width="100"
+                                            Header="Photo">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Source="{Binding Photo}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <Grid Grid.Row="0" Grid.Column="1">
+                <DockPanel>
+                    <StackPanel Margin="10">
+                        <DockPanel Margin="10">
+                            <TextBox DockPanel.Dock="Right"
+                                     Width="100"
+                                     Text="{Binding CreatedProduct.Name}"/>
+                            <TextBlock Text="Name"/>
+                        </DockPanel>
+                        
+                        <DockPanel Margin="10">
+                            <TextBox DockPanel.Dock="Right"
+                                     Width="100"
+                                     Text="{Binding CreatedProduct.Weight}"/>
+                            <TextBlock Text="Weight"/>
+                        </DockPanel>
+                        
+                        <DockPanel Margin="10">
+                            <TextBox DockPanel.Dock="Right"
+                                     Width="100"
+                                     Text="{Binding CreatedProduct.Price}"/>
+                            <TextBlock Text="Price"/>
+                        </DockPanel>
+                        
+                        <DockPanel Margin="10 10 20 10">
+                            <Button DockPanel.Dock="Right"
+                                    Width="80"
+                                    Content="Choose"
+                                    Command="{Binding ChoosePhotoCommand}"/>
+                            <TextBlock Text="Photo"/>
+                        </DockPanel>
+                        
+                        <StackPanel>
+                            <Button DockPanel.Dock="Bottom"
+                                    Margin="30, 10"
+                                    Command="{Binding CreateModelCommand}">Create</Button>
+                            <Button DockPanel.Dock="Bottom"
+                                    Margin="30, 10"
+                                    Command="{Binding UpdateModelCommand}">Update</Button>
+                            <Button Margin="30, 10"
+                                    Command="{Binding DeleteModelCommand}">Delete</Button>
+                        </StackPanel>
+                    </StackPanel>
+                </DockPanel>
+            </Grid>
+            
+        </Grid>
+        
+    </DockPanel>
 </Window>
