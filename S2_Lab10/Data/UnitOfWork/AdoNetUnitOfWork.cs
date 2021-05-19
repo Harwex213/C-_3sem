@@ -26,13 +26,12 @@ namespace S2_Lab10.Data.UnitOfWork
         public void SaveChanges()
         {
             if (_transaction == null)
-                throw new InvalidOperationException
-                    ("Transaction have already been committed. Check your transaction handling.");
+                throw new InvalidOperationException("Transaction have already been committed. Check your transaction handling.");
 			
             _transaction.Commit();
             _transaction = null;
         }
-	
+
         public void Dispose()
         {
             if (_transaction != null)

@@ -6,11 +6,13 @@ namespace S2_Lab10
 {
     public abstract class RepositoryBase<T>
     {
-        private IUnitOfWork _unitOfWork;
         public RepositoryBase(IUnitOfWork unitOfWork)
         {
-            _unitOfWork = unitOfWork;
+            UnitOfWork = unitOfWork;
         }
+
+        protected IUnitOfWork UnitOfWork { get; }
+
         public abstract IEnumerable<T> GetModelList();
         public abstract T GetModel(int id);
         public abstract void Create(T item);
