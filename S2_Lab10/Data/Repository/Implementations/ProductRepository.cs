@@ -56,18 +56,30 @@ namespace S2_Lab10
 
         }
 
-        public override void Create(Product item)
+        public override int Create(Product item)
         {
             if (item is null)
-                return;
+                return -1;
 
             using var command = UnitOfWork.CreateCommand();
             command.CommandText = @"insert into Products(Name, Weight, Price)
-                                            values(@name, @weight, @price)";
+                                            values(@name, @weight, @price);
+                                            SET @id=SCOPE_IDENTITY()";
+            
             command.Parameters.Add(new SqlParameter("@name", item.Name));
             command.Parameters.Add(new SqlParameter("@weight", item.Weight));
             command.Parameters.Add(new SqlParameter("@price", item.Price));
+            
+            var sqlParameter = new SqlParameter()
+            {
+                ParameterName = "@id",
+                SqlDbType = SqlDbType.Int,
+                Direction = ParameterDirection.Output
+            };
+            command.Parameters.Add(sqlParameter);
+            
             command.ExecuteNonQuery();
+            return (int) sqlParameter.Value;
         }
 
         public override void Update(Product item)

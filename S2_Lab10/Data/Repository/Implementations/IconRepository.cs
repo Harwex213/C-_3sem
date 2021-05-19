@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using S2_Lab10.Data.UnitOfWork;
 
@@ -51,17 +52,30 @@ namespace S2_Lab10
             return icon;
         }
 
-        public override void Create(Icon item)
+        public override int Create(Icon item)
         {
             if (item is null)
-                return;
+                return -1;
 
             using var command = UnitOfWork.CreateCommand();
             command.CommandText = @"insert into Icons(ProductId, Photo)
-                                            values(@productId, @photo)";
+                                            values(@productId, @photo);
+                                    SET @id=SCOPE_IDENTITY();";
+            
             command.Parameters.Add(new SqlParameter("@productId", item.ProductId));
             command.Parameters.Add(new SqlParameter("@photo", item.Photo));
+            
+                        
+            var sqlParameter = new SqlParameter()
+            {
+                ParameterName = "@id",
+                SqlDbType = SqlDbType.Int,
+                Direction = ParameterDirection.Output
+            };
+            command.Parameters.Add(sqlParameter);
+            
             command.ExecuteNonQuery();
+            return (int) sqlParameter.Value;
         }
 
         public override void Update(Icon item)

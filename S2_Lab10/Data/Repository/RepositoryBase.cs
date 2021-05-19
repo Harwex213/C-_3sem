@@ -15,7 +15,7 @@ namespace S2_Lab10
 
         public abstract IEnumerable<T> GetModelList();
         public abstract T GetModel(int id);
-        public abstract void Create(T item);
+        public abstract int Create(T item);
         public abstract void Update(T item); 
         public abstract void Delete(int id); 
     }
