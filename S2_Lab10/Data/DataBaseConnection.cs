@@ -37,12 +37,6 @@ namespace S2_Lab10.Data
                                         ProductId INT foreign key references Products(Id),
                                         Photo varbinary(MAX)
                                     )";
-            
-            var createProcGetProductInfo = @"CREATE PROCEDURE sp_GetProductsInfo
-                                             AS 
-                                                SELECT p.Id, p.Name, p.Weight, p.Price, i.ProductId, i.Photo 
-                                                FROM Products p 
-                                                    join Icons i on p.Id = i.ProductId";
 
             try
             {
@@ -63,8 +57,6 @@ namespace S2_Lab10.Data
                 using var connection = new SqlConnection(_connectionString);
                 connection.Open();
                 var command = new SqlCommand(createTables, connection);
-                command.ExecuteNonQuery();
-                command.CommandText = createProcGetProductInfo;
                 command.ExecuteNonQuery();
                 connection.Close();
             }
