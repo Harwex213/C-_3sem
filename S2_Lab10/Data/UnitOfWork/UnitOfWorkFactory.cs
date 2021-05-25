@@ -10,7 +10,7 @@ namespace S2_Lab10.Data.UnitOfWork
             var connection = new DataBaseConnection().DataBaseConnect();
             connection.Open();
 		
-            return new AdoNetUnitOfWork(connection, true);
+            return new AdoNetUnitOfWork(connection);
         }
     }
 }

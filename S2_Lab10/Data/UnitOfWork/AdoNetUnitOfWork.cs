@@ -6,13 +6,11 @@ namespace S2_Lab10.Data.UnitOfWork
     public class AdoNetUnitOfWork : IUnitOfWork
     {
         private IDbConnection _connection;
-        private readonly bool _ownsConnection;
         private IDbTransaction _transaction;
 
-        public AdoNetUnitOfWork(IDbConnection connection, bool ownsConnection)
+        public AdoNetUnitOfWork(IDbConnection connection)
         {
             _connection = connection;
-            _ownsConnection = ownsConnection;
             _transaction = connection.BeginTransaction();
         }
 	
@@ -23,7 +21,7 @@ namespace S2_Lab10.Data.UnitOfWork
             return command;
         }
 	
-        public void SaveChanges()
+        public void SaveChanges()   
         {
             if (_transaction == null)
                 throw new InvalidOperationException("Transaction have already been committed. Check your transaction handling.");
@@ -38,12 +36,6 @@ namespace S2_Lab10.Data.UnitOfWork
             {
                 _transaction.Rollback();
                 _transaction = null;
-            }
-		
-            if (_connection != null && _ownsConnection)
-            {
-                _connection.Close();
-                _connection = null;
             }
         }
     }

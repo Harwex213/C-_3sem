@@ -9,7 +9,8 @@ namespace S2_Lab10.Data
     {
         public DataBaseConnection()
         {
-            _connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+            _connectionString = ConfigurationManager.ConnectionStrings["DefaultConnection"]?.ConnectionString;
+            _connectionString ??= "Server=.;Database=lab10_OOP;Trusted_Connection=True";
         }
         
         private readonly string _connectionString;
@@ -38,6 +39,10 @@ namespace S2_Lab10.Data
                                         Photo varbinary(MAX)
                                     )";
 
+            var createProcGetProductInfo = @"CREATE PROCEDURE sp_GetProductsInfo
+                                                        AS
+                                                            SELECT p.Id, p.Name, p.Weight, p.Price, i.ProductId, i.Photo 
+                                                            FROM Products p join Icons i on p.Id = i.ProductId";
             try
             {
                 using var connection = new SqlConnection(GeneralConnection);
@@ -57,6 +62,8 @@ namespace S2_Lab10.Data
                 using var connection = new SqlConnection(_connectionString);
                 connection.Open();
                 var command = new SqlCommand(createTables, connection);
+                command.ExecuteNonQuery();
+                command.CommandText = createProcGetProductInfo;
                 command.ExecuteNonQuery();
                 connection.Close();
             }

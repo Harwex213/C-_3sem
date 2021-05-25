@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Data;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -60,12 +61,14 @@ namespace S2_Lab10
             
             using var unitOfWork = UnitOfWorkFactory.Create();
 
-            var productRepository = new ProductRepository(unitOfWork).GetModelList();
-            var iconRepository = new IconRepository(unitOfWork).GetModelList();
+            var procedureCommand = unitOfWork.CreateCommand();
+            procedureCommand.CommandText = "sp_GetProductsInfo";
+            procedureCommand.CommandType = CommandType.StoredProcedure;
+            var reader = procedureCommand.ExecuteReader();
 
-            foreach (var product in productRepository)
+            while (reader.Read())
             {
-                var photoByteArray = iconRepository.First(i => i.ProductId == product.Id).Photo;
+                var photoByteArray =  (byte[])reader.GetValue(5);
                 BitmapFrame bitmapImage;
                 using (var ms = new MemoryStream(photoByteArray))
                 {
@@ -74,14 +77,16 @@ namespace S2_Lab10
                 
                 Products.Add(new ProductInfo
                 {
-                    Id = product.Id,
-                    Name = product.Name,
-                    Weight = product.Weight,
-                    Price = product.Price,
-                    IconId = iconRepository.First(i => i.ProductId == product.Id).Id,
+                    Id = reader.GetInt32(0),
+                    Name = reader.GetString(1),
+                    Weight = reader.GetInt32(2),
+                    Price = reader.GetDecimal(3),
+                    IconId = reader.GetInt32(4),
                     Photo = bitmapImage
                 });
             }
+            
+            reader.Close();
         }
         
         private string _pathIcon;

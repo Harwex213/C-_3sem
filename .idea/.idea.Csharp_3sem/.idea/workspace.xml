@@ -14,15 +14,23 @@
     <projectFile>S2_Lab01/S2_Lab01.csproj</projectFile>
     <projectFile>S2_Lab02/S2_Lab02.csproj</projectFile>
     <projectFile>S3_Exm/S3_Exm.csproj</projectFile>
+    <projectFile>S2_WPF_Lab/S2_WPF_Lab.csproj</projectFile>
+    <projectFile>S2_Lab10/S2_Lab10.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1191e5e8-3097-4c1a-86b9-0f97b658835a" name="Default Changelist" comment="Observer pattern added">
+    <list default="true" id="1191e5e8-3097-4c1a-86b9-0f97b658835a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/riderModule.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/Decorator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/Decorator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/MainForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/MainForm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.exe" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab02/bin/Debug/S2_Lab02.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab01/obj/Debug/netcoreapp3.1/Lab01.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01/obj/Debug/netcoreapp3.1/Lab01.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab01/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab10/Application/MainWindowView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab10/Application/MainWindowView.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab10/Application/MainWindowViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab10/Application/MainWindowViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab10/Data/DataBaseConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab10/Data/DataBaseConnection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab10/Data/UnitOfWork/AdoNetUnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab10/Data/UnitOfWork/AdoNetUnitOfWork.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/S2_Lab10/Data/UnitOfWork/UnitOfWorkFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab10/Data/UnitOfWork/UnitOfWorkFactory.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,20 +50,29 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/c9/06187363/TimerQueueTimer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/23BD44B4-B3BB-4072-991D-175B46E28280/12/JsonSerializer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/b5/88bdabc3/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1E9166BF-CA65-4377-B09C-EA42D003812D/2e/4ed8fa74/Size.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/23BD44B4-B3BB-4072-991D-175B46E28280/5/JsonConvert.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/215F2307-E820-492D-A272-E3ABA04F3DFF/05/88a5da3d/Control.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/45/1a369336/Number.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/215F2307-E820-492D-A272-E3ABA04F3DFF/74/30b7de83/TreeNode.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/9c/2aa5818d/List`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00E25C71-8E2F-4828-8B8C-5088590E8D84/03/2629deec/RegularExpressionAttribute.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/215F2307-E820-492D-A272-E3ABA04F3DFF/32/49bc854d/TextBox.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00E25C71-8E2F-4828-8B8C-5088590E8D84/a0/c07769e0/ValidationAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/647FAEDF-A0C0-4C01-B79E-04471FFD80DF/E2/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/647FAEDF-A0C0-4C01-B79E-04471FFD80DF/233/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/2d/a5e6a882/Timer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/9c/2aa5818d/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/45/1a369336/Number.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6DCA8774-EB13-45CC-9E6C-D47111258A5B/9c/554b4866/EFontAwesomeIcon.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/23BD44B4-B3BB-4072-991D-175B46E28280/5/JsonConvert.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/13ED6137-04BF-46D8-B4AD-A023C1088CBB/af/d8603d3a/SqlConnection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/23BD44B4-B3BB-4072-991D-175B46E28280/12/JsonSerializer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/db/8301dde9/TextReader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/13ED6137-04BF-46D8-B4AD-A023C1088CBB/d6/9f3a8922/SqlCommand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/215F2307-E820-492D-A272-E3ABA04F3DFF/05/88a5da3d/Control.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00E25C71-8E2F-4828-8B8C-5088590E8D84/a0/c07769e0/ValidationAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/46BC5461-BD30-4C6F-BE04-ECAB5C39ADFE/52B/ItemCollection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1E9166BF-CA65-4377-B09C-EA42D003812D/2e/4ed8fa74/Size.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/46BC5461-BD30-4C6F-BE04-ECAB5C39ADFE/38E/AvTraceMessages.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/c9/06187363/TimerQueueTimer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/00E25C71-8E2F-4828-8B8C-5088590E8D84/03/2629deec/RegularExpressionAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/215F2307-E820-492D-A272-E3ABA04F3DFF/74/30b7de83/TreeNode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D6D3AC03-BF86-4882-89C2-EBF3A45CE0A1/b5/88bdabc3/ExecutionContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/215F2307-E820-492D-A272-E3ABA04F3DFF/32/49bc854d/TextBox.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/46BC5461-BD30-4C6F-BE04-ECAB5C39ADFE/235/XamlReader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/647FAEDF-A0C0-4C01-B79E-04471FFD80DF/3A/RuntimeType.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -80,6 +97,30 @@
       <option value="$PROJECT_DIR$/S2_Lab02/MainForm.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/CrewMember.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/Decorator.cs" />
+      <option value="$PROJECT_DIR$/S2_WPF_Lab/MainWindow.xaml" />
+      <option value="$PROJECT_DIR$/S2_Lab10/MainWindow.xaml" />
+      <option value="$PROJECT_DIR$/S2_Lab10/Data/Models/Person.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab10/MainWindow.xaml.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab10/App.xaml" />
+      <option value="$PROJECT_DIR$/S2_Lab10/Data/DataBaseContext.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab10/Data/Repository/IRepository.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab10/Data/Repository/Implemetations/IconRepository.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab10/Data/Repository/Implemetations/ProductRepository.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab10/Data/UnitOfWork/IUnitOfWork.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab10/Application/MainWindowView.xaml.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab10/Data/Models/Product.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab10/Data/Models/Icon.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab10/Data/Models/ProductInfo.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab10/Data/Repository/Implementations/ProductRepository.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab10/Data/Repository/Implementations/IconRepository.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab10/Data/UnitOfWork/UnitOfWorkFactory.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab10/Data/Repository/RepositoryBase.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab10/Data/UnitOfWork/AdoNetUnitOfWork.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab10/Application/MainWindowView.xaml" />
+      <option value="$PROJECT_DIR$/S2_Lab10/Application/MainWindowViewModel.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab10/App.config" />
+      <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9946eb83-f087-4fef-a9fe-536a657e1118/console.sql" />
+      <option value="$PROJECT_DIR$/S2_Lab10/Data/DataBaseConnection.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pNugI2TykzfhNUzryyjUwIWkcm" />
@@ -98,14 +139,14 @@
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="XThreadsFramesViewSplitterKey" value="0.35779816" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Project.S2_Lab02">
+  <component name="RunManager" selected=".NET Project.S2_Lab10">
     <configuration name="Lab01" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -322,6 +363,42 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="S2_Lab10" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/S2_Lab10/S2_Lab10.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="S2_WPF_Lab" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/S2_WPF_Lab/S2_WPF_Lab.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="S3_Exm" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -370,6 +447,17 @@
       <workItem from="1617100737471" duration="10226000" />
       <workItem from="1617706183800" duration="2186000" />
       <workItem from="1617870822301" duration="55000" />
+      <workItem from="1618492593281" duration="176000" />
+      <workItem from="1620508448984" duration="442000" />
+      <workItem from="1620509068595" duration="65000" />
+      <workItem from="1621336508287" duration="2168000" />
+      <workItem from="1621349391928" duration="1190000" />
+      <workItem from="1621354623002" duration="5754000" />
+      <workItem from="1621436240493" duration="11443000" />
+      <workItem from="1621453078016" duration="1798000" />
+      <workItem from="1621776926423" duration="19000" />
+      <workItem from="1621936368045" duration="1592000" />
+      <workItem from="1621940186929" duration="3780000" />
     </task>
     <task id="LOCAL-00001" summary="Lab02: Design complete">
       <created>1615041454107</created>
@@ -504,7 +592,63 @@
       <option name="project" value="LOCAL" />
       <updated>1617124090232</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Small unuseful updates">
+      <created>1618492652399</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1618492652399</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Repository &amp; UnitOfWork on ADO.NET implementation">
+      <created>1621439479886</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1621439479886</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Закончил со связкой БД">
+      <created>1621444247385</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1621444247385</updated>
+    </task>
+    <task id="LOCAL-00023" summary="возврат id добавленной модели">
+      <created>1621451744167</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1621451744167</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Осталось только начальную выборку">
+      <created>1621454879558</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1621454879558</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Getting existed data from db">
+      <created>1621937383233</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1621937383233</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Getting existed data from db">
+      <created>1621937613103</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1621937613103</updated>
+    </task>
+    <task id="LOCAL-00027" summary="remove procedure">
+      <created>1621937669920</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1621937669920</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,7 +688,14 @@
     <MESSAGE value="Pattern Decorator add" />
     <MESSAGE value="Strategy pattern add" />
     <MESSAGE value="Observer pattern added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Observer pattern added" />
+    <MESSAGE value="Small unuseful updates" />
+    <MESSAGE value="Repository &amp; UnitOfWork on ADO.NET implementation" />
+    <MESSAGE value="Закончил со связкой БД" />
+    <MESSAGE value="возврат id добавленной модели" />
+    <MESSAGE value="Осталось только начальную выборку" />
+    <MESSAGE value="Getting existed data from db" />
+    <MESSAGE value="remove procedure" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove procedure" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

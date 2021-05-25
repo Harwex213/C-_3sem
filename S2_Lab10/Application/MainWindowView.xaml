@@ -53,7 +53,7 @@
                                         Header="Name"
                                         Width="*"/>
                     <DataGridTextColumn Binding="{Binding Path=Price}"
-                                        Header="Qty"
+                                        Header="Price"
                                         Width="*"/>
                     <DataGridTextColumn Binding="{Binding Path=Weight}"
                                         Header="Weight"
