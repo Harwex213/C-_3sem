@@ -13,7 +13,7 @@ namespace S2_Lab10
         public override IEnumerable<Product> GetModelList()
         {
             var products = new List<Product>();
-            
+
             using var command = UnitOfWork.CreateCommand();
             command.CommandText = "select * from Products";
             var result = command.ExecuteReader();
@@ -28,7 +28,8 @@ namespace S2_Lab10
                     Price = result.GetDecimal(3),
                 });
             }
-            
+            result.Close();
+
             return products;
         }
 
@@ -52,6 +53,8 @@ namespace S2_Lab10
                 Weight = result.GetInt32(2),
                 Price = result.GetDecimal(3),
             };
+            result.Close();
+            
             return product;
 
         }

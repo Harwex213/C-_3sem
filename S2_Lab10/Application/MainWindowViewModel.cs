@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
@@ -55,6 +56,32 @@ namespace S2_Lab10
         {
             Products = new ObservableCollection<ProductInfo>();
             CreatedProduct = new ProductInfo();
+            
+            
+            using var unitOfWork = UnitOfWorkFactory.Create();
+
+            var productRepository = new ProductRepository(unitOfWork).GetModelList();
+            var iconRepository = new IconRepository(unitOfWork).GetModelList();
+
+            foreach (var product in productRepository)
+            {
+                var photoByteArray = iconRepository.First(i => i.ProductId == product.Id).Photo;
+                BitmapFrame bitmapImage;
+                using (var ms = new MemoryStream(photoByteArray))
+                {
+                    bitmapImage = BitmapFrame.Create(ms, BitmapCreateOptions.None, BitmapCacheOption.OnLoad);
+                }
+                
+                Products.Add(new ProductInfo
+                {
+                    Id = product.Id,
+                    Name = product.Name,
+                    Weight = product.Weight,
+                    Price = product.Price,
+                    IconId = iconRepository.First(i => i.ProductId == product.Id).Id,
+                    Photo = bitmapImage
+                });
+            }
         }
         
         private string _pathIcon;

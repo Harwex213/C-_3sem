@@ -26,6 +26,7 @@ namespace S2_Lab10
                     Photo = (byte[]) result.GetValue(2)
                 });
             }
+            result.Close();
             
             return products;
         }
@@ -49,6 +50,8 @@ namespace S2_Lab10
                 ProductId = result.GetInt32(1),
                 Photo = (byte[]) result.GetValue(2)
             };
+            result.Close();
+            
             return icon;
         }
 
