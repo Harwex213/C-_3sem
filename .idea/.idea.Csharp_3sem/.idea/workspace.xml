@@ -16,21 +16,15 @@
     <projectFile>S3_Exm/S3_Exm.csproj</projectFile>
     <projectFile>S2_WPF_Lab/S2_WPF_Lab.csproj</projectFile>
     <projectFile>S2_Lab10/S2_Lab10.csproj</projectFile>
+    <projectFile>S2_Lab09/S2_Lab09.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1191e5e8-3097-4c1a-86b9-0f97b658835a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/riderModule.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/S2_Lab09/MyCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S2_Lab09/UserControls/ColorPicker.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S2_Lab09/UserControls/Events.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp_3sem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/obj/Debug/netcoreapp3.1/Lab01.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01/obj/Debug/netcoreapp3.1/Lab01.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab01/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Lab01/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab10/Application/MainWindowView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab10/Application/MainWindowView.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab10/Application/MainWindowViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab10/Application/MainWindowViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab10/Data/DataBaseConnection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab10/Data/DataBaseConnection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab10/Data/UnitOfWork/AdoNetUnitOfWork.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab10/Data/UnitOfWork/AdoNetUnitOfWork.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/S2_Lab10/Data/UnitOfWork/UnitOfWorkFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/S2_Lab10/Data/UnitOfWork/UnitOfWorkFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Csharp_3sem.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Csharp_3sem.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +70,6 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/S2_Lab02/Form1.Designer.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/Program.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/Form1.cs" />
       <option value="$PROJECT_DIR$/S2_Lab02/DataForm.cs" />
@@ -121,6 +114,13 @@
       <option value="$PROJECT_DIR$/S2_Lab10/App.config" />
       <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9946eb83-f087-4fef-a9fe-536a657e1118/console.sql" />
       <option value="$PROJECT_DIR$/S2_Lab10/Data/DataBaseConnection.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab09/UserControls/ColorPicker.xaml" />
+      <option value="$PROJECT_DIR$/S2_Lab09/UserControls/ColorPicker.xaml.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab09/MyCommand.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab09/MainWindow.xaml.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab09/MainWindow.xaml" />
+      <option value="$PROJECT_DIR$/S2_Lab09/UserControls/Events.xaml.cs" />
+      <option value="$PROJECT_DIR$/S2_Lab09/UserControls/Events.xaml" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pNugI2TykzfhNUzryyjUwIWkcm" />
@@ -146,7 +146,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected=".NET Project.S2_Lab10">
+  <component name="RunManager" selected=".NET Project.S2_Lab09">
     <configuration name="Lab01" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -363,6 +363,24 @@
         <option name="Build" />
       </method>
     </configuration>
+    <configuration name="S2_Lab09" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/S2_Lab09/S2_Lab09.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
     <configuration name="S2_Lab10" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -457,7 +475,8 @@
       <workItem from="1621453078016" duration="1798000" />
       <workItem from="1621776926423" duration="19000" />
       <workItem from="1621936368045" duration="1592000" />
-      <workItem from="1621940186929" duration="3780000" />
+      <workItem from="1621940186929" duration="3868000" />
+      <workItem from="1622524879062" duration="3422000" />
     </task>
     <task id="LOCAL-00001" summary="Lab02: Design complete">
       <created>1615041454107</created>
@@ -648,7 +667,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621937669920</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="All Done">
+      <created>1621944177035</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1621944177035</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -670,7 +696,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Lab02: Design complete" />
     <MESSAGE value="Remake Path" />
     <MESSAGE value="New GitIgnore" />
     <MESSAGE value="Lab02: validation done (unless some bug)" />
@@ -695,7 +720,8 @@
     <MESSAGE value="Осталось только начальную выборку" />
     <MESSAGE value="Getting existed data from db" />
     <MESSAGE value="remove procedure" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove procedure" />
+    <MESSAGE value="All Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="All Done" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
